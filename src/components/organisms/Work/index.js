@@ -20,7 +20,11 @@ const Jobs = ({ jobs, ...props }) => {
         return (
           <div key={i}>
             <Heading level={3} palette={'pigeonRed'}>
-              <Span><Link href={url}>{employer}</Link></Span>
+              <Span>
+                <Link href={url}>
+                  {employer}
+                </Link>
+              </Span>
               <Span>
                 —— {title}
               </Span>

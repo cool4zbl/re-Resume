@@ -16,9 +16,6 @@ const Prototype = props => {
         <Subtitle>Prototype</Subtitle>
       </Heading>
       <List hasIndex={true}>
-        <Item>
-          <Link to={'/about'}>About me</Link>
-        </Item>
         {hobbies.map((h, i) => {
           return (
             <Item key={i}>

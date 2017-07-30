@@ -6,8 +6,7 @@ import CodePlugin from 'typography-plugin-code'
 // theme.scaleRatio = 1.56
 
 theme.plugins = [new CodePlugin()]
-theme.overrideThemeStyles = ({ rhythm }) => ({
-})
+theme.overrideThemeStyles = ({ rhythm }) => ({})
 
 const typography = new Typography(theme)
 
