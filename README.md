@@ -1,12 +1,13 @@
-# Rocket 🚀
-### My React starter kit based on the Atomic Design methodology.
+# Resume 🤓
+### Another front end engineer resume
 
 ### Stacks
 - React
 - React-Router
 - Webpack2 / Webpack-blocks
+- normalizr
+- styled-components
 - Storybook
-- TODO: Redux
 
 ### 0. Install
 `npm install`
@@ -19,4 +20,4 @@
 
 
 ---
-#### Based on [arc](https://arc.js.org)
+#### Based on [Rocket 🚀](https://github.com/cool4zbl/rocket)
