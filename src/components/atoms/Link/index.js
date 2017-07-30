@@ -1,7 +1,7 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
-import { ifProp } from 'styled-tools'
 import NavLink from 'react-router-dom/NavLink'
 
 const styles = css`
@@ -17,7 +17,7 @@ const StyledNavLink = styled( ({theme, palette, to, ...props}) => {
   return <NavLink to={to} {...props}>{children}</NavLink>
 } )`${styles}`
 
-const Link = (props) => {
+const Link = ({children, ...props}) => {
   if (props.to) {
     return <StyledNavLink {...props}>{children}</StyledNavLink>
   }
