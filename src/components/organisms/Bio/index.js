@@ -8,19 +8,9 @@ const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
 const Span = styled.span`margin-right: .5em;`
 
-const Social = styled(({ type, id, ...props }) => {
-  const link = `https://${type}.com/${id.startsWith('@') ? id.slice(1) : id}`
-  return (
-    <Link href={link}>
-      <Icon palette={'grayscale'} icon={type} />
-      {id}
-    </Link>
-  )
-})``
-
 const keyMap = {
   base: '坐标',
-  apply: '求职',
+  apply: '应聘岗位',
   experience: '工作经验',
 }
 const Email = ({ email, ...props }) => {
@@ -51,8 +41,6 @@ const Bio = ({ name, blog, email, github, twitter, display, ...props }) => {
         基本信息
         <Subtitle>Basic Info</Subtitle>
       </Heading>
-      <Social type={'github'} id={github} />
-      <Social type={'twitter'} id={twitter} />
       <List hasIndex={true}>
         {Object.keys(props).map((k, i) => {
           return (
@@ -71,6 +59,13 @@ const Bio = ({ name, blog, email, github, twitter, display, ...props }) => {
   )
 }
 
-Bio.propTypes = {}
+Bio.propTypes = {
+  name: PropTypes.string,
+  apply: PropTypes.string,
+  experience: PropTypes.string,
+  base: PropTypes.string,
+  email: PropTypes.string,
+  blog: PropTypes.string,
+}
 
 export default Bio

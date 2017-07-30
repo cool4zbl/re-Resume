@@ -9,8 +9,6 @@ const Bio = {
   base: '北京',
   email: 'i@zhangbinliu.me',
   blog: 'http://zhangbinliu.me',
-  github: '@cool4zbl',
-  twitter: '@cool4zbl',
   // biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
   display: () => {},
 }
@@ -23,7 +21,7 @@ const SocialMedia = {
   blog: 'http://zhangbinliu.me/',
   github: '@cool4zbl',
   twitter: '@cool4zbl',
-  douban: '@郫县豆瓣',
+  douban: '郫县豆瓣',
 }
 
 const Education = {
@@ -103,7 +101,7 @@ const Me = {
   Projects,
   Education,
   Prototype,
-  // SocialMedia,
+  SocialMedia,
   Thanks,
 }
 

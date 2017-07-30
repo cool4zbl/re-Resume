@@ -7,17 +7,20 @@ import {
   Projects,
   Education,
   Prototype,
+  SocialMedia,
   Thanks,
   Header,
   Footer,
 } from 'components'
 import Me from '../../../Me/index.js'
+
 const componentMap = {
   Bio: props => <Bio {...props} />,
   Work: props => <Work {...props} />,
   Skills: props => <Skills {...props} />,
   Projects: props => <Projects {...props} />,
   Education: props => <Education {...props} />,
+  SocialMedia: props => <SocialMedia {...props} />,
   Prototype: props => <Prototype {...props} />,
   Thanks: props => <Thanks {...props} />,
 }
