@@ -12,7 +12,9 @@ const styles = css`
     }
   }
 `
+
 const Anchor = styled.a`${styles};`
+
 const StyledNavLink = styled(({ theme, palette, to, ...props }) => {
   return <NavLink to={to} {...props} />
 })`${styles}`

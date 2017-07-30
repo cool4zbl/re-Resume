@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { Item, Subtitle, BracketSpan, List, Heading } from 'components'
+import { Link, Item, Subtitle, BracketSpan, List, Heading } from 'components'
 
 import { getEntities } from './schema.js'
 
@@ -16,6 +16,7 @@ const Projects = props => {
 
   const nProjects = getEntities(projects)
   const { company, openSource } = nProjects
+  const proj = { ...company, ...openSource }
 
   return (
     <Wrapper {...props}>
@@ -24,8 +25,8 @@ const Projects = props => {
         <Subtitle>Projects</Subtitle>
       </Heading>
       <div>
-        {Object.keys(company).map((k, i) => {
-          const { title, dates, description, highlights } = company[k]
+        {Object.keys(proj).map((k, i) => {
+          const { title, code, dates, description, highlights, url } = proj[k]
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
@@ -33,6 +34,11 @@ const Projects = props => {
                 <BracketSpan square={true}>
                   {dates}
                 </BracketSpan>
+                {code
+                  ? <Link href={code}>
+                      <BracketSpan square={true}>code</BracketSpan>
+                    </Link>
+                  : ''}
               </Heading>
               <div>
                 {description}
