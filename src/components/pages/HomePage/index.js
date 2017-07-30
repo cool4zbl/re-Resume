@@ -12,32 +12,22 @@ import {
 } from 'components'
 import Me from '../../../Me/index.js'
 const componentMap = {
-  Bio: () => <Bio />,
-  Work: () => <Work />,
-  Projects: () => <Projects />,
-  Education: () => <Education />,
-  Prototype: () => <Prototype />,
-  Thanks: () => <Thanks />,
+  Bio: props => <Bio {...props} />,
+  Work: props => <Work {...props} />,
+  Projects: props => <Projects {...props} />,
+  Education: props => <Education {...props} />,
+  Prototype: props => <Prototype {...props} />,
+  Thanks: props => <Thanks {...props} />,
 }
 
 const HomePage = () => {
   return (
     <PageTemplate header={<Header />} footer={<Footer />}>
-      <Bio {...Me['Bio']} />
-      <Work {...Me['Work']} />
-      <Projects {...Me['Projects']} />
-      <Education {...Me['Education']} />
-      <Prototype {...Me['Prototype']} />
-      <Thanks {...Me['Thanks']} />
-
-      {/*
-        Object.keys(Me).map((k, i) =>
-        <div key={i}>
-          <h2>{k}</h2>
-          <div>{ Me[k] }</div>
-        </div>
-      )
-      */}
+      {Object.keys(Me).map((k, i) => {
+        const component = componentMap[k]
+        const props = { ...Me[k], key: i }
+        return React.createElement(component, props)
+      })}
     </PageTemplate>
   )
 }
