@@ -3,6 +3,7 @@ import {
   PageTemplate,
   Bio,
   Work,
+  Skills,
   Projects,
   Education,
   Prototype,
@@ -14,6 +15,7 @@ import Me from '../../../Me/index.js'
 const componentMap = {
   Bio: props => <Bio {...props} />,
   Work: props => <Work {...props} />,
+  Skills: props => <Skills {...props} />,
   Projects: props => <Projects {...props} />,
   Education: props => <Education {...props} />,
   Prototype: props => <Prototype {...props} />,

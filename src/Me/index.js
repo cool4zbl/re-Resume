@@ -3,14 +3,15 @@
  */
 
 const Bio = {
-  name: 'zhangbinliu',
-  role: 'FrontEnd Engineer',
+  name: '张滨浏',
+  apply: '前端开发工程师',
+  experience: '两年',
+  base: '北京',
   email: 'i@zhangbinliu.me',
-  website: 'http://zhangbinliu.me/',
+  blog: 'http://zhangbinliu.me',
   github: '@cool4zbl',
   twitter: '@cool4zbl',
-  apply: '前端开发工程师',
-  biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
+  // biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
   display: () => {},
 }
 
@@ -97,6 +98,7 @@ const Thanks = {
 
 const Me = {
   Bio,
+  Skills,
   Work,
   Projects,
   Education,
