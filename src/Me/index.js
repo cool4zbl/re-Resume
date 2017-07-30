@@ -3,18 +3,26 @@
  */
 
 const Bio = {
-  name: 'Zhangbinliu',
+  name: 'zhangbinliu',
   role: 'FrontEnd Engineer',
-  contacts: {
-    mobile: '18500367879',
-    email: 'i@zhangbinliu.me',
-    github: '@cool4zbl',
-    twitter: '@cool4zbl',
-  },
-  selfIntroduce: 'A Front End Engineer',
-  skills: ['JS', 'React', 'Redux'],
-  biopic: 'Pigeon',
+  email: 'i@zhangbinliu.me',
+  website: 'http://zhangbinliu.me/',
+  github: '@cool4zbl',
+  twitter: '@cool4zbl',
+  apply: '前端开发工程师',
+  biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
   display: () => {},
+}
+
+const Skills = {
+  skills: ['JS', 'React', 'Redux'],
+}
+
+const SocialMedia = {
+  blog: 'http://zhangbinliu.me/',
+  github: '@cool4zbl',
+  twitter: '@cool4zbl',
+  douban: '@郫县豆瓣',
 }
 
 const Education = {
@@ -89,11 +97,11 @@ const Thanks = {
 
 const Me = {
   Bio,
-  Education,
   Work,
   Projects,
+  Education,
   Prototype,
-  // Expactation,
+  // SocialMedia,
   Thanks,
 }
 

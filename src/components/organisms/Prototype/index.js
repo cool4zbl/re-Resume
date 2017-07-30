@@ -2,18 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
-import { List, BracketSpan, Link, Heading } from 'components'
+import { Item, List, Subtitle, BracketSpan, Link, Heading } from 'components'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
-
-const Item = styled.li``
 
 const Prototype = props => {
   const { hobbies, quotes } = props
 
   return (
     <Wrapper {...props}>
-      <Heading level={2}>Prototype</Heading>
+      <Heading level={2}>
+        更多
+        <Subtitle>Prototype</Subtitle>
+      </Heading>
       <List hasIndex={true}>
         <Item>
           <Link to={'/about'}>About me</Link>

@@ -5,7 +5,7 @@ import { font, palette } from 'styled-theme'
 
 const BigName = styled.h1`
   text-align: center;
-  color: ${palette('pigeonRed', 2)};
+  color: ${palette('pigeonRed', 1)};
 `
 
 // config.name

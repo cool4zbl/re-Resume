@@ -22,11 +22,9 @@ const componentMap = {
 
 const HomePage = () => {
   return (
-    <PageTemplate header={<Header />} footer={<Footer />}>
+    <PageTemplate header={<Header name={Me['Bio'].name} />} footer={<Footer />}>
       {Object.keys(Me).map((k, i) => {
-        const component = componentMap[k]
-        const props = { ...Me[k], key: i }
-        return React.createElement(component, props)
+        return React.createElement(componentMap[k], { ...Me[k], key: i })
       })}
     </PageTemplate>
   )

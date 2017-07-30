@@ -3,13 +3,12 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { BracketSpan, List, Heading } from 'components'
+import { Item, Subtitle, BracketSpan, List, Heading } from 'components'
 
 import { getEntities } from './schema.js'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
-const Item = styled.li``
 const Span = styled.span`margin-right: .5rem;`
 
 const Projects = props => {
@@ -20,7 +19,10 @@ const Projects = props => {
 
   return (
     <Wrapper {...props}>
-      <Heading level={2}>Projects</Heading>
+      <Heading level={2}>
+        项目经验
+        <Subtitle>Projects</Subtitle>
+      </Heading>
       <div>
         {Object.keys(company).map((k, i) => {
           const { title, dates, description, highlights } = company[k]
