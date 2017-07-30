@@ -1,4 +1,3 @@
-// Page Content
 import React from 'react'
 import {
   PageTemplate,
@@ -6,23 +5,19 @@ import {
   Work,
   Projects,
   Education,
+  Prototype,
+  Thanks,
   Header,
   Footer,
-  Heading,
-  InfoSection,
 } from 'components'
 import Me from '../../../Me/index.js'
 const componentMap = {
   Bio: () => <Bio />,
-  Work: () => {
-    ;<Work />
-  },
-  Projects: () => {
-    ;<Projects />
-  },
-  Education: () => {
-    ;<Education />
-  },
+  Work: () => <Work />,
+  Projects: () => <Projects />,
+  Education: () => <Education />,
+  Prototype: () => <Prototype />,
+  Thanks: () => <Thanks />,
 }
 
 const HomePage = () => {
@@ -32,6 +27,8 @@ const HomePage = () => {
       <Work {...Me['Work']} />
       <Projects {...Me['Projects']} />
       <Education {...Me['Education']} />
+      <Prototype {...Me['Prototype']} />
+      <Thanks {...Me['Thanks']} />
 
       {/*
         Object.keys(Me).map((k, i) =>

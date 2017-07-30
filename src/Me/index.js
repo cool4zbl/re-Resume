@@ -72,21 +72,18 @@ const Projects = {
   display: () => {},
 }
 
-// __proto__, the true me.
+/*
+ * __proto__, the true me.
+ */
 const Prototype = {
   hobbies: ['Vimer', 'Taking pictures'],
   quotes: ['Fake it till you make it.'],
   display: () => {},
 }
 
-const Expactation = {
-  company: ['Techonoly', 'Internet'],
-  team: ['Up'],
-  display: () => {},
-}
-
 const Thanks = {
-  thanks: '',
+  thanks:
+    "Thanks for checking, I 'm expecting the opportunity to co-work with you.🤓",
   display: () => {},
 }
 
@@ -95,8 +92,9 @@ const Me = {
   Education,
   Work,
   Projects,
+  Prototype,
   // Expactation,
-  // Thanks,
+  Thanks,
 }
 
 export default Me
