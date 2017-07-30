@@ -5,6 +5,7 @@ import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 
 const StyledSpan = styled.span`
+  font-size: .8em;
   margin-right: .5rem;
   font-weight: 400;
   color: ${palette('grayscale', 4)};

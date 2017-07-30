@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { size, palette } from 'styled-theme'
+import { palette } from 'styled-theme'
 
 const Wrapper = styled.div`
   display: flex;

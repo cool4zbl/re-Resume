@@ -3,23 +3,24 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { Subtitle, Item, BracketSpan, List, Heading } from 'components'
+import { Link, Subtitle, Item, BracketSpan, List, Heading } from 'components'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
-const Span = styled.span`margin-right: .5rem;`
+const Span = styled.span`
+  margin-right: .5rem;
+  color: ${palette('grayscale', 1)};
+`
 
 const Jobs = ({ jobs, ...props }) => {
   return (
     <div>
       {jobs.map((job, i) => {
-        const { responsibilities, employer, title, location, dates } = job
+        const { responsibilities, url, employer, title, location, dates } = job
         return (
           <div key={i}>
             <Heading level={3} palette={'pigeonRed'}>
-              <Span>
-                {employer}
-              </Span>
+              <Span><Link href={url}>{employer}</Link></Span>
               <Span>
                 —— {title}
               </Span>

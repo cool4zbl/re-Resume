@@ -5,7 +5,7 @@ import { font, palette } from 'styled-theme'
 
 const Span = styled.span`
   color: ${palette('grayscale', 4)};
-  font-size: 1rem;
+  font-size: .8em;
   font-weight: 400;
   &:before {
     content: " / ";

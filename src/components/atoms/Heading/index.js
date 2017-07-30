@@ -6,7 +6,7 @@ import { font, palette } from 'styled-theme'
 const fontSize = ({ level }) => `${0.75 + 1 * (1 / level)}rem`
 
 const styles = css`
-  font-weight: 500;
+  font-weight: 600;
   font-size: ${fontSize};
   margin: 0;
   margin-top: 0.85714em;
