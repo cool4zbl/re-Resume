@@ -1,0 +1,37 @@
+import PropTypes from 'prop-types'
+import styled, { css } from 'styled-components'
+import { font, palette } from 'styled-theme'
+import { ifProp } from 'styled-tools'
+import NavLink from 'react-router-dom/NavLink'
+
+const styles = css`
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: normal;
+    }
+  }
+`
+const Anchor = styled.a`${styles}`
+const StyledNavLink = styled( ({theme, palette, to, ...props}) => {
+  return <NavLink to={to} {...props}>{children}</NavLink>
+} )`${styles}`
+
+const Link = (props) => {
+  if (props.to) {
+    return <StyledNavLink {...props}>{children}</StyledNavLink>
+  }
+  return <Anchor {...props}>{children}</Anchor>
+}
+
+Link.propTypes = {
+  palette: PropTypes.string,
+  theme: PropTypes.string,
+  to: PropTypes.string,
+}
+
+Link.defaultProps = {
+  palette: 'grayscale',
+}
+
+export default Link
