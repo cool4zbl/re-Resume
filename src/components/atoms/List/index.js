@@ -20,7 +20,7 @@ List.propTypes = {
 
 List.defaultProps = {
   ordered: false,
-  hasIndex: false
+  hasIndex: false,
 }
 
 export default List

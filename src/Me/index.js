@@ -50,7 +50,7 @@ const Projects = {
   projects: [
     {
       id: 1,
-      type: 'company',  // business
+      type: 'company', // business
       title: 'Account',
       dates: '2015.12 - Present',
       description: 'Account system',

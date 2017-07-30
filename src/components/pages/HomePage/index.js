@@ -14,11 +14,16 @@ import {
 import Me from '../../../Me/index.js'
 const componentMap = {
   Bio: () => <Bio />,
-  Work: () => { <Work /> },
-  Projects: () => { <Projects /> },
-  Education: () => { <Education /> },
+  Work: () => {
+    ;<Work />
+  },
+  Projects: () => {
+    ;<Projects />
+  },
+  Education: () => {
+    ;<Education />
+  },
 }
-
 
 const HomePage = () => {
   return (

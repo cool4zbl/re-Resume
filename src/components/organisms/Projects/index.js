@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { List, Heading } from 'components'
+import { BracketSpan, List, Heading } from 'components'
 
 import { getEntities } from './schema.js'
 
@@ -22,38 +22,36 @@ const Projects = props => {
     <Wrapper {...props}>
       <Heading level={2}>Projects</Heading>
       <div>
-        {
-          Object.keys(company).map( (k, i) => {
-            const { title, dates, description, highlights, } = company[k]
-            return (
-              <div key={i}>
-                <Heading level={3} palette={'pigeonRed'}>
-                  <Span>
-                    {title}
-                  </Span>
-                  <Span>
-                    [{dates}]
-                  </Span>
-                </Heading>
-                <div>{description}</div>
-                <List hasIndex={true}>
-                  {highlights.map((r, j) =>
-                    <Item key={j}>
-                      {r}
-                    </Item>
-                  )}
-                </List>
+        {Object.keys(company).map((k, i) => {
+          const { title, dates, description, highlights } = company[k]
+          return (
+            <div key={i}>
+              <Heading level={3} palette={'pigeonRed'}>
+                {title}
+                <BracketSpan square={true}>
+                  {dates}
+                </BracketSpan>
+              </Heading>
+              <div>
+                {description}
               </div>
-            )
-          } )
-        }
+              <List hasIndex={true}>
+                {highlights.map((r, j) =>
+                  <Item key={j}>
+                    {r}
+                  </Item>
+                )}
+              </List>
+            </div>
+          )
+        })}
       </div>
     </Wrapper>
   )
 }
 
 Projects.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array,
 }
 
 export default Projects

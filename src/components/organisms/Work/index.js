@@ -3,15 +3,12 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { List, Heading } from 'components'
+import { BracketSpan, List, Heading } from 'components'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
 const Item = styled.li``
 const Span = styled.span`margin-right: .5rem;`
-const StyledH3 = styled.h3`
-  // color: ${palette('pigeonRed', 2)};
-`
 
 const Jobs = ({ jobs, ...props }) => {
   return (
@@ -27,9 +24,9 @@ const Jobs = ({ jobs, ...props }) => {
               <Span>
                 —— {title}
               </Span>
-              <Span>
-                [{dates}]
-              </Span>
+              <BracketSpan square={true}>
+                {dates}
+              </BracketSpan>
             </Heading>
             <List hasIndex={true}>
               {responsibilities.map((r, j) =>

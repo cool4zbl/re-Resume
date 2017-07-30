@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `
 
 const Footer = props => {
-  return <Wrapper {...props}>I am the Footer</Wrapper>
+  return <Wrapper {...props}>Fake it till you make it. 💪 </Wrapper>
 }
 
 Footer.propTypes = {

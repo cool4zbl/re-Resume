@@ -12,16 +12,24 @@ const styles = css`
     }
   }
 `
-const Anchor = styled.a`${styles}`
-const StyledNavLink = styled( ({theme, palette, to, ...props}) => {
-  return <NavLink to={to} {...props}>{children}</NavLink>
-} )`${styles}`
+const Anchor = styled.a`${styles};`
+const StyledNavLink = styled(({ theme, palette, to, ...props }) => {
+  return <NavLink to={to} {...props} />
+})`${styles}`
 
-const Link = ({children, ...props}) => {
+const Link = ({ children, ...props }) => {
   if (props.to) {
-    return <StyledNavLink {...props}>{children}</StyledNavLink>
+    return (
+      <StyledNavLink {...props}>
+        {children}
+      </StyledNavLink>
+    )
   }
-  return <Anchor {...props}>{children}</Anchor>
+  return (
+    <Anchor {...props}>
+      {children}
+    </Anchor>
+  )
 }
 
 Link.propTypes = {
