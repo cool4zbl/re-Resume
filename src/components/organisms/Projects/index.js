@@ -10,20 +10,12 @@ import { getEntities } from './schema.js'
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
 const Item = styled.li``
-const Span = styled.span`margin-left: .5rem;`
-const StyledH3 = styled.h3`
-  // color: ${palette('pigeonRed', 2)};
-`
+const Span = styled.span`margin-right: .5rem;`
 
 const Projects = props => {
   const { projects } = props
 
   const nProjects = getEntities(projects)
-
-  console.log(
-    'normalize data',
-    nProjects
-  )
   const { company, openSource } = nProjects
 
   return (
@@ -32,7 +24,7 @@ const Projects = props => {
       <div>
         {
           Object.keys(company).map( (k, i) => {
-            const { title, dates, description, highlights, } = company[k] 
+            const { title, dates, description, highlights, } = company[k]
             return (
               <div key={i}>
                 <Heading level={3} palette={'pigeonRed'}>

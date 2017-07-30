@@ -20,6 +20,8 @@ const Bio = {
 const Education = {
   schools: [
     {
+      id: 1,
+      type: 'college',
       name: 'UESTC',
       location: '',
       degree: 'bacheolor',
@@ -90,7 +92,7 @@ const Thanks = {
 
 const Me = {
   Bio,
-  // Education,
+  Education,
   Work,
   Projects,
   // Expactation,

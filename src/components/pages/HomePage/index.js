@@ -5,6 +5,7 @@ import {
   Bio,
   Work,
   Projects,
+  Education,
   Header,
   Footer,
   Heading,
@@ -15,6 +16,7 @@ const componentMap = {
   Bio: () => <Bio />,
   Work: () => { <Work /> },
   Projects: () => { <Projects /> },
+  Education: () => { <Education /> },
 }
 
 
@@ -24,6 +26,8 @@ const HomePage = () => {
       <Bio {...Me['Bio']} />
       <Work {...Me['Work']} />
       <Projects {...Me['Projects']} />
+      <Education {...Me['Education']} />
+
       {/*
         Object.keys(Me).map((k, i) =>
         <div key={i}>
@@ -36,5 +40,4 @@ const HomePage = () => {
   )
 }
 
-// <InfoSection key={i} title={k} content={Me[k]} />
 export default HomePage
