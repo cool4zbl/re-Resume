@@ -6,6 +6,7 @@ import { HomePage, NotFoundPage } from 'components'
 import theme from './themes/default'
 injectGlobal`
   body: {
+    font-size: 15px;
     background: '#fffefb';
   }
 `

@@ -16,6 +16,7 @@ const Projects = props => {
 
   const nProjects = getEntities(projects)
   const { company, openSource } = nProjects
+
   const proj = { ...company, ...openSource }
 
   return (
@@ -35,9 +36,11 @@ const Projects = props => {
                   {dates}
                 </BracketSpan>
                 {code
-                  ? <Link href={code}>
-                      <BracketSpan square={true}>code</BracketSpan>
-                    </Link>
+                    ? <BracketSpan square={true}>
+                      <Link href={code}>
+                        code
+                      </Link>
+                    </BracketSpan>
                   : ''}
               </Heading>
               <div>

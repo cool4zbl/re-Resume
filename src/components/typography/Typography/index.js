@@ -1,12 +1,18 @@
 import Typography from 'typography'
 import theme from 'typography-theme-github'
 // import theme from 'typography-theme-stow-lake'
-import CodePlugin from 'typography-plugin-code'
-
+// import CodePlugin from 'typography-plugin-code'
 // theme.scaleRatio = 1.56
+// theme.plugins = [new CodePlugin()]
 
-theme.plugins = [new CodePlugin()]
-theme.overrideThemeStyles = ({ rhythm }) => ({})
+theme.overrideThemeStyles = ({ rhythm }) => ({
+  'html': {
+    fontSize: '16px',
+  },
+  'body': {
+    background: '#fffefb'
+  }
+})
 
 const typography = new Typography(theme)
 
