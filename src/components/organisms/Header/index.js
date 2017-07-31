@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { font, palette } from 'styled-theme'
+import { palette } from 'styled-theme'
 import { Link, Heading } from 'components'
 
 const BigName = styled(Heading)`
   font-weight: 400;
-  font-size: 4em;
+  font-size: 3.6em;
   color: ${palette('pigeonRed', 1)};
   text-align: center;
   border-bottom: 0;

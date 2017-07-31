@@ -195,12 +195,17 @@ const Articles = {
   articles: [
     {
       id: 1,
-      title: '',
+      title: 'Fun with Codemod',
       url: '',
     },
     {
       id: 2,
-      title: '',
+      title: '移动环境下的 SEO',
+      url: '',
+    },
+    {
+      id: 3,
+      title: '翻译技术文',
       url: '',
     },
   ],
@@ -210,7 +215,13 @@ const Articles = {
  * __proto__, the true me.
  */
 const Prototype = {
-  hobbies: ['Vimer', 'Taking pictures'],
+  hobbies: [
+    '终身学习者',
+    '痴迷一切引人入胜的优美设计',
+    '',
+    'Vimer / Mac / Tmux',
+    'Taking pictures',
+  ],
   quotes: ['Fake it till you make it.'],
   display: () => {},
 }

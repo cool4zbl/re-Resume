@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import NavLink from 'react-router-dom/NavLink'
 import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
-import { ifProp } from 'styled-tools'
 
 const styles = css`
   a {
@@ -14,7 +13,9 @@ const styles = css`
   }
 `
 
-const Anchor = styled.a`${styles};`
+const Anchor = styled.a.attrs({
+  target: '_new',
+})`${styles};`
 
 const StyledNavLink = styled(({ theme, palette, to, ...props }) => {
   return <NavLink to={to} {...props} />

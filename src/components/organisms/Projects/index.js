@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { font, palette } from 'styled-theme'
+import { palette } from 'styled-theme'
 import { Link, Item, Subtitle, BracketSpan, List, Heading } from 'components'
 
 import { getEntities } from './schema.js'
