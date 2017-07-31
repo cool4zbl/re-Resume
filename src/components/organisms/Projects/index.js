@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
-import { ifProp } from 'styled-tools'
 import { Link, Item, Subtitle, BracketSpan, List, Heading } from 'components'
 
 import { getEntities } from './schema.js'
@@ -36,10 +35,8 @@ const Projects = props => {
                   {dates}
                 </BracketSpan>
                 {code
-                    ? <BracketSpan square={true}>
-                      <Link href={code}>
-                        code
-                      </Link>
+                  ? <BracketSpan square={true}>
+                      <Link href={code}>code</Link>
                     </BracketSpan>
                   : ''}
               </Heading>

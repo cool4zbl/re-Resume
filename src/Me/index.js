@@ -1,9 +1,10 @@
 /* todo
- * Syntax Highlighting
+ * Highlighting points
  */
 
 const Bio = {
   name: '张滨浏',
+  gender: '女',
   apply: '前端开发工程师',
   experience: '两年',
   base: '北京',

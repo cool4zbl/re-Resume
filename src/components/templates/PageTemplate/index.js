@@ -9,12 +9,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   min-height: 100vh;
   box-sizing: border-box;
-  padding: 0 10vw;
+  padding: 2rem 20vw;
   a {
     color: ${palette('pigeonRed', 1)};
   }
-  @media screen and (max-width: 640px) {
-    /*padding-top: 3.25rem;*/
+  @media screen and (max-width: 780px) {
+    padding: 2rem 10vw;
   }
 `
 

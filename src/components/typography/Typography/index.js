@@ -6,12 +6,12 @@ import theme from 'typography-theme-github'
 // theme.plugins = [new CodePlugin()]
 
 theme.overrideThemeStyles = ({ rhythm }) => ({
-  'html': {
+  html: {
     fontSize: '16px',
   },
-  'body': {
-    background: '#fffefb'
-  }
+  body: {
+    background: '#fffefb',
+  },
 })
 
 const typography = new Typography(theme)

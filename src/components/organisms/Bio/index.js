@@ -9,6 +9,7 @@ const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 const Span = styled.span`margin-right: .5em;`
 
 const keyMap = {
+  gender: '性别',
   base: '坐标',
   apply: '应聘岗位',
   experience: '工作经验',

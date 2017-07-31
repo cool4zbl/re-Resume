@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import NavLink from 'react-router-dom/NavLink'
 import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
-import NavLink from 'react-router-dom/NavLink'
+import { ifProp } from 'styled-tools'
 
 const styles = css`
   a {
