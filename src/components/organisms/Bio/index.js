@@ -10,10 +10,12 @@ const Span = styled.span`margin-right: .5em;`
 
 const keyMap = {
   gender: '性别',
+  age: '年龄',
   base: '坐标',
   apply: '应聘岗位',
   experience: '工作经验',
 }
+
 const Email = ({ email, ...props }) => {
   return (
     <Item>

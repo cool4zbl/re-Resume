@@ -5,6 +5,7 @@
 const Bio = {
   name: '张滨浏',
   gender: '女',
+  age: 24,
   apply: '前端开发工程师',
   experience: '两年',
   base: '北京',
@@ -16,10 +17,10 @@ const Bio = {
 
 const Skills = {
   skills: [
-    '两年大型网站跨终端 Web (PC / Mobile / Native App WebView) 产品前端开发和维护经验',
+    '**两年**大型网站跨终端 Web (PC / Mobile / Native App WebView) 产品前端开发和维护经验',
     '熟悉 JavaScript, 能够脱离各 JS 类库后进行跨浏览器开发',
-    '熟悉模块化、前端编译和构建工具，熟练运用 React / Redux / Webpack 等相关框架技术, 构建单页面应用',
-    '工具控，效率控， 喜欢研究 Web 性能，热衷前端工程化, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
+    '熟悉模块化、前端编译和构建工具，熟练运用 `React` / `Redux` / `Webpack` 等相关框架技术, 构建单页面应用',
+    '喜欢研究 Web 性能，热衷前端工程化, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
     '具有审美设计能力，关注用户体验',
     '关注 Web 发展，喜欢探索新信息，学习新技术服务团队和业务, 乐于分享',
   ],
@@ -71,6 +72,10 @@ const Work = {
   display: () => {},
 }
 
+// SAR
+// 项目背景上下文（场景、问题）
+// 你在其中的角色（职责、发挥的作用、结果度量）
+// 与此项经历有关的知识与技能（技术栈）
 const Projects = {
   projects: [
     {
@@ -84,7 +89,7 @@ const Projects = {
         '技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`',
         '使用 `React` 编写基本组件，`React-Router` 按功能（注册、绑定、第三方登录等）路由切分页面',
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
-        '使用 [jscodeshift](https://github.com/facebook/jscodeshift) & [js-codemod](https://github.com/cpojer/js-codemod) & [react-codemod](https://github.com/reactjs/react-codemod) 将所有代码从 ES5 迁移到 ES6',
+        '使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6',
         '使用 Hybrid JSBridge 进行 `WebView` 和 APP 通信',
         '根据检测 `userAgent` 来自动判断 App 平台及版本号，达到多平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）+ 多版本 + 多设备系统（iOS / Android）兼容',
       ],
@@ -216,11 +221,10 @@ const Articles = {
  */
 const Prototype = {
   hobbies: [
-    'Vimer / Mac / Tmux',
-    '终生学习者',
+    '终身学习者',
     '痴迷一切引人入胜的优美设计',
-    '代码 / 音乐 / 摄影 / 阅读 / 运动',
-    '写一手好代码 / 拍一手好照片 / 烧一手好菜',
+    '工具控 / 效率控 / Vimer',
+    '理想: 写一手好代码 / 拍一手好照片 / 烧一手好菜',
   ],
   quotes: ['Fake it till you make it.', 'God helps one who help themselves'],
   display: () => {},

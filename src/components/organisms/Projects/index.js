@@ -14,8 +14,11 @@ const renderHighlights = highlights => {
   return (
     <List hasIndex={true}>
       {highlights.map((r, j) => {
-        r = r.replace(/`(\S+)`/g, '<code>$1</code>')
-        return <Item key={j} dangerouslySetInnerHTML={{ __html: r }} />
+        return (
+          <Item key={j}>
+            {r}
+          </Item>
+        )
       })}
     </List>
   )
