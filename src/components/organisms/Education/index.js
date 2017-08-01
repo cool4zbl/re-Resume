@@ -23,7 +23,7 @@ const Education = props => {
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
-                <Link to={url}>
+                <Link href={url}>
                   {name}
                 </Link>
                 <BracketSpan square={true}>
@@ -32,6 +32,9 @@ const Education = props => {
               </Heading>
               {
                 <List hasIndex={true}>
+                  <Item>
+                    {degree}
+                  </Item>
                   {majors.map((r, j) =>
                     <Item key={j}>
                       {r}
