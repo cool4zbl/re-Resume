@@ -15,8 +15,9 @@ const Credits = styled(Paragraph)`
   margin: 0;
 `
 
-const IconHeart = styled(Icon)`
+const StyledIcon = styled(Icon)`
   vertical-align: top;
+  margin: 0 5px;
 `
 
 const Footer = props => {
@@ -24,8 +25,11 @@ const Footer = props => {
     <Wrapper {...props}>
       Fake it till you make it. 💪
       <Credits>
-        Made with <IconHeart icon="heart" /> by{' '}
-        <Link href="http://zhangbinliu.me">ZBL</Link>
+        Made with
+        <StyledIcon icon="heart" />
+        &
+        <StyledIcon icon="react" />
+        by <Link href="http://zhangbinliu.me">ZBL</Link>
       </Credits>
     </Wrapper>
   )
