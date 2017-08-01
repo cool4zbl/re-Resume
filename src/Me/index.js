@@ -96,10 +96,10 @@ const Projects = {
       type: 'company', // business
       title: 'Creator 创作者社区',
       dates: '2017.04 - Present',
-      description: '豆瓣正在打造的整站创作者社区，包括创作者作品申请、作品管理后台及创作者作品展示',
+      description: '支持 PC Web + Mobile 平台的整站创作者社区，包括创作者作品申请、作品管理后台及创作者作品展示',
       highlights: [
-        '技术栈： `React` + `Redux` + `React-Router V4` + `Webpack` + `create-react-app`',
-        '使用 `React` 从零编写项目需要的基本组件（如 Button / Input / Form 等），`React-Router V4` 路由切页面做到无刷新加载，Web + App + Mobile 多端 Single Page Application',
+        '技术栈： `React` + `Redux` + `React-Router` + `Webpack` + `create-react-app`',
+        '使用 `React` 从零编写项目需要的基本组件（如 Button / Input / Form 等），`React-Router` 路由切页面做到无刷新加载，Web + App + Mobile 多端 Single Page Application',
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
         '实现了一个简单的使用 `Map` 数据类型的`WorksStore.js ` 作为用户作品前端状态存储，并实现复杂的页面交互',
       ],
@@ -158,7 +158,7 @@ const Projects = {
       url: ['https://www.douban.com/'],
     },
     {
-      id: 1,
+      id: 6,
       type: 'openSource',
       title: '100 Days',
       dates: '2017.06',
@@ -173,7 +173,7 @@ const Projects = {
       code: ['github'],
     },
     {
-      id: 2,
+      id: 7,
       type: 'openSource',
       title: 'Resume 个人简历',
       dates: '2017.07',
@@ -216,13 +216,13 @@ const Articles = {
  */
 const Prototype = {
   hobbies: [
-    '终身学习者',
-    '痴迷一切引人入胜的优美设计',
-    '',
     'Vimer / Mac / Tmux',
-    'Taking pictures',
+    '终生学习者',
+    '痴迷一切引人入胜的优美设计',
+    '代码 / 音乐 / 摄影 / 阅读 / 运动',
+    '写一手好代码 / 拍一手好照片 / 烧一手好菜',
   ],
-  quotes: ['Fake it till you make it.'],
+  quotes: ['Fake it till you make it.', 'God helps one who help themselves'],
   display: () => {},
 }
 

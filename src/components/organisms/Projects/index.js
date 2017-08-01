@@ -10,12 +10,23 @@ const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
 const Span = styled.span`margin-right: .5rem;`
 
+const renderHighlights = highlights => {
+  return (
+    <List hasIndex={true}>
+      {highlights.map((r, j) => {
+        r = r.replace(/`(\S+)`/g, '<code>$1</code>')
+        return <Item key={j} dangerouslySetInnerHTML={{ __html: r }} />
+      })}
+    </List>
+  )
+}
 const Projects = props => {
   const { projects } = props
 
   const nProjects = getEntities(projects)
   const { company, openSource } = nProjects
 
+  // todo: 分类展示
   const proj = { ...company, ...openSource }
 
   return (
@@ -43,13 +54,7 @@ const Projects = props => {
               <div>
                 {description}
               </div>
-              <List hasIndex={true}>
-                {highlights.map((r, j) =>
-                  <Item key={j}>
-                    {r}
-                  </Item>
-                )}
-              </List>
+              {renderHighlights(highlights)}
             </div>
           )
         })}
