@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
 import { Link, Item, Subtitle, BracketSpan, List, Heading } from 'components'
-
 import { getEntities } from './schema.js'
+
+import creator_img from './creator_all.jpg'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 
