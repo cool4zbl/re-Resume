@@ -4,17 +4,16 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import styled, { css } from 'styled-components'
 import { palette } from 'styled-theme'
+import { Typography } from 'components'
 import theme from '../../themes/default'
 
 const media = Object.keys(theme.sizes).reduce((accumulator, label) => {
-  // use em in breakpoints to work properly cross-browser and support users
-  // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
   const emSize = theme.sizes[label] / 16
   accumulator[label] = (...args) => css`
-  @media (max-width: ${emSize}em) {
-    ${css(...args)}
-  }
-`
+    @media (max-width: ${emSize}em) {
+      ${css(...args)}
+    }
+  `
   return accumulator
 }, {})
 
@@ -52,6 +51,7 @@ const PageTemplate = ({ header, children, footer, ...props }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>张滨浏- 前端开发工程师 - 简历</title>
       </Helmet>
+      {Typography()}
       <Header>
         {header}
       </Header>

@@ -13,8 +13,6 @@ import {
 } from 'components'
 import { getEntities } from './schema.js'
 
-import creator_img from './creator_all.jpg'
-
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 const Span = styled.span`margin-right: .5rem;`
 

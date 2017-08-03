@@ -1,3 +1,4 @@
+import { createElement } from 'react'
 import Typography from 'typography'
 import theme from 'typography-theme-github'
 // import theme from 'typography-theme-stow-lake'
@@ -21,4 +22,13 @@ if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles()
 }
 
-export default typography
+const typographyComponent = function(_typography = typography) {
+  return createElement('style', {
+    id: 'typography',
+    dangerouslySetInnerHTML: {
+      __html: _typography.toString(),
+    },
+  })
+}
+
+export default typographyComponent

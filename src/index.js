@@ -5,11 +5,10 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { basename } from 'config'
 import App from 'components/App'
-import { Typography } from 'components'
 
 const renderApp = () =>
   <BrowserRouter basename={basename}>
-    <App style={Typography} />
+    <App />
   </BrowserRouter>
 
 const root = document.getElementById('app')
