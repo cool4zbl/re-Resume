@@ -252,8 +252,7 @@ const Prototype = {
 }
 
 const Thanks = {
-  thanks:
-    "Thanks for checking, I 'm expecting the opportunity to co-work with you.🤓",
+  thanks: "感谢您的阅读，我非常期待与您一起工作的机会。🤓",
   display: () => {},
 }
 
