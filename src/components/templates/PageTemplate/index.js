@@ -1,6 +1,7 @@
 // Page Layout
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
 import styled, { css } from 'styled-components'
 import { palette } from 'styled-theme'
 import theme from '../../themes/default'
@@ -43,6 +44,14 @@ const Footer = styled.footer`margin-top: auto;`
 const PageTemplate = ({ header, children, footer, ...props }) => {
   return (
     <Wrapper {...props}>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="description" content="前端开发工程师张滨浏的在线简历" />
+        <meta name="keywords" content="张滨浏的简历,前端,应聘,简历,F2E" />
+        <meta property="og:site_name" content="张滨浏的简历" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>张滨浏- 前端开发工程师 - 简历</title>
+      </Helmet>
       <Header>
         {header}
       </Header>

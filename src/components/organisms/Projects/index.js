@@ -52,9 +52,11 @@ const Projects = props => {
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
-                <Span>
-                  {title}
-                </Span>
+                <Link href={url}>
+                  <Span>
+                    {title}
+                  </Span>
+                </Link>
                 <BracketSpan square={true}>
                   {dates}
                 </BracketSpan>

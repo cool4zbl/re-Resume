@@ -99,8 +99,8 @@ const Projects = {
       id: 2,
       type: 'company', // business
       title: 'Creator 创作者社区',
-      dates: '2017.04 - Present',
-      description: '支持 PC Web + Mobile 平台的整站创作者社区，包括创作者作品申请、作品管理后台及创作者作品展示',
+      dates: '2017.05 - Present',
+      description: 'PC Web + Mobile 平台的整站创作者社区，包括创作者作品申请、作品管理后台及创作者作品展示',
       highlights: [
         '技术栈： `React` + `Redux` + `React-Router` + `Webpack` + `create-react-app`',
         '使用 `React` 从零编写项目需要的基本组件（如 Button / Input / Form 等），`React-Router` 路由切页面做到无刷新加载，Web + App + Mobile 多端单页应用',
@@ -181,15 +181,15 @@ const Projects = {
       type: 'openSource',
       title: 'Resume 个人简历',
       dates: '2017.07',
-      description: 'Open source proj...',
+      description: '排版良好，具有设计感的简历生成模板。',
       highlights: [
-        '技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`',
+        '技术栈： `React` + `styled-component` + `Webpack`',
         '开发 Web 广播转播功能，使用 `ES6` + `jQuery` 编写转播对话框插件，同时对历史遗留 JS 代码进行重构',
         '传统大型项目 Web 开发, 模块化、组件化思想在传统 Web 项目的实现，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 `def` blocks（ Mako 模块函数），达到跨项目复用，例如对全站的 `UserCard` 的 HTML + CSS + JS 做了封装，可以跨项目被 SNS 社区 / 条目等项目复用，提升开发效率',
       ],
       images: ['http://zhangbinliu.me'],
       url: ['http://zhangbinliu.me'],
-      code: ['github'],
+      code: 'https://github.com/cool4zbl/resume',
     },
     {
       id: 8,
@@ -202,7 +202,7 @@ const Projects = {
         '使用 `unirest` 的 `delete` API 开发了监听本地文件被删除并同步至服务器的功能，优化了与服务器端通信发生问题时的错误处理',
       ],
       url: ['https://www.npmjs.com/package/zed-sync'],
-      code: ['github'],
+      code: 'https://www.npmjs.com/package/zed-sync',
     },
     {
       id: 9,
@@ -212,7 +212,7 @@ const Projects = {
       description: '一个使用 Ghost 及其默认主题 Casper 的静态博客生成器 ',
       highlights: ['技术栈：`Node`', '对生成博客文章链接格式进行了优化，并修复一些小 Bug'],
       url: ['https://github.com/mixu/ghost-render'],
-      code: ['https://github.com/mixu/ghost-render'],
+      code: 'https://github.com/mixu/ghost-render',
     },
   ],
   display: () => {},
