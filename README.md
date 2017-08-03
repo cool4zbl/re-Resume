@@ -1,7 +1,10 @@
 # Resume 🤓
 ### Another front end engineer resume
 
-### Stacks
+Instant resume with no config!
+![补截图]()
+
+### Tech Stacks
 - React
 - React-Router
 - Webpack2 / Webpack-blocks
