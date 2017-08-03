@@ -13,7 +13,8 @@
     "build:clean": "rimraf \"dist/!(.git*|Procfile)**\"",
     "build:copy": "copyfiles -u 1 public/* public/**/* dist",
     "prebuild": "npm run build:clean && npm run build:copy",
-    "build": "npm run env:prod -- webpack"
+    "build": "npm run env:prod -- webpack",
+    "build-resume": "PUBLIC_PATH=resume npm run env:prod -- webpack"
   },
   "author": {
     "name": "cool4zbl",
