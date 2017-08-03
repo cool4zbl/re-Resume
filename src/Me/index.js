@@ -18,9 +18,9 @@ const Bio = {
 const Skills = {
   skills: [
     '**两年**大型网站跨终端 Web (PC / Mobile / Native App WebView) 产品前端开发和维护经验',
-    '熟悉 JavaScript, 能够脱离各 JS 类库后进行跨浏览器开发',
-    '熟悉模块化、前端编译和构建工具，熟练运用 `React` / `Redux` / `Webpack` 等相关框架技术, 构建单页面应用',
-    '喜欢研究 Web 性能，热衷前端工程化, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
+    '熟悉 **JavaScript**, 能够脱离各 JS 类库后进行**跨浏览器**开发',
+    '熟悉模块化、前端编译和构建工具，熟练运用 React / Redux / Webpack 等相关框架技术, 构建**单页面应用**',
+    '喜欢研究 Web 性能，热衷**前端工程化**, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
     '具有审美设计能力，关注用户体验',
     '关注 Web 发展，喜欢探索新信息，学习新技术服务团队和业务, 乐于分享',
   ],
@@ -55,7 +55,7 @@ const Work = {
     {
       employer: 'Douban',
       url: 'https://douban.com',
-      title: '前端开发工程师',
+      title: '前端工程师',
       location: 'Beijing',
       dates: '2015 - Present',
       responsibilities: [
@@ -107,7 +107,7 @@ const Projects = {
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
         '使用 `Redux` + `normalizr` 作前端状态存储管理, 并实现复杂的页面交互',
       ],
-      images: ['https://accounts.douban.com/'],
+      images: [''],
       url: [
         'https://www.douban.com/verify/apply/',
         'https://www.douban.com/verify/apply/work/#/myworks',
@@ -123,7 +123,7 @@ const Projects = {
         '技术栈：`Mako` + `SCSS` + `ES6` + `Webpack`',
         '三个月重构项目，整合之前分散在五个大型项目中的长评前端相关代码，并按页面布局模块拆分，基本重写了 CSS / SCSS 样式文件，更易维护',
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
-        '将之前主站庞大的 douban.js 按模块拆分加载，使用 Vanilla JavaScript 重构，Webpack 打包，提升页面的性能，方便调试和维护',
+        '将之前主站庞大的 `douban.js` 按模块拆分加载，使用 Vanilla JavaScript 重构，Webpack 打包，提升页面的性能，方便调试和维护',
         '解决了多个项目不同域名下的 CORS 跨域请求',
         '交互上， 把之前所有需刷新的操作（回复删除引用评论等），结合 JS 模板，从传统表单提交改为 Ajax 的方式与后端通信，提升用户体验',
       ],
