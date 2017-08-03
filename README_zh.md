@@ -11,6 +11,7 @@ Preview
 2. 排版良好，多种风格切换
 3. 支持基本的代码高亮和 Markdown 粗体、斜体语法
 4. 原子化组件，方便各种自定义配置
+5. SEO 优化
 
 
 ## 如何使用
@@ -32,6 +33,7 @@ Preview
 - normalizr
 - Storybook
 
+## 开发
 ### 0. Install
 `yarn install`
 

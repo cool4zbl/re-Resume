@@ -1,7 +1,7 @@
 {
-  "name": "zbl-resume",
-  "version": "0.0.1",
-  "description": "FrontEnd Engineer resume",
+  "name": "Re-Resume",
+  "version": "0.1.0",
+  "description": "Another front end engineer resume generator",
   "private": true,
   "scripts": {
     "format": "prettier --no-semi --single-quote --trailing-comma es5 --jsx-bracket-same-line --write 'src/**/*.{js,jsx}'",
@@ -15,7 +15,10 @@
     "prebuild": "npm run build:clean && npm run build:copy",
     "build": "npm run env:prod -- webpack"
   },
-  "author": "cool4ZBL",
+  "author": {
+    "name": "cool4zbl",
+    "email": "i@zhangbinliu.me"
+  },
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-actions": "^3.0.0",
@@ -72,5 +75,12 @@
     "typography-plugin-code": "^0.15.11",
     "typography-theme-github": "^0.15.10",
     "typography-theme-stow-lake": "^0.15.10"
-  }
+  },
+  "keywords": [
+    "react",
+    "resume",
+    "online resume",
+    "F2E resume",
+    "front end engineer resume"
+  ]
 }

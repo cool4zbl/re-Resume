@@ -156,9 +156,8 @@ const Projects = {
       highlights: [
         '技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`',
         '开发 Web 广播转播功能，使用 `ES6` + `jQuery` 编写转播对话框插件，同时对历史遗留 JS 代码进行重构',
-        '传统大型项目 Web 开发, 模块化、组件化思想在传统 Web 项目的实现，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 `def` blocks（ Mako 模块函数），达到跨项目复用，例如对全站的 `UserCard` 的 HTML + CSS + JS 做了封装，可以跨项目被 SNS 社区 / 条目等项目复用，提升开发效率',
+        '模块化、组件化思想在传统 Web 项目的实现，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 `def` blocks（ Mako 模块函数），达到跨项目复用，例如对全站的 `UserCard` 的 HTML + CSS + JS 做了封装，可以跨项目被 SNS 社区 / 条目等项目复用，提升开发效率',
       ],
-      images: ['https://accounts.douban.com/'],
       url: ['https://www.douban.com/'],
     },
     {
