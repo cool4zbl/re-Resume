@@ -86,8 +86,8 @@ const Projects = {
         '整站帐号系统移动端，包含注册、找回密码、绑定/解绑手机号、绑定/解绑微信号、第三方帐号登录，Web 端 Popup 登录注册等功能',
       highlights: [
         '技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`',
-        '使用 `React` 编写基本组件，`React-Router` 按功能（注册、绑定、第三方登录等）路由切分页面',
-        '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
+        '使用 `React` 编写基本组件，`React-Router` 按功能（注册、绑定、第三方登录等）路由切分页面, 做到无刷新单页面应用体验',
+        '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载, 提高加载效率',
         '使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6',
         '使用 Hybrid JSBridge 进行 `WebView` 和 APP 通信',
         '根据检测 `userAgent` 来自动判断 App 平台及版本号，达到多平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）+ 多版本 + 多设备系统（iOS / Android）兼容',
@@ -103,9 +103,9 @@ const Projects = {
       description: '支持 PC Web + Mobile 平台的整站创作者社区，包括创作者作品申请、作品管理后台及创作者作品展示',
       highlights: [
         '技术栈： `React` + `Redux` + `React-Router` + `Webpack` + `create-react-app`',
-        '使用 `React` 从零编写项目需要的基本组件（如 Button / Input / Form 等），`React-Router` 路由切页面做到无刷新加载，Web + App + Mobile 多端 Single Page Application',
+        '使用 `React` 从零编写项目需要的基本组件（如 Button / Input / Form 等），`React-Router` 路由切页面做到无刷新加载，Web + App + Mobile 多端单页应用',
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
-        '实现了一个简单的使用 `Map` 数据类型的`WorksStore.js ` 作为用户作品前端状态存储，并实现复杂的页面交互',
+        '使用 `Redux` + `normalizr` 作前端状态存储管理, 并实现复杂的页面交互',
       ],
       images: ['https://accounts.douban.com/'],
       url: [

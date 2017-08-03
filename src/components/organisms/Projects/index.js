@@ -2,13 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
-import { Link, Item, Subtitle, BracketSpan, List, Heading } from 'components'
+import {
+  Paragraph,
+  Link,
+  Item,
+  Subtitle,
+  BracketSpan,
+  List,
+  Heading,
+} from 'components'
 import { getEntities } from './schema.js'
 
 import creator_img from './creator_all.jpg'
 
 const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
-
 const Span = styled.span`margin-right: .5rem;`
 
 const renderHighlights = highlights => {
@@ -45,7 +52,9 @@ const Projects = props => {
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
-                {title}
+                <Span>
+                  {title}
+                </Span>
                 <BracketSpan square={true}>
                   {dates}
                 </BracketSpan>
@@ -55,9 +64,9 @@ const Projects = props => {
                     </BracketSpan>
                   : ''}
               </Heading>
-              <div>
+              <Paragraph>
                 {description}
-              </div>
+              </Paragraph>
               {renderHighlights(highlights)}
             </div>
           )

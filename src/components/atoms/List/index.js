@@ -5,7 +5,7 @@ import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 
 const styles = css`
-  list-style: ${ifProp('hasIndex', 'normal', 'none')};
+  list-style: ${ifProp('hasIndex', 'initial', 'none')};
 `
 const Ol = styled.ol``
 const Ul = styled.ul``
