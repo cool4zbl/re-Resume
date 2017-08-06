@@ -11,6 +11,7 @@ const fontSize = ({ width, height }) => {
 
 const Wrapper = styled.span`
   display: inline-block;
+  vertical-align: middle;
   font-size: ${fontSize};
   color: ${ifProp('palette', palette({ grayscale: 0 }, 1), 'currentcolor')};
   width: 1em;
@@ -21,7 +22,7 @@ const Wrapper = styled.span`
   & > svg {
     width: 100%;
     height: 100%;
-    fill: currentcolor;
+    fill: ${props => props.fill ? props.fill : 'currentcolor'};
     stroke: currentcolor;
   }
 `

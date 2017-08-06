@@ -16,7 +16,7 @@ const Social = styled(({ type, id, ...props }) => {
     )
   if (id.startsWith('@')) {
     link = `https://${type}.com/${id.slice(1)}`
-    prefix = <Icon palette={'grayscale'} icon={type} />
+    prefix = <Span><Icon palette={'grayscale'} icon={type} fill={'none'}/></Span>
   }
   if (type === 'douban') {
     link = `https://${type}.com/people/cool4zbl`

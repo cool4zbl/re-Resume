@@ -9,8 +9,8 @@ const Item = ({ palette, theme, children, ...props }) => {
   if (typeof children === 'string') {
     // replace simply markdown syntax, like `code`, **bold**
     const r = children
-      .replace(/`(\S+)`/g, '<code>$1</code>')
-      .replace(/\*{2}(\S+)\*{2}/g, '<b>$1</b>')
+      .replace(/`(.+?)`/g, '<code>$1</code>')
+      .replace(/\*{2}(.+?)\*{2}/g, '<strong>$1</strong>')
     return <StyledLi {...props} dangerouslySetInnerHTML={{ __html: r }} />
   }
   return (

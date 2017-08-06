@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { font, palette } from 'styled-theme'
+import styled, { keyframes } from 'styled-components'
+import { palette } from 'styled-theme'
+import { ifProp } from 'styled-tools'
 import { Icon, Paragraph, Link } from 'components'
 
 const Wrapper = styled.div`
@@ -15,8 +16,33 @@ const Credits = styled(Paragraph)`
   margin: 0;
 `
 
+const heartbeat = keyframes`
+  from {
+    transform: scale(.5);
+  }
+  23%, 77% {
+    transform: scale(.8);
+  }
+  54% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.5);
+  }
+`
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`
+
 const StyledIcon = styled(Icon)`
-  vertical-align: top;
+  animation: ${ifProp('rotate', rotate360, heartbeat)} ${ifProp('rotate', '3s', '1s')} linear infinite;
+  vertical-align: text-bottom;
   margin: 0 5px;
 `
 
@@ -28,7 +54,7 @@ const Footer = props => {
         Made with
         <StyledIcon icon="heart" />
         &
-        <StyledIcon icon="react" />
+        <StyledIcon icon="react" rotate />
         by <Link href="http://zhangbinliu.me">ZBL</Link>
       </Credits>
     </Wrapper>
