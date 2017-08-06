@@ -6133,6 +6133,13 @@ typography-plugin-code@^0.15.11:
     gray-percentage "^2.0.0"
     lodash "^4.13.1"
 
+typography-theme-funston@^0.15.10:
+  version "0.15.10"
+  resolved "https://registry.npmjs.org/typography-theme-funston/-/typography-theme-funston-0.15.10.tgz#bfdfc336090e6333bbfdb381b149e9ccab0d9645"
+  dependencies:
+    gray-percentage "^2.0.0"
+    typography-breakpoint-constants "^0.15.10"
+
 typography-theme-github@^0.15.10:
   version "0.15.10"
   resolved "http://registry.npm.taobao.org/typography-theme-github/download/typography-theme-github-0.15.10.tgz#64ada39722e2e23c820db8a08fcca84f4e704309"

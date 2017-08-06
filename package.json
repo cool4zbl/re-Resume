@@ -74,6 +74,7 @@
     "styled-tools": "^0.1.2",
     "typography": "^0.15.12",
     "typography-plugin-code": "^0.15.11",
+    "typography-theme-funston": "^0.15.10",
     "typography-theme-github": "^0.15.10",
     "typography-theme-stow-lake": "^0.15.10"
   },

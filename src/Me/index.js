@@ -42,7 +42,7 @@ const Education = {
       location: '成都',
       degree: '本科',
       majors: ['电子信息工程'],
-      GPA: '3.6',
+      more: 'GPA: 3.6',
       dates: '2011 - 2015',
       url: 'http://www.uestc.edu.cn/',
     },

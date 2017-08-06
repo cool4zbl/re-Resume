@@ -12,7 +12,7 @@ const Prototype = props => {
   return (
     <Wrapper {...props}>
       <Heading level={2}>
-        原型
+        更多属性
         <Subtitle>Prototype</Subtitle>
       </Heading>
       <List hasIndex={true}>

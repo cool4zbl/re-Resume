@@ -1,7 +1,7 @@
 import { createElement } from 'react'
 import Typography from 'typography'
 import theme from 'typography-theme-github'
-// import theme from 'typography-theme-stow-lake'
+// import fustonTheme from 'typography-theme-fuston'
 // import CodePlugin from 'typography-plugin-code'
 // theme.scaleRatio = 1.56
 // theme.plugins = [new CodePlugin()]

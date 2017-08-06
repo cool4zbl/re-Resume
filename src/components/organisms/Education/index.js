@@ -19,7 +19,7 @@ const Education = props => {
       </Heading>
       <div>
         {Object.keys(schools).map((k, i) => {
-          const { name, degree, dates, url, majors } = schools[k]
+          const { name, degree, dates, url, majors, more } = schools[k]
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
@@ -33,13 +33,8 @@ const Education = props => {
               {
                 <List hasIndex={true}>
                   <Item>
-                    {degree}
+                    { [degree, majors.join(' / '), more].join(' / ')}  
                   </Item>
-                  {majors.map((r, j) =>
-                    <Item key={j}>
-                      {r}
-                    </Item>
-                  )}
                 </List>
               }
             </div>
