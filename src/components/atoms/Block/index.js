@@ -1,7 +1,7 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { font, palette } from 'styled-theme'
-import { ifProp } from 'styled-tools'
+import { palette } from 'styled-theme'
 
 const Block = styled.div`color: ${palette('grayscale', 1)};`
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
 import {
+  Image,
   Paragraph,
   Link,
   Item,
@@ -46,7 +47,15 @@ const Projects = props => {
       </Heading>
       <div>
         {Object.keys(proj).map((k, i) => {
-          const { title, code, dates, description, highlights, url } = proj[k]
+          const {
+            title,
+            code,
+            dates,
+            description,
+            highlights,
+            url,
+            image,
+          } = proj[k]
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
@@ -64,6 +73,7 @@ const Projects = props => {
                     </BracketSpan>
                   : ''}
               </Heading>
+              {image && <Image bgUrl={image.path} {...image} />}
               <Paragraph>
                 {description}
               </Paragraph>

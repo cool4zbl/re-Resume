@@ -33,7 +33,7 @@ const Education = props => {
               {
                 <List hasIndex={true}>
                   <Item>
-                    { [degree, majors.join(' / '), more].join(' / ')}  
+                    {[degree, majors.join(' / '), more].join(' / ')}
                   </Item>
                 </List>
               }

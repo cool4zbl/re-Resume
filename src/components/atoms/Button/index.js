@@ -13,8 +13,10 @@ const backgroundColor = ({ transparent, disabled }) =>
 const foregroundColor = ({ transparent, disabled }) =>
   transparent ? palette(disabled ? 2 : 1) : palette('grayscale', 0, true)
 
-const hoverBackgroundColor = ({ disabled, transparent }) => !disabled && !transparent && palette(0)
-const hoverForegroundColor = ({ disabled, transparent }) => !disabled && transparent && palette(0)
+const hoverBackgroundColor = ({ disabled, transparent }) =>
+  !disabled && !transparent && palette(0)
+const hoverForegroundColor = ({ disabled, transparent }) =>
+  !disabled && transparent && palette(0)
 
 const styles = css`
   display: inline-flex;
@@ -22,7 +24,11 @@ const styles = css`
   align-items: center;
   white-space: nowrap;
   font-size: ${fontSize};
-  border: 0.0625em solid ${ifProp('transparent', 'currentcolor', 'transparent')};
+  border: 0.0625em solid ${ifProp(
+    'transparent',
+    'currentcolor',
+    'transparent'
+  )};
   height: 2.5em;
   justify-content: center;
   text-decoration: none;
@@ -46,11 +52,12 @@ const styles = css`
   }
 `
 
-const StyledLink = styled(({ disabled, transparent, reverse, palette, height, theme, ...props }) =>
-  <Link {...props} />
+const StyledLink = styled(
+  ({ disabled, transparent, reverse, palette, height, theme, ...props }) =>
+    <Link {...props} />
 )`${styles}`
-const Anchor = styled.a`${styles}`
-const StyledButton = styled.button`${styles}`
+const Anchor = styled.a`${styles};`
+const StyledButton = styled.button`${styles};`
 
 const Button = ({ type, ...props }) => {
   if (props.to) {

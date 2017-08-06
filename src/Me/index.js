@@ -1,6 +1,6 @@
-/* todo
- * Highlighting points
- */
+// Resume content
+import accountImg from './images/account_all.jpg'
+import creatorImg from './images/creator_all.jpg'
 
 const Bio = {
   name: '张滨浏',
@@ -92,7 +92,7 @@ const Projects = {
         '使用 Hybrid JSBridge 进行 `WebView` 和 APP 通信',
         '根据检测 `userAgent` 来自动判断 App 平台及版本号，达到多平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）+ 多版本 + 多设备系统（iOS / Android）兼容',
       ],
-      images: ['https://accounts.douban.com/'],
+      image: { path: accountImg, height: '40vh' },
       url: ['https://accounts.douban.com/app/register#/'],
     },
     {
@@ -107,7 +107,7 @@ const Projects = {
         '`Webpack` 打包编译所有源文件，并使用 `code-splitting` 技术使页面代码按需加载',
         '使用 `Redux` + `normalizr` 作前端状态存储管理, 并实现复杂的页面交互',
       ],
-      images: [''],
+      image: { path: creatorImg, height: '50vh', size: 'cover' },
       url: [
         'https://www.douban.com/verify/apply/',
         'https://www.douban.com/verify/apply/work/#/myworks',
