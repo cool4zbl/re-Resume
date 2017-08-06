@@ -22,5 +22,10 @@ Instant resume with no config!
 `[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] npm run build`
 
 
+#### Credits
+- styled-components
+- Typography
+
+
 ---
 #### Based on [Rocket 🚀](https://github.com/cool4zbl/rocket)
