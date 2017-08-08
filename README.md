@@ -1,9 +1,13 @@
-# Resume 🤓
+# Re-Resume 🤓
 Another resume generator or template.
 Simple but useful.
 Instant resume with no config!
 
-![补截图]()
+[中文版自述](README_zh.md)
+
+### Preview
+![Web Preview](resume_cool4zbl_web.png)
+![Mobile Preview](resume_cool4zbl_m.png)
 
 ## Feature
 - Simplicity. Just a resume template
