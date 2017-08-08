@@ -4,12 +4,17 @@ import styled, { css } from 'styled-components'
 
 const styles = css`
   margin-bottom: 0.8125rem;
-  height: ${props => props.height};
   background-image: ${props => `url(${props.bgUrl})`};
   background-size: ${props => props.size};
+  height: ${props => props.height};
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 480px) {
+    background-size: contain;
+    height: 40vh;
+  }
 `
+
 const WithBg = styled.div`${styles};`
 
 const Image = ({ src, bgUrl, ...props }) => {
