@@ -1,5 +1,5 @@
 # Resume 🤓
-Another resume generator or template. 
+Another resume generator or template.
 Simple but useful.
 Instant resume with no config!
 
@@ -7,7 +7,7 @@ Instant resume with no config!
 
 ## Feature
 - Simplicity. Just a resume template
-- Typography
+- Typography, responsive image.
 - Atom components, with higly customize
 - SEO optimization
 
