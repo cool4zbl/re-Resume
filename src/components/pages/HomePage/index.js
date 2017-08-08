@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   PageTemplate,
+  Articles,
   Bio,
   Work,
   Skills,
@@ -19,6 +20,7 @@ const componentMap = {
   Work: props => <Work {...props} />,
   Skills: props => <Skills {...props} />,
   Projects: props => <Projects {...props} />,
+  Articles: props => <Articles {...props} />,
   Education: props => <Education {...props} />,
   SocialMedia: props => <SocialMedia {...props} />,
   Prototype: props => <Prototype {...props} />,

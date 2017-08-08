@@ -208,7 +208,7 @@ const Articles = {
     {
       id: 1,
       title: 'Fun with Codemod & AST',
-      desc: '介绍大型项目代码库迁移工具`Codemod` 及其理论基础 AST',
+      desc: '介绍大型项目代码库迁移工具 `Codemod` 及其理论基础 AST',
       url: 'http://zhangbinliu.me/2017-02-15-fun-with-codemod-and-ast/',
     },
     {
@@ -245,6 +245,7 @@ const Me = {
   Skills,
   Work,
   Projects,
+  Articles,
   Education,
   Prototype,
   SocialMedia,
