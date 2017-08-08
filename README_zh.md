@@ -1,15 +1,15 @@
 # 简历 🤓
 ### 又一份前端工程师简历
 
-一键生成排版良好，具有设计感, 多种风格和配色的程序员在线简历模板。
+一键生成排版良好，具有设计感, 程序员在线简历模板。
 
 Preview
 ![补截图]()
 
-## 特色： Feature:
+## 特色：
 1. 简单、简洁，仅仅就是一个简历模板生成器。Just a resume template.
-2. 排版良好，多种风格切换
-3. 支持基本的代码高亮和 Markdown 粗体、斜体语法
+2. 排版良好
+3. 支持 Markdown 粗体、斜体语法
 4. 原子化组件，方便各种自定义配置
 5. SEO 优化
 
@@ -99,5 +99,14 @@ projects contains:
 `[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] yarn build`
 
 
----
+## TODO:
+- 多种风格和配色，针对特定公司定制化
+- 支持代码高亮
+- 一键生成 PDF
+
+
+#### Credits
+- styled-components
+- Typography
+
 #### Based on [Rocket 🚀](https://github.com/cool4zbl/rocket)
