@@ -7,7 +7,7 @@ Instant resume with no config!
 
 ### Preview
 ![Web Preview](resume_cool4zbl_web.png)
-![Mobile Preview](resume_cool4zbl_m.png)
+
 
 ## Feature
 - Simplicity. Just a resume template

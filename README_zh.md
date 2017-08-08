@@ -5,7 +5,6 @@
 
 ### Preview
 ![Web Preview](resume_cool4zbl_web.png)
-![Mobile Preview](resume_cool4zbl_m.png)
 
 ## 特色：
 1. 简单、简洁，仅仅就是一个简历模板生成器。Just a resume template.
