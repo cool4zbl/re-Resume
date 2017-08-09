@@ -9,17 +9,14 @@ const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
 const Span = styled.span`margin-right: .5em;`
 
 const keyMap = {
-  gender: '性别',
-  age: '年龄',
-  base: '坐标',
-  apply: '应聘岗位',
-  experience: '工作经验',
+  base: <Icon fill={'none'} icon="map-pin" />,
+  apply: <Icon fill={'none'} icon="activity" />,
 }
 
 const Email = ({ email, ...props }) => {
   return (
     <Item>
-      <Span>Email:</Span>
+      <Span><Icon fill={'none'} icon="mail" /></Span>
       <Link href={`mailto:${email}`} {...props}>
         {email}
       </Link>
@@ -29,7 +26,7 @@ const Email = ({ email, ...props }) => {
 const BlogLink = ({ blog, ...props }) => {
   return (
     <Item>
-      <Span>Blog:</Span>
+      <Span><Icon fill={'none'} icon="link" /></Span>
       <Link href={blog} {...props}>
         {blog}
       </Link>
@@ -37,7 +34,7 @@ const BlogLink = ({ blog, ...props }) => {
   )
 }
 
-const Bio = ({ name, blog, email, github, twitter, display, ...props }) => {
+const Bio = ({ name, gender, age, experience, blog, email, github, twitter, display, ...props }) => {
   return (
     <Wrapper {...props}>
       <Heading level={2}>
@@ -45,11 +42,16 @@ const Bio = ({ name, blog, email, github, twitter, display, ...props }) => {
         <Subtitle>Basic Info</Subtitle>
       </Heading>
       <List hasIndex={true}>
+        <Item >
+          <Span>👩🏻‍💻</Span>
+          <Span> / 24</Span>
+          <Span>/ 两年工作经验</Span>
+        </Item>
         {Object.keys(props).map((k, i) => {
           return (
             <Item key={i} type={k}>
               <Span>
-                {keyMap[k]}:
+                {keyMap[k]}
               </Span>
               {props[k]}
             </Item>

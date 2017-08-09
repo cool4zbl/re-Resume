@@ -4,11 +4,11 @@ import creatorImg from './images/creator_all.jpg'
 
 const Bio = {
   name: '张滨浏',
-  gender: '女',
+  gender: 'female',
   age: 24,
   apply: '前端开发工程师',
   experience: '两年',
-  base: '北京',
+  base: 'Beijing',
   email: 'i@zhangbinliu.me',
   blog: 'http://zhangbinliu.me',
   // biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
