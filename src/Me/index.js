@@ -19,7 +19,7 @@ const Skills = {
   skills: [
     '**两年**大型网站跨终端 Web (PC / Mobile / Hybrid App) 产品前端开发和维护经验',
     '熟悉 **HTML / CSS / JavaScript**，能够脱离各 JS 类库后进行**跨浏览器**开发',
-    '熟悉模块化、前端编译和构建工具，熟练运用 React / Redux / Webpack 等相关框架技术, 构建**单页面应用**',
+    '熟悉模块化、前端编译和构建工具，熟练运用 React / Redux / Vue / Webpack 等相关框架技术, 构建**单页面应用**',
     '喜欢研究 Web 性能，热衷**前端工程化**, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
     '关注 Web 发展，**喜欢探索新信息**，**乐于分享**，并实践新技术来服务业务和团队',
   ],
@@ -56,7 +56,7 @@ const Work = {
       url: 'https://douban.com',
       title: '前端工程师',
       location: 'Beijing',
-      dates: '2015.07 - Present',
+      dates: '2015.07 - 2017.09',
       responsibilities: [
         '负责全站移动端帐号系统开发与维护',
         '负责全站创作者社区项目 Web & Mobile 端页面开发与维护',
@@ -77,7 +77,7 @@ const Projects = {
       id: 1,
       type: 'company', // business
       title: 'Creator 创作者社区',
-      dates: '2017.05 - Present',
+      dates: '2017.05 - 2017.09',
       description:
         '负责开发的创作者社区平台（Web + Mobile + Hybrid），包括创作者作品申请、作品管理后台及创作者作品展示功能。',
       highlights: [
@@ -92,7 +92,7 @@ const Projects = {
       id: 2,
       type: 'company', // business
       title: 'Account 帐号系统 ',
-      dates: '2015.12 - Present',
+      dates: '2015.12 - 2017.09',
       description:
         '负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。',
       highlights: [
