@@ -76,7 +76,7 @@ const Projects = {
     {
       id: 0,
       type: 'company', // business
-      title: 'Map-GAIA 地图基础数据平台',
+      title: 'Map-Gaia 地图基础数据平台',
       dates: '2017.09 - 至今',
       description:
         '负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。',
