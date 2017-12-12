@@ -4,6 +4,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 
 import { HomePage } from 'components'
 import theme from './themes/default'
+
 injectGlobal`
   body: {
     font-size: 15px;

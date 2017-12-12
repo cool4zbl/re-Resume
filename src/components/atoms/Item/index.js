@@ -23,6 +23,7 @@ const Item = ({ palette, theme, children, ...props }) => {
 Item.propTypes = {
   palette: PropTypes.string,
   theme: PropTypes.string,
+  children: PropTypes.any,
 }
 
 Item.defaultProps = {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { font, palette } from 'styled-theme'
+import { palette } from 'styled-theme'
 
 const fontSize = ({ level }) => `${0.75 + 1 * (1 / level)}rem`
 

@@ -13,7 +13,7 @@ import {
   Header,
   Footer,
 } from 'components'
-import Me from '../../../Me/index.js'
+import Me from '../../../Me/'
 
 const componentMap = {
   Bio: props => <Bio {...props} />,
@@ -30,9 +30,9 @@ const componentMap = {
 const HomePage = () => {
   return (
     <PageTemplate header={<Header name={Me['Bio'].name} />} footer={<Footer />}>
-      {Object.keys(Me).map((k, i) => {
-        return React.createElement(componentMap[k], { ...Me[k], key: i })
-      })}
+      {Object.keys(Me).map(k =>
+        React.createElement(componentMap[k], { ...Me[k], key: k })
+      )}
     </PageTemplate>
   )
 }

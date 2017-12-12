@@ -12,7 +12,7 @@ const Bio = {
   email: 'i@zhangbinliu.me',
   blog: 'http://zhangbinliu.me',
   // biopic: 'http://zhangbinliu.me/content/images/avatar_zbl.jpg',
-  display: () => {},
+  // display: () => {},
 }
 
 const Skills = {
@@ -73,6 +73,20 @@ const Work = {
 // 与此项经历有关的知识与技能（技术栈）
 const Projects = {
   projects: [
+    {
+      id: 0,
+      type: 'company', // business
+      title: 'Map-GAIA 地图基础数据平台',
+      dates: '2017.09 - 至今',
+      description:
+        '负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。',
+      highlights: [
+        '使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；',
+        '实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；',
+        '技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`',
+      ],
+      url: 'javascript:;',
+    },
     {
       id: 1,
       type: 'company', // business

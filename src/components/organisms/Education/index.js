@@ -18,10 +18,10 @@ const Education = props => {
         <Subtitle>Education</Subtitle>
       </Heading>
       <div>
-        {Object.keys(schools).map((k, i) => {
+        {Object.keys(schools).map(k => {
           const { name, degree, dates, url, majors, more } = schools[k]
           return (
-            <div key={i}>
+            <div key={k}>
               <Heading level={3} palette={'pigeonRed'}>
                 <Link href={url}>
                   {name}
