@@ -3,7 +3,7 @@ import accountImg from './images/account_all.jpg'
 import creatorImg from './images/creator_all.jpg'
 
 const Bio = {
-  name: '张滨浏',
+  name: 'ZBL',
   gender: 'female',
   age: 24,
   apply: '前端开发工程师',
