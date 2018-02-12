@@ -176,7 +176,7 @@ const Projects = {
     {
       id: 7,
       type: 'openSource',
-      title: 'Re-Resume',
+      title: 're-Resume',
       dates: '2017.08',
       description: '一个排版良好，具有设计感的响应式简历模板生成器；',
       highlights: [
