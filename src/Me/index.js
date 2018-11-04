@@ -5,9 +5,9 @@ import creatorImg from './images/creator_all.jpg'
 const Bio = {
   name: 'ZBL',
   gender: 'female',
-  age: 24,
+  age: 25,
   apply: '前端开发工程师',
-  experience: '两年',
+  experience: '三年',
   base: 'Beijing',
   email: 'i@zhangbinliu.me',
   blog: 'http://zhangbinliu.me',
@@ -17,7 +17,7 @@ const Bio = {
 
 const Skills = {
   skills: [
-    '**两年**大型网站跨终端 Web (PC / Mobile / Hybrid App) 产品前端开发和维护经验',
+    '**三年**大型网站跨终端 Web (PC / Mobile / Hybrid App) 产品前端开发和维护经验',
     '熟悉 **HTML / CSS / JavaScript**，能够脱离各 JS 类库后进行**跨浏览器**开发',
     '熟悉模块化、前端编译和构建工具，熟练运用 React / Redux / Webpack 等相关框架技术, 构建**单页面应用**',
     '喜欢研究 Web 性能，热衷**前端工程化**, 在理解前端开发流程的基础上，结合实际创造提升工作效率的工具',
@@ -52,6 +52,24 @@ const Education = {
 const Work = {
   jobs: [
     {
+      employer: '蚂蚁金服',
+      url: 'https://antfin.com',
+      title: '高级前端工程师',
+      location: 'Beijing',
+      dates: '2018.01 - 至今',
+      responsibilities: [
+        '蚂蚁全域 AB 实验平台的开发与维护',
+      ],
+    }, {
+      employer: '美团',
+      url: 'https://meituan.com',
+      title: '高级前端工程师',
+      location: 'Beijing',
+      dates: '2017.10 - 2018.01',
+      responsibilities: [
+        '美团地图 - 数据平台开发与维护',
+      ],
+    }, {
       employer: '豆瓣',
       url: 'https://douban.com',
       title: '前端工程师',
@@ -77,7 +95,7 @@ const Projects = {
       id: 0,
       type: 'company', // business
       title: 'Map-Gaia 地图基础数据平台',
-      dates: '2017.09 - 至今',
+      dates: '2017.09 - 2018.01',
       description:
         '负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。',
       highlights: [

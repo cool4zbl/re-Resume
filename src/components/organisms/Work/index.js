@@ -33,8 +33,8 @@ const Jobs = ({ jobs, ...props }) => {
               </BracketSpan>
             </Heading>
             <List hasIndex={true}>
-              {responsibilities.map((r, j) =>
-                <Item key={j}>
+              {responsibilities.map(r =>
+                <Item key={dates}>
                   {r}
                 </Item>
               )}
