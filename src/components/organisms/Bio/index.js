@@ -4,13 +4,17 @@ import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { Subtitle, Link, Icon, Item, List, Heading } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
-const Span = styled.span`margin-right: .5em;`
+const Span = styled.span`
+  margin-right: 0.5em;
+`
 
 const keyMap = {
   base: <Icon fill={'none'} icon="map-pin" />,
-  apply: <Icon fill={'none'} icon="activity" />,
+  apply: <Icon fill={'none'} icon="activity" />
 }
 
 const Email = ({ email, ...props }) => {
@@ -55,7 +59,7 @@ const Bio = ({
         基本信息
         <Subtitle>Basic Info</Subtitle>
       </Heading>
-      <List hasIndex={true}>
+      <List hasIndex>
         <Item>
           <Span>👩🏻‍💻</Span>
           <Span> / 24</Span>
@@ -64,9 +68,7 @@ const Bio = ({
         {Object.keys(props).map(k => {
           return (
             <Item key={k} type={k}>
-              <Span>
-                {keyMap[k]}
-              </Span>
+              <Span>{keyMap[k]}</Span>
               {props[k]}
             </Item>
           )
@@ -86,7 +88,7 @@ Bio.propTypes = {
   email: PropTypes.string,
   blog: PropTypes.string,
   github: PropTypes.string,
-  twitter: PropTypes.string,
+  twitter: PropTypes.string
 }
 
 export default Bio

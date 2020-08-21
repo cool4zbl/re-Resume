@@ -6,7 +6,9 @@ import { Subtitle, Item, List, BracketSpan, Link, Heading } from 'components'
 
 import { getEntities } from './schema.js'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
 const Education = props => {
   const { schools } = getEntities(props)
@@ -23,18 +25,12 @@ const Education = props => {
           return (
             <div key={k}>
               <Heading level={3} palette={'pigeonRed'}>
-                <Link href={url}>
-                  {name}
-                </Link>
-                <BracketSpan square={true}>
-                  {dates}
-                </BracketSpan>
+                <Link href={url}>{name}</Link>
+                <BracketSpan square>{dates}</BracketSpan>
               </Heading>
               {
-                <List hasIndex={true}>
-                  <Item>
-                    {[degree, majors.join(' / '), more].join(' / ')}
-                  </Item>
+                <List hasIndex>
+                  <Item>{[degree, majors.join(' / '), more].join(' / ')}</Item>
                 </List>
               }
             </div>
@@ -46,7 +42,7 @@ const Education = props => {
 }
 
 Education.propTypes = {
-  schools: PropTypes.array,
+  schools: PropTypes.array
 }
 
 export default Education

@@ -8,11 +8,11 @@ import theme from 'typography-theme-github'
 
 theme.overrideThemeStyles = ({ rhythm }) => ({
   html: {
-    fontSize: '16px',
+    fontSize: '16px'
   },
   body: {
-    background: '#fffefb',
-  },
+    background: '#fffefb'
+  }
 })
 
 const typography = new Typography(theme)
@@ -26,8 +26,8 @@ const typographyComponent = function(_typography = typography) {
   return createElement('style', {
     id: 'typography',
     dangerouslySetInnerHTML: {
-      __html: _typography.toString(),
-    },
+      __html: _typography.toString()
+    }
   })
 }
 

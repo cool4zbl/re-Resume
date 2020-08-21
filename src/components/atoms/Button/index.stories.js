@@ -9,6 +9,6 @@ storiesOf('Button', module)
   .add('disabled', () => <Button disabled>Hello</Button>)
   .add('transparent', () => <Button transparent>Hello</Button>)
   .add('height', () => <Button height={100}>Hello</Button>)
-  .add('link', () =>
+  .add('link', () => (
     <Button href="https://github.com/diegohaz/arc">ARc repository</Button>
-  )
+  ))

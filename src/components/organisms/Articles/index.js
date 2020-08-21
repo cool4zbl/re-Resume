@@ -5,10 +5,12 @@ import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { Link, Subtitle, Item, BracketSpan, List, Heading } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
 const Span = styled.span`
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   color: ${palette('grayscale', 1)};
 `
 
@@ -21,15 +23,11 @@ const ArticlesList = ({ articles, ...props }) => {
           <div key={i}>
             <Heading level={3} palette={'pigeonRed'}>
               <Span>
-                <Link href={url}>
-                  {title}
-                </Link>
+                <Link href={url}>{title}</Link>
               </Span>
             </Heading>
-            <List hasIndex={true}>
-              <Item>
-                {desc}
-              </Item>
+            <List hasIndex>
+              <Item>{desc}</Item>
             </List>
           </div>
         )

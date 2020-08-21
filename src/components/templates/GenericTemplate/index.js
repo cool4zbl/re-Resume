@@ -20,15 +20,13 @@ const Content = styled.section`
 const GenericTemplate = ({ children, ...props }) => {
   return (
     <Wrapper {...props}>
-      <Content>
-        {children}
-      </Content>
+      <Content>{children}</Content>
     </Wrapper>
   )
 }
 
 GenericTemplate.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any.isRequired
 }
 
 export default GenericTemplate

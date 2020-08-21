@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { Item, List, Subtitle, BracketSpan, Link, Heading } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
 const Skills = props => {
   const { skills } = props
@@ -15,13 +17,9 @@ const Skills = props => {
         专业技能
         <Subtitle>Skills</Subtitle>
       </Heading>
-      <List hasIndex={true}>
+      <List hasIndex>
         {skills.map((h, i) => {
-          return (
-            <Item key={i}>
-              {h}
-            </Item>
-          )
+          return <Item key={i}>{h}</Item>
         })}
       </List>
     </Wrapper>
@@ -30,7 +28,7 @@ const Skills = props => {
 
 Skills.propTypes = {
   hobbies: PropTypes.array,
-  quotes: PropTypes.array,
+  quotes: PropTypes.array
 }
 
 export default Skills

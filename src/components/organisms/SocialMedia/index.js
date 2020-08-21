@@ -4,16 +4,16 @@ import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { Icon, Item, List, Subtitle, Link, Heading } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
-const Span = styled.span`margin-right: .5em;`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
+const Span = styled.span`
+  margin-right: 0.5em;
+`
 
 const Social = styled(({ type, id, ...props }) => {
   let link,
-    prefix = (
-      <Span>
-        {type.toUpperCase()}:
-      </Span>
-    )
+    prefix = <Span>{type.toUpperCase()}:</Span>
   if (id.startsWith('@')) {
     link = `https://${type}.com/${id.slice(1)}`
     prefix = (
@@ -29,9 +29,7 @@ const Social = styled(({ type, id, ...props }) => {
   return (
     <Item>
       {prefix}
-      <Link href={link}>
-        {id}
-      </Link>
+      <Link href={link}>{id}</Link>
     </Item>
   )
 })``
@@ -43,7 +41,7 @@ const SocialMedia = props => {
         社交媒体
         <Subtitle>Social</Subtitle>
       </Heading>
-      <List hasIndex={true}>
+      <List hasIndex>
         {Object.keys(props).map((s, i) => {
           return <Social key={i} type={s} id={props[s]} />
         })}
@@ -56,7 +54,7 @@ SocialMedia.propTypes = {
   blog: PropTypes.string,
   github: PropTypes.string,
   twitter: PropTypes.string,
-  douban: PropTypes.string,
+  douban: PropTypes.string
 }
 
 export default SocialMedia

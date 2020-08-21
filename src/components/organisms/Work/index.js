@@ -5,10 +5,12 @@ import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { Link, Subtitle, Item, BracketSpan, List, Heading } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
 const Span = styled.span`
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   color: ${palette('grayscale', 1)};
 `
 
@@ -21,23 +23,15 @@ const Jobs = ({ jobs, ...props }) => {
           <div key={i}>
             <Heading level={3} palette={'pigeonRed'}>
               <Span>
-                <Link href={url}>
-                  {employer}
-                </Link>
+                <Link href={url}>{employer}</Link>
               </Span>
-              <Span>
-                —— {title}
-              </Span>
-              <BracketSpan square={true}>
-                {dates}
-              </BracketSpan>
+              <Span>—— {title}</Span>
+              <BracketSpan square>{dates}</BracketSpan>
             </Heading>
-            <List hasIndex={true}>
-              {responsibilities.map(r =>
-                <Item key={dates}>
-                  {r}
-                </Item>
-              )}
+            <List hasIndex>
+              {responsibilities.map(r => (
+                <Item key={dates}>{r}</Item>
+              ))}
             </List>
           </div>
         )

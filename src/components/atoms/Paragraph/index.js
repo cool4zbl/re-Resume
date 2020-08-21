@@ -10,11 +10,11 @@ const Paragraph = styled.p`
 Paragraph.propTypes = {
   palette: PropTypes.string,
   reverse: PropTypes.bool,
-  opaque: PropTypes.bool,
+  opaque: PropTypes.bool
 }
 
 Paragraph.defaultProps = {
-  palette: 'grayscale',
+  palette: 'grayscale'
 }
 
 export default Paragraph

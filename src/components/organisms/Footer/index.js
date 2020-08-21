@@ -41,11 +41,8 @@ const rotate360 = keyframes`
 `
 
 const StyledIcon = styled(Icon)`
-  animation: ${ifProp('rotate', rotate360, heartbeat)} ${ifProp(
-  'rotate',
-  '3s',
-  '1s'
-)} linear infinite;
+  animation: ${ifProp('rotate', rotate360, heartbeat)}
+    ${ifProp('rotate', '3s', '1s')} linear infinite;
   vertical-align: text-bottom;
   margin: 0 5px;
 `
@@ -66,7 +63,7 @@ const Footer = props => {
 }
 
 Footer.propTypes = {
-  reverse: PropTypes.bool,
+  reverse: PropTypes.bool
 }
 
 export default Footer

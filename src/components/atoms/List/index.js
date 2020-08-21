@@ -12,15 +12,17 @@ const Ul = styled.ul``
 
 const List = styled(({ ordered, children, ...props }) => {
   return createElement(ordered ? Ol : Ul, props, children)
-})`${styles}`
+})`
+  ${styles}
+`
 
 List.propTypes = {
-  ordered: PropTypes.bool,
+  ordered: PropTypes.bool
 }
 
 List.defaultProps = {
   ordered: false,
-  hasIndex: false,
+  hasIndex: false
 }
 
 export default List

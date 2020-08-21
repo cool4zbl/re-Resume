@@ -1,4 +1,5 @@
 import { normalize, schema } from 'normalizr'
+
 const school = new schema.Entity('schools')
 const schoolListSchema = { schools: [school] }
 

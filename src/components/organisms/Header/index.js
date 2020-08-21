@@ -12,18 +12,18 @@ const BigName = styled(Heading)`
 `
 const Span = styled.span`
   color: #fff;
-  text-shadow: 1px 1px rgba(226, 44, 41, 1.00), 2px 2px rgba(226, 44, 41, 1.00),
-    3px 3px rgba(226, 44, 41, 1.00), 4px 4px rgba(226, 44, 41, 0.99),
+  text-shadow: 1px 1px rgba(226, 44, 41, 1), 2px 2px rgba(226, 44, 41, 1),
+    3px 3px rgba(226, 44, 41, 1), 4px 4px rgba(226, 44, 41, 0.99),
     5px 5px rgba(226, 44, 41, 0.98), 6px 6px rgba(226, 44, 41, 0.97),
-    7px 7px rgba(226, 44, 41, 0.94), 8px 8px rgba(226, 44, 41, 0.90),
+    7px 7px rgba(226, 44, 41, 0.94), 8px 8px rgba(226, 44, 41, 0.9),
     9px 9px rgba(226, 44, 41, 0.84), 10px 10px rgba(226, 44, 41, 0.76),
-    11px 11px rgba(226, 44, 41, 0.65), 12px 12px rgba(226, 44, 41, 0.50),
+    11px 11px rgba(226, 44, 41, 0.65), 12px 12px rgba(226, 44, 41, 0.5),
     13px 13px rgba(226, 44, 41, 0.31), 14px 14px rgba(226, 44, 41, 0.08);
 `
 
 const Wrapper = styled.div`
   display: inline;
-  padding: .8rem 1.4rem;
+  padding: 0.8rem 1.4rem;
   background: ${palette('pigeonRed', 1)};
 `
 
@@ -32,10 +32,8 @@ const Header = props => {
   return (
     <BigName {...props}>
       <Wrapper>
-        <Link reverse={true} href={'/'}>
-          <Span>
-            {' '}{props.name || '<ZBL />'}{' '}
-          </Span>
+        <Link reverse href={'/'}>
+          <Span> {props.name || '<ZBL />'} </Span>
         </Link>
       </Wrapper>
     </BigName>
@@ -43,7 +41,7 @@ const Header = props => {
 }
 
 Header.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string
 }
 
 export default Header

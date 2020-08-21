@@ -13,21 +13,17 @@ const Item = ({ palette, theme, children, ...props }) => {
       .replace(/\*{2}(.+?)\*{2}/g, '<strong>$1</strong>')
     return <StyledLi {...props} dangerouslySetInnerHTML={{ __html: r }} />
   }
-  return (
-    <StyledLi {...props}>
-      {children}
-    </StyledLi>
-  )
+  return <StyledLi {...props}>{children}</StyledLi>
 }
 
 Item.propTypes = {
   palette: PropTypes.string,
   theme: PropTypes.string,
-  children: PropTypes.any,
+  children: PropTypes.any
 }
 
 Item.defaultProps = {
-  palette: 'grayscale',
+  palette: 'grayscale'
 }
 
 export default Item

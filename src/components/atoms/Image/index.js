@@ -15,23 +15,27 @@ const styles = css`
   }
 `
 
-const WithBg = styled.div`${styles};`
+const WithBg = styled.div`
+  ${styles};
+`
 
 const Image = ({ src, bgUrl, ...props }) => {
-  return src
-    ? <img {...props} src={src} />
-    : <WithBg bgUrl={bgUrl} {...props} />
+  return src ? (
+    <img {...props} src={src} />
+  ) : (
+    <WithBg bgUrl={bgUrl} {...props} />
+  )
 }
 
 Image.propTypes = {
   src: PropTypes.string,
   height: PropTypes.string,
-  size: PropTypes.string,
+  size: PropTypes.string
 }
 
 Image.defaultProps = {
   height: '40vh',
-  size: 'contain',
+  size: 'contain'
 }
 
 export default Image

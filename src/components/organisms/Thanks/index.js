@@ -9,10 +9,12 @@ import {
   List,
   BracketSpan,
   Link,
-  Heading,
+  Heading
 } from 'components'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
 
 const Thanks = props => {
   const { thanks } = props
@@ -23,15 +25,13 @@ const Thanks = props => {
         衷心感谢
         <Subtitle>Thanks</Subtitle>
       </Heading>
-      <Paragraph>
-        {thanks}
-      </Paragraph>
+      <Paragraph>{thanks}</Paragraph>
     </Wrapper>
   )
 }
 
 Thanks.propTypes = {
-  thanks: PropTypes.string,
+  thanks: PropTypes.string
 }
 
 export default Thanks

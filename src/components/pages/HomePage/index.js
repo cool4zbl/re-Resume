@@ -11,7 +11,7 @@ import {
   SocialMedia,
   Thanks,
   Header,
-  Footer,
+  Footer
 } from 'components'
 import Me from '../../../Me/'
 
@@ -24,12 +24,12 @@ const componentMap = {
   Education: props => <Education {...props} />,
   SocialMedia: props => <SocialMedia {...props} />,
   Prototype: props => <Prototype {...props} />,
-  Thanks: props => <Thanks {...props} />,
+  Thanks: props => <Thanks {...props} />
 }
 
 const HomePage = () => {
   return (
-    <PageTemplate header={<Header name={Me['Bio'].name} />} footer={<Footer />}>
+    <PageTemplate header={<Header name={Me.Bio.name} />} footer={<Footer />}>
       {Object.keys(Me).map(k =>
         React.createElement(componentMap[k], { ...Me[k], key: k })
       )}

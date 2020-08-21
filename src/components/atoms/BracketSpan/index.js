@@ -20,24 +20,20 @@ const StyledSpan = styled.span`
 `
 
 const BracketSpan = ({ children, ...props }) => {
-  return (
-    <StyledSpan {...props}>
-      {children}
-    </StyledSpan>
-  )
+  return <StyledSpan {...props}>{children}</StyledSpan>
 }
 
 BracketSpan.propTypes = {
   palette: PropTypes.string,
   theme: PropTypes.string,
   square: PropTypes.bool,
-  round: PropTypes.bool,
+  round: PropTypes.bool
 }
 
 BracketSpan.defaultProps = {
   palette: 'grayscale',
   square: false,
-  round: false,
+  round: false
 }
 
 export default BracketSpan

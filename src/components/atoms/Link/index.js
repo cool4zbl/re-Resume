@@ -13,36 +13,32 @@ const styles = css`
 `
 
 const Anchor = styled.a.attrs({
-  target: '_new',
-})`${styles};`
+  target: '_new'
+})`
+  ${styles};
+`
 
 const StyledNavLink = styled(({ theme, palette, to, ...props }) => {
   return <NavLink to={to} {...props} />
-})`${styles}`
+})`
+  ${styles}
+`
 
 const Link = ({ children, ...props }) => {
   if (props.to) {
-    return (
-      <StyledNavLink {...props}>
-        {children}
-      </StyledNavLink>
-    )
+    return <StyledNavLink {...props}>{children}</StyledNavLink>
   }
-  return (
-    <Anchor {...props}>
-      {children}
-    </Anchor>
-  )
+  return <Anchor {...props}>{children}</Anchor>
 }
 
 Link.propTypes = {
   palette: PropTypes.string,
   theme: PropTypes.string,
-  to: PropTypes.string,
+  to: PropTypes.string
 }
 
 Link.defaultProps = {
-  palette: 'grayscale',
+  palette: 'grayscale'
 }
 
 export default Link

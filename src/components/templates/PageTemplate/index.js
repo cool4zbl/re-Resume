@@ -30,7 +30,9 @@ const Wrapper = styled.div`
   ${media.desktop`padding: 2rem 20vw;`} ${media.tablet`padding: 2rem 10vw;`} ${media.phone`padding: 2rem 8vw;`};
 `
 
-const Header = styled.header`width: 100%;`
+const Header = styled.header`
+  width: 100%;
+`
 
 const Content = styled.div`
   width: 100%;
@@ -38,13 +40,15 @@ const Content = styled.div`
   margin: 2rem auto;
 `
 
-const Footer = styled.footer`margin-top: auto;`
+const Footer = styled.footer`
+  margin-top: auto;
+`
 
 const PageTemplate = ({ header, children, footer, ...props }) => {
   return (
     <Wrapper {...props}>
       <Helmet>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content="前端开发工程师cool4ZBL的在线简历" />
         <meta name="keywords" content="cool4ZBL的简历,前端,应聘,简历,F2E" />
         <meta property="og:site_name" content="cool4ZBL的简历" />
@@ -52,15 +56,9 @@ const PageTemplate = ({ header, children, footer, ...props }) => {
         <title>cool4ZBL- 前端开发工程师 - 简历</title>
       </Helmet>
       {Typography()}
-      <Header>
-        {header}
-      </Header>
-      <Content>
-        {children}
-      </Content>
-      <Footer>
-        {footer}
-      </Footer>
+      <Header>{header}</Header>
+      <Content>{children}</Content>
+      <Footer>{footer}</Footer>
     </Wrapper>
   )
 }
@@ -68,7 +66,7 @@ const PageTemplate = ({ header, children, footer, ...props }) => {
 PageTemplate.propTypes = {
   header: PropTypes.node.isRequired,
   footer: PropTypes.node.isRequired,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any.isRequired
 }
 
 export default PageTemplate

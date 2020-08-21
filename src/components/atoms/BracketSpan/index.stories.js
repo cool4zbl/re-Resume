@@ -3,33 +3,33 @@ import { storiesOf } from '@storybook/react'
 import BracketSpan from '.'
 
 storiesOf('BracketSpan', module)
-  .add('default', () =>
+  .add('default', () => (
     <BracketSpan>
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
-  .add('reverse', () =>
+  ))
+  .add('reverse', () => (
     <BracketSpan reverse>
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
-  .add('palette', () =>
+  ))
+  .add('palette', () => (
     <BracketSpan palette="primary">
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
-  .add('palette reverse', () =>
+  ))
+  .add('palette reverse', () => (
     <BracketSpan palette="primary" reverse>
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
-  .add('palette opaque', () =>
+  ))
+  .add('palette opaque', () => (
     <BracketSpan palette="primary" opaque>
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
-  .add('palette opaque reverse', () =>
+  ))
+  .add('palette opaque reverse', () => (
     <BracketSpan palette="primary" opaque reverse>
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </BracketSpan>
-  )
+  ))

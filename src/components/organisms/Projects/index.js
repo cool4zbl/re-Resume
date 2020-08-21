@@ -10,22 +10,22 @@ import {
   Subtitle,
   BracketSpan,
   List,
-  Heading,
+  Heading
 } from 'components'
 import { getEntities } from './schema.js'
 
-const Wrapper = styled.section`color: ${palette('grayscale', 1)};`
-const Span = styled.span`margin-right: .5rem;`
+const Wrapper = styled.section`
+  color: ${palette('grayscale', 1)};
+`
+const Span = styled.span`
+  margin-right: 0.5rem;
+`
 
 const renderHighlights = highlights => {
   return (
-    <List hasIndex={true}>
+    <List hasIndex>
       {highlights.map((r, j) => {
-        return (
-          <Item key={j}>
-            {r}
-          </Item>
-        )
+        return <Item key={j}>{r}</Item>
       })}
     </List>
   )
@@ -54,29 +54,25 @@ const Projects = props => {
             description,
             highlights,
             url,
-            image,
+            image
           } = proj[k]
           return (
             <div key={i}>
               <Heading level={3} palette={'pigeonRed'}>
                 <Link href={url}>
-                  <Span>
-                    {title}
-                  </Span>
+                  <Span>{title}</Span>
                 </Link>
-                <BracketSpan square={true}>
-                  {dates}
-                </BracketSpan>
-                {code
-                  ? <BracketSpan square={true}>
-                      <Link href={code}>code</Link>
-                    </BracketSpan>
-                  : ''}
+                <BracketSpan square>{dates}</BracketSpan>
+                {code ? (
+                  <BracketSpan square>
+                    <Link href={code}>code</Link>
+                  </BracketSpan>
+                ) : (
+                  ''
+                )}
               </Heading>
               {image && <Image bgUrl={image.path} {...image} />}
-              <Paragraph>
-                {description}
-              </Paragraph>
+              <Paragraph>{description}</Paragraph>
               {renderHighlights(highlights)}
             </div>
           )
@@ -87,7 +83,7 @@ const Projects = props => {
 }
 
 Projects.propTypes = {
-  projects: PropTypes.array,
+  projects: PropTypes.array
 }
 
 export default Projects
