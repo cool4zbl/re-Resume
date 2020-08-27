@@ -1,0 +1,125 @@
+// JSON with Comments
+// @see https://jsonresume.org/schema/
+// 中文版
+{
+  "basics": {
+    "name": "ZBL",
+    "gender": "female",
+    "age": 27,
+    "apply": "前端开发工程师",
+    "experience": "三年",
+    "email": "i@zhangbinliu.me",
+    "label": "Programmer",
+    "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
+    "phone": "185-xxxx-xxxx",
+    "website": "http://zhangbinliu.me",
+    "summary": "A summary of ZBL...",
+    "location": {
+      "city": "Beijing",
+      "countryCode": "CH",
+      "region": "Beijing"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "@cool4zbl",
+        "url": "https://github.com/@cool4zbl"
+      },
+      {
+        "network": "Douban",
+        "username": "郫县豆瓣",
+        "url": "https://douban.com/people/cool4zbl"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "蚂蚁金服",
+      "website": "https://antfin.com",
+      "title": "FrontEnd Engineer II / 高级前端工程师",
+      "location": "Beijing",
+      "dates": "2018.01 ~ 至今",
+      "startDate": "2018-01",
+      "endDate": "2020-07",
+      "summary": "开发 A/B 测试科学平台，探索数据科学领域",
+      "highlights": [
+        "参与建设蚂蚁一站式 A/B 测试科学平台 —— 达尔文",
+        "主要负责达尔文主站平台功能开发",
+        "主导三方开放、降低实验门槛相关工作"
+      ]
+    },
+    {
+      "company": "Company",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": ["Started the company"]
+    }
+  ],
+  // "volunteer": [
+  //   {
+  //     "organization": "Organization",
+  //     "position": "Volunteer",
+  //     "website": "http://organization.com/",
+  //     "startDate": "2012-01-01",
+  //     "endDate": "2013-01-01",
+  //     "summary": "Description...",
+  //     "highlights": ["Awarded 'Volunteer of the Month'"]
+  //   }
+  // ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ]
+  // "references": [
+  //   {
+  //     "name": "Jane Doe",
+  //     "reference": "Reference..."
+  //   }
+  // ]
+}

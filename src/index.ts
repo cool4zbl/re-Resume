@@ -22,7 +22,7 @@
 // }
 
 export class C {
-  private x
+  private x = 0
 
   getX = () => this.x
   setX = (newVal: number) => {
@@ -30,5 +30,7 @@ export class C {
   }
 }
 
-export let x = new C()
-export let y = { ...{ some: 'value' } }
+console.log('😲 worked!')
+
+export const x = new C()
+export const y = { ...{ some: 'value' } }
