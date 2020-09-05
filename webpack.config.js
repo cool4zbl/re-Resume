@@ -1,6 +1,6 @@
-// eslint-disable @typescript-eslint/no-var-requires */
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 3000
@@ -38,8 +38,12 @@ module.exports = {
       },
       // assets
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(less|css)$/,
+        use: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+          'less-loader',
+        ],
       },
       {
         test: /\.(png|jpe?g|svg|gif|woff2?|ttf|eot)$/,
@@ -50,10 +54,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'public/index.html',
-      template: path.resolve(sourcePath, 'assets/index.ejs'),
+      template: path.resolve(sourcePath, 'assets/index.html'),
       templateParameters: {
         foo: 'bar',
-        name: 'zzzbl',
       },
     }),
   ],
