@@ -11,7 +11,7 @@ import {
   SocialMedia,
   Thanks,
   Header,
-  Footer
+  Footer,
 } from 'components'
 import Me from '../../../Me/'
 
@@ -24,7 +24,7 @@ const componentMap = {
   Education: props => <Education {...props} />,
   SocialMedia: props => <SocialMedia {...props} />,
   Prototype: props => <Prototype {...props} />,
-  Thanks: props => <Thanks {...props} />
+  Thanks: props => <Thanks {...props} />,
 }
 
 const HomePage = () => {

@@ -19,8 +19,8 @@ theme.palette = {
     '#bdbdbd',
     '#e0e0e0',
     '#eeeeee',
-    '#ffffff'
-  ]
+    '#ffffff',
+  ],
 }
 
 theme.reversePalette = reversePalette(theme.palette)
@@ -28,9 +28,9 @@ theme.reversePalette = reversePalette(theme.palette)
 theme.fonts = {
   github: 'Helvetica Neue, Helvetica, Roboto, sans-serif',
   primary:
-    "'-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'",
+    "`-apple-system`,`BlinkMacSystemFont`,'Segoe UI','Roboto','Helvetica','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'",
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
-  quote: 'Georgia, serif'
+  quote: 'Georgia, serif',
 }
 
 theme.sizes = {
@@ -38,7 +38,7 @@ theme.sizes = {
   giant: 1170,
   desktop: 992,
   tablet: 768,
-  phone: 480
+  phone: 480,
 }
 
 export default theme

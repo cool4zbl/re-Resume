@@ -41,7 +41,7 @@ const Header = props => {
 }
 
 Header.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 }
 
 export default Header

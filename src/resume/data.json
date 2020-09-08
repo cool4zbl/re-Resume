@@ -1,15 +1,14 @@
-// JSON with Comments
-// @see https://jsonresume.org/schema/
 {
+  "//": "@see https://jsonresume.org/schema/",
   "basics": {
     "name": "ZBL",
     "label": "Programmer",
-    "objective": "Senior FrontEnd Engineer",
     "experience": "5+ years",
     "email": "i@zhangbinliu.me",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
+    "url": "http://zhangbinliu.me/resume",
     "summary": "A summary of ZBL...",
     "location": {
       "city": "Beijing",
@@ -38,9 +37,10 @@
       "dates": "2018.01 ~ 至今",
       "startDate": "2018-01",
       "endDate": "2020-07",
-      "summary": "参与建设蚂蚁一站式 A/B 测试科学平台 —— 达尔文",
+      "summary": "负责蚂蚁一站式 A/B 测试科学平台 —— 达尔文前端开发",
       "highlights": [
-        "主要负责达尔文主站平台功能开发",
+        "负责达尔文主站平台功能前端开发",
+        "协助数据科学家、后端、产品同学",
         "同时主导面向三方开放、降低实验门槛相关工作"
       ]
     },
@@ -54,17 +54,6 @@
       "highlights": ["Started the company"]
     }
   ],
-  // "volunteer": [
-  //   {
-  //     "organization": "Organization",
-  //     "position": "Volunteer",
-  //     "website": "http://organization.com/",
-  //     "startDate": "2012-01-01",
-  //     "endDate": "2013-01-01",
-  //     "summary": "Description...",
-  //     "highlights": ["Awarded 'Volunteer of the Month'"]
-  //   }
-  // ],
   "education": [
     {
       "institution": "University",
@@ -76,23 +65,6 @@
       "courses": ["DB1101 - Basic SQL"]
     }
   ],
-  // "awards": [
-  //   {
-  //     "title": "Award",
-  //     "date": "2014-11-01",
-  //     "awarder": "Company",
-  //     "summary": "There is no spoon."
-  //   }
-  // ],
-  // "publications": [
-  //   {
-  //     "name": "Publication",
-  //     "publisher": "Company",
-  //     "releaseDate": "2014-10-01",
-  //     "website": "http://publication.com",
-  //     "summary": "Description..."
-  //   }
-  // ],
   "skills": [
     {
       "name": "Web Development",
@@ -112,10 +84,4 @@
       "keywords": ["Ferrets", "Unicorns"]
     }
   ]
-  // "references": [
-  //   {
-  //     "name": "Jane Doe",
-  //     "reference": "Reference..."
-  //   }
-  // ]
 }
