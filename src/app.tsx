@@ -4,12 +4,13 @@
 
 import React from 'react'
 import Layout from './layout'
-
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 import data from './resume/data.json'
 // TODO: Chinese ver
+
+import './common/global.less'
 
 const App = (): React.ReactNode => {
   let resumeData: Resume = {}
