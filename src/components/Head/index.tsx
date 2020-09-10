@@ -1,7 +1,10 @@
+/**
+ * @description HTML Head for resume
+ */
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Head: React.FunctionComponent<Resume> = ({ basics }: Resume = {}) => {
+const Head: React.FC<Resume> = ({ basics }: Resume = {}) => {
   if (!basics) return null
 
   const { name, label, picture, summary: desc, website, url } = basics

@@ -28,7 +28,7 @@ theme.reversePalette = reversePalette(theme.palette)
 theme.fonts = {
   github: 'Helvetica Neue, Helvetica, Roboto, sans-serif',
   primary:
-    "`-apple-system`,`BlinkMacSystemFont`,'Segoe UI','Roboto','Helvetica','Arial','sans-serif','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'",
+    '`-apple-system`,`BlinkMacSystemFont`,"Segoe UI","Roboto","Helvetica","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
   quote: 'Georgia, serif',
 }

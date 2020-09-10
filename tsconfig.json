@@ -16,11 +16,14 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "strict": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "skipLibCheck": true
   },
   "exclude": [
+    "./legacy",
+    ".idea",
     "node_modules",
     "build",
     "scripts",

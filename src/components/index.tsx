@@ -3,12 +3,13 @@
  * @see https://webpack.js.org/guides/dependency-management/
  */
 
-const req = require.context('.', true, /\.js$/)
+// NOTE: The arguments passed to require.context must be literals!
+const req = require.context('.', true, /\.(ts|js)x?$/)
 
 const exportAll = req => {
   req.keys().forEach(key => {
-    console.log('export key: ', key)
-    // const componentName = key.replace()
+    const componentName = key.replace(/^.+\/([^/]+)\/index\.(ts|js)x?$/, '$1')
+    module.exports[componentName] = req(key).default
   })
 }
 

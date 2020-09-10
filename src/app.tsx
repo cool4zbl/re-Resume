@@ -4,13 +4,13 @@
 
 import React from 'react'
 import Layout from './layout'
-import Header from './components/Header'
-import Footer from './components/Footer'
-
-import data from './resume/data.json'
-// TODO: Chinese ver
-
 import './common/global.less'
+import { Footer } from './components'
+import Header from './components/Header'
+import Contacts from './components/Contacts'
+
+// TODO: Chinese ver
+import data from './resume/data.json'
 
 const App = (): React.ReactNode => {
   let resumeData: Resume = {}
@@ -24,10 +24,13 @@ const App = (): React.ReactNode => {
 
   const { basics } = resumeData
 
+  const Sidebar = () => <Contacts basics={basics} />
+
   return (
     <Layout
-      header={<Header basics={basics} />}
+      header={<Header basics={basics} hidePicture />}
       footer={<Footer />}
+      sidebar={<Sidebar />}
       resumeData={resumeData}
     ></Layout>
   )

@@ -6,12 +6,14 @@ html {
     'Segoe UI Symbol';
   box-sizing: border-box;
   overflow-y: scroll;
-  font-size: @baseFontSize;
+  font-size: @base-font-size;
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  background: #fffefb;
+  margin: 0;
+  line-height: 1.6;
+  color: @text-color;
+  background: @bg-color0;
   font-weight: normal;
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
     'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -21,5 +23,86 @@ body {
 
 a {
   text-decoration: none;
-  color: @pigeonRed;
+  color: @pigeon-red;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: #18587a;
+//   position: relative;
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+//   font-weight: bold;
+//   line-height: 1.4;
+//   cursor: text;
+// }
+
+// h1,
+// h2 {
+//   padding-bottom: 0.3em;
+//   border-bottom: 1px solid @hr-color;
+// }
+
+// h1 {
+//   font-size: 4em;
+//   line-height: 1.2;
+// }
+// h2 {
+//   font-size: 1.75em;
+//   line-height: 1.225;
+// }
+// h3 {
+//   font-size: 1.5em;
+//   line-height: 1.43;
+// }
+// h4 {
+//   font-size: 1.25em;
+// }
+// h5 {
+//   font-size: 1em;
+// }
+// h6 {
+//   font-size: 1em;
+//   color: #777;
+// }
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: 0.8em 0;
+}
+li > ol,
+li > ul {
+  margin: 0 0;
+}
+hr {
+  height: 4px;
+  height: 1px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-bottom: 1px solid #eee;
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  pre {
+    word-wrap: break-word;
+  }
 }

@@ -58,10 +58,10 @@ interface Basics {
   website: string
   summary: string
   location: Location
-  profiles: Profile[]
+  social: Social[]
 }
 
-interface Profile {
+interface Social {
   network: string
   username: string
   url: string

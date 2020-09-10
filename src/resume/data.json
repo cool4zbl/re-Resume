@@ -2,20 +2,20 @@
   "//": "@see https://jsonresume.org/schema/",
   "basics": {
     "name": "ZBL",
-    "label": "Programmer",
+    "label": "Full stack Programmer",
     "experience": "5+ years",
     "email": "i@zhangbinliu.me",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
-    "summary": "A summary of ZBL...",
+    "summary": "A summary of ZBL, looking for a better job",
     "location": {
       "city": "Beijing",
       "countryCode": "CH",
       "region": "Beijing"
     },
-    "profiles": [
+    "social": [
       {
         "network": "GitHub",
         "username": "@cool4zbl",
