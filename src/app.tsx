@@ -29,7 +29,7 @@ const App = (): React.ReactNode => {
   return (
     <Layout
       header={<Header basics={basics} hidePicture />}
-      footer={<Footer />}
+      footer={<Footer basics={basics} />}
       sidebar={<Sidebar />}
       resumeData={resumeData}
     ></Layout>

@@ -12,6 +12,7 @@ body {
 }
 
 .wrapper {
+  padding: 30px;
   max-width: 1000px;
   min-height: 100vh;
   margin: 0 auto;
@@ -40,17 +41,17 @@ body {
   box-sizing: border-box;
 }
 
-.sidebar {
-  background: rgb(241, 241, 243);
-  flex: 1;
-  height: 100%;
-  min-height: 800px;
-}
-
 .main {
   background: orange;
   flex: 3;
   box-sizing: border-box;
+}
+
+.sidebar {
+  background: @bg-color2;
+  flex: 1 180px;
+  height: 100%;
+  min-height: 800px;
 }
 
 .footer {

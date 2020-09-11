@@ -1,0 +1,48 @@
+.svgWrapper {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0 0.3em;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: text-top;
+
+  & > svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentcolor;
+  }
+
+  &.heartbeatIcon > svg {
+    animation: heartbeat 1s linear infinite;
+  }
+  &.spin > svg {
+    animation: rotate360 3s linear infinite;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(0.5);
+  }
+  23%,
+  77% {
+    transform: scale(0.8);
+  }
+  54% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

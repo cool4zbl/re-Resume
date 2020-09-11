@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
-import { palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { Icon, Paragraph, Link } from 'components'
 
@@ -63,7 +62,7 @@ const Footer = props => {
 }
 
 Footer.propTypes = {
-  reverse: PropTypes.bool
+  reverse: PropTypes.bool,
 }
 
 export default Footer
