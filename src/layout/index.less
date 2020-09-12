@@ -7,16 +7,9 @@
 
 @list: @desktop, @tablet, @phone;
 
-body {
-  border-top: 0.4rem solid @pigeon-red;
-}
-
 .wrapper {
-  padding: 30px;
-  max-width: 1000px;
   min-height: 100vh;
   margin: 0 auto;
-  background: #fff;
 
   // @media @desktop {
   //   padding: 2rem 20vw;
@@ -36,34 +29,28 @@ body {
 }
 
 .contentWrapper {
+  background: @content-bg-color;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
 }
 
 .main {
-  background: orange;
-  flex: 3;
+  flex: 4;
   box-sizing: border-box;
 }
 
 .sidebar {
   background: @bg-color2;
-  flex: 1 180px;
+  padding: 0 1.5rem;
+  border-left: 1px solid @border-color;
+  max-width: 25%;
+  flex: 0 0 25%;
   height: 100%;
   min-height: 800px;
 }
 
 .footer {
   margin-top: auto;
-}
-
-@media print {
-  body {
-    border: 0;
-  }
-  .wrapper {
-    border-top: 1.2rem solid @pigeon-red;
-    border-bottom: 1.2rem solid @black;
-  }
 }

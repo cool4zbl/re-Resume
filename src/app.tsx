@@ -24,7 +24,11 @@ const App = (): React.ReactNode => {
 
   const { basics } = resumeData
 
-  const Sidebar = () => <Contacts basics={basics} />
+  const Sidebar = (): React.ReactNode => (
+    <>
+      <Contacts basics={basics} />
+    </>
+  )
 
   return (
     <Layout
@@ -32,7 +36,9 @@ const App = (): React.ReactNode => {
       footer={<Footer basics={basics} />}
       sidebar={<Sidebar />}
       resumeData={resumeData}
-    ></Layout>
+    >
+      MAIN from app
+    </Layout>
   )
 }
 

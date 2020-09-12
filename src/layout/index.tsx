@@ -27,11 +27,8 @@ LayoutProps): React.FC {
       <div className={styles.wrapper}>
         <header className={styles.header}>{header}</header>
         <div className={styles.contentWrapper}>
-          <section className={styles.main}>
-            测试 main
-            {children}
-          </section>
-          <div className={styles.sidebar}>{sidebar}</div>
+          <section className={styles.main}>{children}</section>
+          <aside className={styles.sidebar}>{sidebar}</aside>
         </div>
         <footer className={styles.footer}>{footer}</footer>
       </div>
