@@ -22,3 +22,16 @@ export default function Heading({
     children
   )
 }
+
+const SectionHeading = ({
+  level = 2,
+  children,
+}: HeadingProps): React.ReactNode => {
+  return (
+    <Heading level={level} className={styles.sectionHeading}>
+      {children}
+    </Heading>
+  )
+}
+
+export { SectionHeading }

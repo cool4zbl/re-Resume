@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Head } from '../components'
 import styles from './index.less'
 
 console.log('styles import: ', styles)
 
 interface LayoutProps {
-  header?: React.ReactNode
-  footer?: React.ReactNode
-  sidebar?: React.ReactNode
-  children: React.ReactNode
+  header?: ReactNode
+  footer?: ReactNode
+  sidebar?: ReactNode
+  children: ReactNode
   resumeData: Resume
   [key: string]: any
 }

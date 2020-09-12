@@ -72,3 +72,7 @@ interface Location {
   countryCode: string
   region: string
 }
+
+interface CommonProps {
+  resumeData: Resume
+}

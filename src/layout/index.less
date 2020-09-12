@@ -1,11 +1,11 @@
 @import '../common/vars';
 
-@giant: ~'(max-width: 1170px)';
-@desktop: ~'(max-width: 992px)';
-@tablet: ~'(max-width: 768px)';
-@phone: ~'(max-width: 480px)';
+@giant: ~'(min-width: 1170px)';
+@desktop: ~'(min-width: 992px)';
+@tablet: ~'(min-width: 768px)';
+// @phone: ~'(max-width: 480px)';
 
-@list: @desktop, @tablet, @phone;
+// @list: @desktop, @tablet, @phone;
 
 .wrapper {
   min-height: 100vh;
@@ -38,6 +38,7 @@
 
 .main {
   flex: 4;
+  max-width: 75%;
   box-sizing: border-box;
 }
 

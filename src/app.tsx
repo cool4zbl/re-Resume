@@ -7,37 +7,33 @@ import Layout from './layout'
 import './common/global.less'
 import { Footer } from './components'
 import Header from './components/Header'
-import Contacts from './components/Contacts'
+import Sidebar from './components/Sidebar'
+import Main from './components/Main'
 
 // TODO: Chinese ver
-import data from './resume/data.json'
+import rawData from './resume/data.json'
+
+let resumeData: Resume = {}
+try {
+  resumeData = JSON.parse(JSON.stringify(rawData))
+} catch (e) {
+  throw new Error(
+    'Parse data error, plz check the format of your `src/resume/data.json`'
+  )
+}
 
 const App = (): React.ReactNode => {
-  let resumeData: Resume = {}
-  try {
-    resumeData = JSON.parse(JSON.stringify(data))
-  } catch (e) {
-    throw new Error(
-      'Parse data error, plz check the format of your `src/resume/data.json`'
-    )
-  }
-
   const { basics } = resumeData
-
-  const Sidebar = (): React.ReactNode => (
-    <>
-      <Contacts basics={basics} />
-    </>
-  )
+  console.log('=== App resumeData', resumeData)
 
   return (
     <Layout
       header={<Header basics={basics} hidePicture />}
       footer={<Footer basics={basics} />}
-      sidebar={<Sidebar />}
-      resumeData={resumeData}
+      sidebar={<Sidebar resumeData={resumeData} />}
+      // resumeData={resumeData}
     >
-      MAIN from app
+      <Main resumeData={resumeData} />
     </Layout>
   )
 }
