@@ -1,16 +1,33 @@
 import React from 'react'
-import { SectionHeading } from '../Heading'
+import BaseList, { BaseListProps } from '../BaseList'
 
-export default function WorkExperience(props: CommonProps): React.ReactNode {
-  const { resumeData } = props
-  const { work } = resumeData
+interface WorkExperienceProps extends BaseListProps<Work> {
+  dataSource: Work[]
+}
+
+const WorkExperience = ({
+  dataSource,
+}: WorkExperienceProps): React.FC<WorkExperienceProps> => {
+  const renderItem = (item: Work): React.ReactNode => {
+    return (
+      <BaseList.Item
+        key={item.company}
+        title={<a href={item.website}>{item.company}</a>}
+        description={item.position}
+      >
+        {item.description}
+        StartDate: {item.startDate}~ End: {item.endDate}
+      </BaseList.Item>
+    )
+  }
 
   return (
-    <div>
-      <SectionHeading>Work exp</SectionHeading>
-      {work.map(w => (
-        <span key={w.company}>{w.company}</span>
-      ))}
-    </div>
+    <BaseList
+      title="Work Experience"
+      dataSource={dataSource}
+      renderItem={renderItem}
+    />
   )
 }
+
+export default WorkExperience

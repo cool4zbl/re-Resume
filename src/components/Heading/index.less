@@ -1,4 +1,4 @@
-@import '../../common/vars';
+@import '../style/vars';
 
 each(range(4), {
   .col-@{value} {
@@ -33,9 +33,22 @@ each(@grayList, {
 
 .sectionHeading {
   position: relative;
+  margin-bottom: 1.5rem;
   padding-left: 1rem;
   font-size: 1.125rem;
   letter-spacing: 0.15rem;
   color: @green0;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: @green0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
 }

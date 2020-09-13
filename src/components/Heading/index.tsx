@@ -11,7 +11,7 @@ interface HeadingProps {
 }
 
 export default function Heading({
-  level,
+  level = 3,
   children,
   ...props
 }: HeadingProps): React.ReactNode {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { SectionHeading } from '../Heading'
 
 interface ContactsProps {
   basics: Resume['basics']
@@ -10,6 +11,7 @@ export default function Contacts(props: ContactsProps): React.ReactNode {
 
   return (
     <div>
+      <SectionHeading>Contacts</SectionHeading>
       <ul>
         <li key="phone">{phone}</li>
         <li>{email}</li>

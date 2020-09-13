@@ -1,4 +1,4 @@
-@import '../common/vars';
+@import '../components/style/global';
 
 @giant: ~'(min-width: 1170px)';
 @desktop: ~'(min-width: 992px)';
@@ -30,7 +30,9 @@
 
 .contentWrapper {
   background: @content-bg-color;
+  padding: 1.5rem;
   max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -43,7 +45,7 @@
 }
 
 .sidebar {
-  background: @bg-color2;
+  // background: @bg-color2;
   padding: 0 1.5rem;
   border-left: 1px solid @border-color;
   max-width: 25%;

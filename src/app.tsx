@@ -4,7 +4,6 @@
 
 import React from 'react'
 import Layout from './layout'
-import './common/global.less'
 import { Footer } from './components'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'

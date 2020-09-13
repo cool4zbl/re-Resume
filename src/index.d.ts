@@ -1,6 +1,7 @@
 interface Resume {
   basics: Basics
   work: Work[]
+  projects: Project[]
   education: Education[]
   skills: Skill[]
   languages: Language[]
@@ -41,9 +42,25 @@ interface Work {
   dates?: string
   startDate: string
   endDate: string
-  summary: string
+  description: string
   highlights: string[]
   position?: string
+}
+
+enum ProjectType {
+  business,
+  openSource,
+}
+
+interface Project {
+  type: ProjectType
+  title: string
+  dates?: string
+  startDate: string
+  endDate: string
+  description: string
+  highlights: string[]
+  url: string
 }
 
 interface Basics {
