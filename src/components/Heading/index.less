@@ -11,18 +11,12 @@ each(range(4), {
 each(@grayList, {
   .h@{index} {
     font-weight: 600;
-    font-size: (0.75 + 1 * (1 / @value))rem;
+    font-size: 0.75rem + 1 * (1 / @index);
     margin: 0;
     margin-top: 0.85714em;
     margin-bottom: 0.57142em;
     color: @value;
-    color: #18587a;
 
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
   }
 });
 
@@ -37,15 +31,15 @@ each(@grayList, {
   padding-left: 1rem;
   font-size: 1.125rem;
   letter-spacing: 0.15rem;
-  color: @green0;
   text-transform: uppercase;
+  color: @theme-primary-color;
 
   &::before {
     content: "";
     display: inline-block;
     width: 5px;
     height: 100%;
-    background: @green0;
+    background: @theme-primary-color;
     position: absolute;
     top: 0;
     left: 0;
