@@ -1,22 +1,18 @@
 import React from 'react'
 import BaseList, { BaseListProps } from '../BaseList'
 
-interface WorkExperienceProps extends BaseListProps<Resume.Basics> {
-  dataSource: Resume.Work[]
-}
-
 const WorkExperience = ({
   dataSource,
-}: WorkExperienceProps): React.FC<WorkExperienceProps> => {
+}: BaseListProps<Resume.Work>): React.FC => {
   const renderItem = (item: Resume.Work): React.ReactNode => {
     return (
       <BaseList.Item
         key={item.company}
-        title={<a href={item.website}>{item.company}</a>}
-        description={item.position}
+        title={item.position}
+        description={<a href={item.website}>{item.company}</a>}
       >
         {item.description}
-        {item.startDate}~ End: {item.endDate}
+        {item.time}
       </BaseList.Item>
     )
   }

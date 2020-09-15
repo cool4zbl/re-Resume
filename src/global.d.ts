@@ -15,7 +15,7 @@ declare module Resume {
     keywords: string[]
   }
 
-  interface Education {
+  type Education = {
     institution: string
     area: string
     studyType: string
@@ -68,31 +68,30 @@ declare module Resume {
     social: Social[]
   }
 
-  interface Social {
+  type Social = {
     network: string
     username: string
     url: string
   }
 
-  interface Location {
+  type Location = {
     city: string
     countryCode: string
     region: string
   }
-
-  interface CommonProps {
-    resumeData: Resume
+  interface IResume {
+    basics: Basics
+    work: Work[]
+    projects: Project[]
+    education: Education[]
+    skills: Skill[]
+    languages: Language[]
+    interests: Interest[]
   }
-}
 
-interface IResume {
-  basics: Basics
-  work: Work[]
-  projects: Project[]
-  education: Education[]
-  skills: Skill[]
-  languages: Language[]
-  interests: Interest[]
+  type CommonProps = {
+    resumeData: IResume
+  }
 }
 
 export as namespace Resume

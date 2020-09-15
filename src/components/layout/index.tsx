@@ -1,15 +1,13 @@
 import React, { ReactNode } from 'react'
-import { Head } from '..'
+import Head from '../Head'
 import styles from './index.less'
-
-console.log('styles import: ', styles)
 
 interface LayoutProps {
   header?: ReactNode
   footer?: ReactNode
   sidebar?: ReactNode
   children: ReactNode
-  resumeData: Resume
+  resumeData: IResume
   [key: string]: any
 }
 
@@ -19,11 +17,11 @@ export default function Layout({
   sidebar,
   children,
   resumeData,
-}: // ...props,
-LayoutProps): React.FC {
+}: LayoutProps): React.ReactNode {
+  const { basics } = resumeData
   return (
     <>
-      <Head {...resumeData} />
+      <Head basics={basics} />
       <div className={styles.wrapper}>
         <header className={styles.header}>{header}</header>
         <div className={styles.contentWrapper}>

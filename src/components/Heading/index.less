@@ -16,23 +16,22 @@ each(@grayList, {
     margin-top: 0.85714em;
     margin-bottom: 0.57142em;
     color: @value;
-
   }
 });
 
 .h1, .h2 {
   padding-bottom: 0.3em;
-  border-bottom: 1px solid @hr-color;
+  // border-bottom: 1px solid @hr-color;
 }
 
 .sectionHeading {
+  color: @theme-primary-color;
   position: relative;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   font-size: 1.125rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  color: @theme-primary-color;
 
   &::before {
     content: "";

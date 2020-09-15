@@ -4,7 +4,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Head: React.FC<Resume> = ({ basics }: Resume = {}) => {
+interface HeadProps {
+  basics: Resume.Basics
+}
+
+const Head: React.FC = ({ basics = {} }: HeadProps) => {
   if (!basics) return null
 
   const { name, label, picture, summary: desc, website, url } = basics

@@ -12,7 +12,7 @@ import Main from './components/Main'
 // TODO: Chinese ver
 import rawData from './resume/data.json'
 
-let resumeData: Resume = {}
+let resumeData: IResume = {}
 try {
   resumeData = JSON.parse(JSON.stringify(rawData))
 } catch (e) {
@@ -23,14 +23,13 @@ try {
 
 const App = (): React.ReactNode => {
   const { basics } = resumeData
-  console.log('=== App resumeData', resumeData)
 
   return (
     <Layout
       header={<Header basics={basics} hidePicture />}
       footer={<Footer basics={basics} />}
       sidebar={<Sidebar resumeData={resumeData} />}
-      // resumeData={resumeData}
+      resumeData={resumeData}
     >
       <Main resumeData={resumeData} />
     </Layout>

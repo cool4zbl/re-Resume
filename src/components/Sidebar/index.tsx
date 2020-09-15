@@ -1,8 +1,7 @@
 import React from 'react'
 import Contacts from '../Contacts'
-// import { SectionHeading } from '../Heading'
 
-const Sidebar = ({ resumeData }: CommonProps): React.ReactNode => {
+const Sidebar = ({ resumeData }: Resume.CommonProps): React.ReactNode => {
   const { basics } = resumeData
 
   return (

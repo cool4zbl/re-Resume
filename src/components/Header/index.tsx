@@ -1,9 +1,9 @@
 import React from 'react'
-import { Heading } from '..'
+import Heading from '../Heading'
 import styles from './index.less'
 
 interface HeaderProps {
-  basics: Resume['basics']
+  basics: Resume.Basics
   hidePicture?: boolean
 }
 
@@ -12,8 +12,8 @@ export default function Header(props: HeaderProps): React.FC {
   const { name, picture, website } = basics
 
   const BigName = (): JSX.Element => (
-    <Heading level={1} className={styles.bigName}>
-      <span className="">{`<${name} />`}</span>
+    <Heading level={1} className={styles.bigNameWrapper}>
+      <span className={styles.name}>{`<${name} />`}</span>
     </Heading>
   )
 
