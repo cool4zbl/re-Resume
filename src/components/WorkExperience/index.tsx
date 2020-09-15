@@ -1,5 +1,6 @@
 import React from 'react'
 import BaseList, { BaseListProps } from '../BaseList'
+import styles from './index.less'
 
 const WorkExperience = ({
   dataSource,
@@ -11,8 +12,8 @@ const WorkExperience = ({
         title={item.position}
         description={<a href={item.website}>{item.company}</a>}
       >
+        <span className={styles.time}>{item.time}</span>
         {item.description}
-        {item.time}
       </BaseList.Item>
     )
   }

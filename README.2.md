@@ -18,7 +18,3 @@ v2 is out, with a breaking change.
 - react
 - typescript
 - webpack (maybe not)
-
-#### Process
-
-- Read `data.json`, inject the key information to the template, then show it.
