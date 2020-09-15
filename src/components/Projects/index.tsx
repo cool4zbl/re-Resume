@@ -1,22 +1,24 @@
 import React from 'react'
-import Heading, { SectionHeading } from '../Heading'
+import Heading from '../Heading'
 import BaseList from '../BaseList'
 
 interface ProjectsProps {
-  dataSource: Project[]
+  dataSource: Resume.Project[]
 }
 
 function Projects(props: ProjectsProps): React.ReactNode {
   const { dataSource } = props
 
   return (
-    <div>
-      {dataSource.map(proj => (
-        <div key={proj.title}>
+    <BaseList
+      title="project"
+      dataSource={dataSource}
+      renderItem={proj => (
+        <BaseList.Item key={proj.title}>
           <Heading level={3}>{proj.title}</Heading>
-        </div>
-      ))}
-    </div>
+        </BaseList.Item>
+      )}
+    ></BaseList>
   )
 }
 

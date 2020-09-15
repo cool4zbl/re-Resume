@@ -1,5 +1,4 @@
 import React from 'react'
-import { SectionHeading } from '../Heading'
 import Summary from '../Summary'
 import WorkExp from '../WorkExperience'
 import Projects from '../Projects'

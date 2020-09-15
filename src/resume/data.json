@@ -39,11 +39,9 @@
     {
       "company": "Ant Finicial",
       "website": "https://antfin.com",
-      "position": "FrontEnd Engineer II",
+      "position": "FrontEnd Specialist",
       "location": "Beijing",
-      "dates": "2018-01 ~ 2020-07",
-      "startDate": "2018-01",
-      "endDate": "2020-07",
+      "time": "Jan 2018 ~ July 2020",
       "description": "负责蚂蚁一站式 A/B 测试科学平台 —— 达尔文前端开发",
       "highlights": [
         "ABTest",
@@ -60,8 +58,20 @@
       "position": "FrontEnd Engineer II",
       "website": "https://meituan.com",
       "location": "Beijing",
+      "time": "Oct 2017 ~ Jan 2018",
       "startDate": "2017-10",
       "endDate": "2018-01",
+      "description": "美团地图 - 数据平台开发与维护",
+      "highlights": ["Map", "Data Platform"]
+    },
+    {
+      "company": "Douban",
+      "position": "FrontEnd Engineer",
+      "website": "https://meituan.com",
+      "location": "Beijing",
+      "time": "July 2015 ~ Sep 2017",
+      "startDate": "2015-07",
+      "endDate": "2017-09",
       "description": "美团地图 - 数据平台开发与维护",
       "highlights": ["Map", "Data Platform"]
     }

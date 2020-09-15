@@ -1,30 +1,35 @@
 import React from 'react'
-import { SectionHeading } from '../Heading'
+import BaseList from '../BaseList'
 
 interface ContactsProps {
-  basics: Resume['basics']
+  basics: Resume.Basics
 }
 
 export default function Contacts(props: ContactsProps): React.ReactNode {
   const { basics } = props
   const { email, phone, website, location, social } = basics
+  const { city } = location
+
+  const contacts = [email, phone, website, city]
 
   return (
     <div>
-      <SectionHeading>Contacts</SectionHeading>
-      <ul>
-        <li key="phone">{phone}</li>
-        <li>{email}</li>
-        <li>{website}</li>
-        <li>{location.city}</li>
-        {social.map(item => (
-          <li key={item.network}>
+      <BaseList
+        dataSource={contacts}
+        title="Contacts"
+        renderItem={item => <BaseList.Item key={item}>{item}</BaseList.Item>}
+      ></BaseList>
+
+      <BaseList
+        dataSource={social}
+        renderItem={item => (
+          <BaseList.Item key={item.network}>
             <a href={item.url} target="_blank" rel="noreferrer">
               {item.username}
             </a>
-          </li>
-        ))}
-      </ul>
+          </BaseList.Item>
+        )}
+      ></BaseList>
     </div>
   )
 }

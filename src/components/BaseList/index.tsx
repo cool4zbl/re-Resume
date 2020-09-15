@@ -33,7 +33,7 @@ export const BaseListItem = ({
 
 export interface BaseListProps<T> {
   dataSource: T[]
-  title: React.ReactNode
+  title?: React.ReactNode
   className?: string
   children?: React.ReactNode
   renderItem: (item: T, index?: number) => React.ReactNode
@@ -59,7 +59,7 @@ function BaseList<T>({
 
   return (
     <>
-      <SectionHeading>{title}</SectionHeading>
+      {title && <SectionHeading>{title}</SectionHeading>}
       <div className={cls} {...rest}>
         {childrenContent}
         {children}

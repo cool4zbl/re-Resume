@@ -3,7 +3,7 @@
  */
 
 import React from 'react'
-import Layout from './layout'
+import Layout from './components/layout'
 import { Footer } from './components'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'

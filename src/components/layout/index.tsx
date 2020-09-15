@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Head } from '../components'
+import { Head } from '..'
 import styles from './index.less'
 
 console.log('styles import: ', styles)
