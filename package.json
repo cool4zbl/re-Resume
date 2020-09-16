@@ -59,10 +59,8 @@
     "html-webpack-plugin": "^4.3.0",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
-    "opn-cli": "^3.1.0",
     "prettier": "^1.5.3",
     "raw-loader": "^0.5.1",
-    "react-hot-loader": "^3.0.0-beta.7",
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
     "styled-components": "^5.1.1",
@@ -73,22 +71,13 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "history": "^4.6.1",
     "lodash": "^4.17.4",
-    "normalizr": "^3.2.3",
     "prop-types": "^15.5.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^4.1.1",
-    "react-typography": "^0.15.10",
-    "styled-theme": "^0.3.0",
-    "styled-tools": "^0.1.2",
-    "typography": "^0.15.12",
-    "typography-plugin-code": "^0.15.11",
-    "typography-theme-funston": "^0.15.10",
-    "typography-theme-github": "^0.15.10",
-    "typography-theme-stow-lake": "^0.15.10"
+    "react-typography": "^0.15.10"
   },
   "keywords": [
     "resume",

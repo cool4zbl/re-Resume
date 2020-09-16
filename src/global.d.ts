@@ -45,7 +45,7 @@ declare module Resume {
   type Project = {
     type: ProjectType
     title: string
-    dates?: string
+    time?: string
     startDate: string
     endDate: string
     description: string
