@@ -3,29 +3,61 @@ import classnames from 'classnames'
 import Heading, { SectionHeading } from '../Heading'
 import styles from './index.less'
 
-interface BaseListItemProps extends React.HTMLAttributes<HTMLDivElement> {
-  title?: React.ReactNode
-  description?: React.ReactNode
+interface ListItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string
   style?: React.CSSProperties
   children?: React.ReactNode
 }
 
-export const BaseListItem = ({
+interface ListItemMetaProps {
+  title?: React.ReactNode
+  description?: React.ReactNode
+  extra?: React.ReactNode
+  className?: string
+  style?: React.CSSProperties
+  children?: React.ReactNode
+}
+
+export const ItemMeta: React.FC<ListItemMetaProps> = ({
+  className,
   title,
   description,
+  extra,
+  ...others
+}: ListItemMetaProps) => {
+  const metaCls = classnames(styles.meta, className)
+
+  return (
+    <div {...others} className={metaCls}>
+      {title && <Heading className={styles.itemTitle}>{title}</Heading>}
+      {extra && <div className={styles.extra}>{extra}</div>}
+      {description && (
+        <div className={styles.itemDescription}>{description}</div>
+      )}
+    </div>
+  )
+}
+
+export interface ListItemTypeProps extends React.FC<ListItemProps> {
+  Meta: typeof ItemMeta
+}
+
+/**
+ * HTML structure
+ * Item
+ *  Meta
+ *    Title | Extra
+ *    Description
+ */
+export const BaseListItem: ListItemTypeProps = ({
   className,
   children,
   ...rest
-}: BaseListItemProps): React.FC<BaseListItemProps> => {
+}: ListItemProps) => {
   const itemCls = classnames(styles.item, className)
 
   return (
     <li {...rest} className={itemCls}>
-      {title && <Heading className={styles.itemTitle}>{title}</Heading>}
-      {description && (
-        <div className={styles.itemDescription}>{description}</div>
-      )}
       {children}
     </li>
   )
@@ -60,7 +92,7 @@ function BaseList<T>({
   return (
     <>
       {title && <SectionHeading>{title}</SectionHeading>}
-      <div className={cls} {...rest}>
+      <div {...rest} className={cls}>
         {childrenContent}
         {children}
       </div>
@@ -69,5 +101,6 @@ function BaseList<T>({
 }
 
 BaseList.Item = BaseListItem
+BaseList.Item.Meta = ItemMeta
 
 export default BaseList

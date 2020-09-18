@@ -4,12 +4,36 @@
   list-style: none;
 }
 
+/**
+  .item
+    .meta
+      .itemTitle  |  .extra
+      .itemDescription
+*/
+
 .item {
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.meta {
   position: relative;
 }
 
 .itemTitle {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/** time or ... */
+.extra {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75rem;
+  color: #9e9e9e;
 }
 
 .itemDescription {
+  font-size: 0.8rem;
 }

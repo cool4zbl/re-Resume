@@ -11,7 +11,7 @@ function Projects(props: ProjectsProps): React.ReactNode {
 
   return (
     <BaseList
-      title="project"
+      title="projects"
       dataSource={dataSource}
       renderItem={proj => (
         <BaseList.Item key={proj.title}>
