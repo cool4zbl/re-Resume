@@ -9,7 +9,7 @@ const WorkExperience = ({
 }: BaseListProps<Resume.Work>): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
     item.company,
-    location && <span>, {item.location}</span>,
+    location && <span key="location">, {item.location}</span>,
   ]
 
   const renderItem = (item: Resume.Work): React.ReactNode => {
