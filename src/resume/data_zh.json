@@ -1,25 +1,22 @@
-// JSON with Comments
-// @see https://jsonresume.org/schema/
-// 中文版
 {
+  "//": "@see https://jsonresume.org/schema/",
+  "///": "Chinese Version",
   "basics": {
     "name": "ZBL",
-    "gender": "female",
-    "age": 27,
-    "apply": "前端开发工程师",
-    "experience": "三年",
+    "label": "Full stack Programmer",
+    "experience": "5+ years",
     "email": "i@zhangbinliu.me",
-    "label": "Programmer",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
-    "summary": "A summary of ZBL...",
+    "url": "http://zhangbinliu.me/resume",
+    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening....",
     "location": {
       "city": "Beijing",
       "countryCode": "CH",
       "region": "Beijing"
     },
-    "profiles": [
+    "social": [
       {
         "network": "GitHub",
         "username": "@cool4zbl",
@@ -32,71 +29,6 @@
       }
     ]
   },
-  "work": [
-    {
-      "company": "蚂蚁金服",
-      "website": "https://antfin.com",
-      "title": "FrontEnd Engineer II / 高级前端工程师",
-      "location": "Beijing",
-      "dates": "2018.01 ~ 至今",
-      "startDate": "2018-01",
-      "endDate": "2020-07",
-      "summary": "开发 A/B 测试科学平台，探索数据科学领域",
-      "highlights": [
-        "参与建设蚂蚁一站式 A/B 测试科学平台 —— 达尔文",
-        "主要负责达尔文主站平台功能开发",
-        "主导三方开放、降低实验门槛相关工作"
-      ]
-    },
-    {
-      "company": "Company",
-      "position": "President",
-      "website": "http://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
-      "highlights": ["Started the company"]
-    }
-  ],
-  // "volunteer": [
-  //   {
-  //     "organization": "Organization",
-  //     "position": "Volunteer",
-  //     "website": "http://organization.com/",
-  //     "startDate": "2012-01-01",
-  //     "endDate": "2013-01-01",
-  //     "summary": "Description...",
-  //     "highlights": ["Awarded 'Volunteer of the Month'"]
-  //   }
-  // ],
-  "education": [
-    {
-      "institution": "University",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "gpa": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "Description..."
-    }
-  ],
   "skills": [
     {
       "name": "Web Development",
@@ -104,9 +36,212 @@
       "keywords": ["HTML", "CSS", "Javascript"]
     }
   ],
+  "work": [
+    {
+      "company": "Ant Finicial",
+      "website": "https://antfin.com",
+      "position": "FrontEnd Specialist",
+      "location": "Beijing",
+      "time": "Jan 2018 ~ July 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.07",
+      "description": "负责蚂蚁一站式 A/B 测试科学平台 —— 达尔文前端开发",
+      "highlights": [
+        "ABTest",
+        "中台建设 MiddlePlatform",
+        "数据可视化 DataVisualization",
+        "Open Platform",
+        "ThirdParty JavaScript SDK",
+        "协助数据科学家、后端、产品同学",
+        "同时主导面向三方开放、降低实验门槛相关工作"
+      ]
+    },
+    {
+      "company": "Meituan",
+      "position": "FrontEnd Engineer II",
+      "website": "https://meituan.com",
+      "location": "Beijing",
+      "time": "Oct 2017 ~ Jan 2018",
+      "startDate": "2017.10",
+      "endDate": "2018.01",
+      "description": "美团地图 - 数据平台开发与维护",
+      "highlights": ["Map", "Data Platform"]
+    },
+    {
+      "company": "Douban",
+      "position": "FrontEnd Engineer",
+      "website": "https://meituan.com",
+      "location": "Beijing",
+      "time": "July 2015 ~ Sep 2017",
+      "startDate": "2015.07",
+      "endDate": "2017.09",
+      "description": "美团地图 - 数据平台开发与维护",
+      "highlights": ["Map", "Data Platform"]
+    }
+  ],
+  "projects": [
+    {
+      "type": 0,
+      "title": "Darwin A/B Testing Platform",
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.04",
+      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "highlights": [
+        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
+        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
+        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 0,
+      "title": "Map-Gaia 地图基础数据平台",
+      "startDate": "2017.09",
+      "endDate": "2018.01",
+      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "highlights": [
+        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
+        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
+        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 0,
+      "title": "Creator 创作者社区",
+      "time": "2017.05 - 2017.09",
+      "startDate": "2017.05",
+      "endDate": "2017.09",
+      "description": "负责开发的创作者社区平台（Web + Mobile + Hybrid），包括创作者作品申请、作品管理后台及创作者作品展示功能。",
+      "highlights": [
+        "使用 `React` + `Redux` 开发的Web + Mobile + Hybrid **多端SPA**，通过 Ajax 与后端进行所有数据通信；",
+        "使用`Redux` + `normalizr` + `Immutable.js` 作**状态管理**，实现复杂的页面交互；",
+        "技术栈： `React` + `React-Router` + `Redux` + `Webpack`"
+      ],
+      "url": "https://www.douban.com/verify/apply/"
+    },
+    {
+      "type": 0,
+      "title": "Account 帐号系统",
+      "time": "2015.12 - 2017.09",
+      "description": "负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。",
+      "highlights": [
+        "使用 `React` 开发的 Mobile + Hybrid 端 **SPA**， 统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；",
+        "使用 `Webpack` `code-splitting` 技术使各个功能的页面代码**按需加载**，页面打开时间减少了 20%，提高了用户体验；",
+        "模块化开发组件且加入**单元测试**，降低线上出错概率的同时提高了开发效率",
+        "使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6",
+        "技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`"
+      ],
+      "link": ["https://accounts.douban.com/app/register#/"]
+    },
+    {
+      "type": 0,
+      "title": "Zerkalo 书影音条目长评",
+      "time": "2016.04 - 2016.08",
+      "startDate": "2016.04",
+      "endDate": "2016.08",
+      "description": "负责开发的传统 PC 页面重构，应用新设计重构豆瓣全站 Web 端条目，包括书影音、游戏、舞台剧等所有条目的长评页面，并加入长评赞赏新功能。",
+      "highlights": [
+        "**三个月重构项目**，整合之前分散在五个大型项目中的长评 `Mako`模板代码，按页面模块布局拆分并基本重写了样式文件；",
+        "将之前超两千行的主站 `douban.js` 按功能模块拆分，使用 Vanilla JavaScript 重构需要的功能代码并`Webpack` 打包加载，提升页面的性能，方便调试和维护；",
+        "交互上把所有传统表单提交操作改为 Ajax 与后端通信，提升用户体验，并解决了多个项目不同域名下的 **CORS 跨域**问题；",
+        "技术栈：`Mako` + `SCSS` + `ES6` + `Webpack`"
+      ],
+      "url": "https://movie.douban.com/review/8004640/"
+    },
+    {
+      "type": 0,
+      "title": "Talion 豆瓣手机版",
+      "time": "2015.12 - 2017.09",
+      "startDate": "2015.12",
+      "endDate": "2017.09",
+      "description": "参与开发的移动版的豆瓣，具备 PC Web 有的基本功能",
+      "highlights": [
+        "对整个移动端进行了 **SEO** 和分享至微信的优化，给整站带来更多的流量及给用户更好的分享效果；",
+        "应用模块化、组件化思想开发传统移动端页面，广泛使用 `ES6 template literals` + `Fetch API` + `SCSS`，根据设计稿开发对应组件， 方便复用和快速生成页面，提高开发效率；",
+        "一些页面的 view 层通过自己编写 Python 调接口实现",
+        "技术栈：`Mako` + `SCSS` + `ES6` + `Python`"
+      ],
+      "url": ["https://m.douban.com"]
+    },
+    {
+      "type": 0,
+      "title": "SNS 社区",
+      "time": "2015.12 - Present",
+      "description": "参与的大型传统 Web 项目开发，即豆瓣 Web 主站，包括广播、日记和用户主页等",
+      "highlights": [
+        "使用`jQuery` 编写转播对话框插件，开发了 Web 广播转播功能，同时对历史遗留代码进行了重构",
+        "在传统 Web 项目应用组件化思想，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 Mako 模块函数，达到跨项目复用，例如对全站的 `UserCard` 的 HTML & CSS & JS 做了封装，可以跨项目被社区 / 条目等项目复用，提升开发效率",
+        "技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`"
+      ],
+      "url": ["https://www.douban.com/"]
+    },
+    {
+      "type": 1,
+      "title": "每日鸡血 Inspiring Me",
+      "time": "2017.07",
+      "startDate": "2017.07",
+      "endDate": "2017.07",
+      "description": "一个带来每日正能量的页面，展示随机生成的鼓舞人心的图片和名人名言；",
+      "highlights": [
+        "技术栈： `React` + `styled-component` + `Webpack` + `Unsplash API`"
+      ],
+      "url": ["http://zhangbinliu.me/inspiring-me"],
+      "code": "https://github.com/cool4zbl/inspiring-me"
+    },
+    {
+      "type": 1,
+      "title": "re-Resume 2.0",
+      "time": "2017.08",
+      "startDate": "2017.08",
+      "endDate": "2017.08",
+      "description": "一个排版良好，具有设计感的响应式简历模板生成器；",
+      "highlights": [
+        "原子化组件，简洁、简单，支持高度自定义；",
+        "技术栈：`TypeScript` + `React`"
+      ],
+      "url": ["http://zhangbinliu.me/resume"],
+      "code": "https://github.com/cool4zbl/resume"
+    },
+    {
+      "type": 1,
+      "title": "Ghost-render",
+      "startDate": "2017.06",
+      "endDate": "2017.06",
+      "description": "一个使用 Ghost 及其默认主题 Casper 的静态博客生成器 ",
+      "highlights": [
+        "对生成博客文章链接格式进行了优化，并修复一些小 Bug",
+        "技术栈：`Node`"
+      ],
+      "url": ["https://github.com/cool4zbl/ghost-render"],
+      "code": "https://github.com/cool4zbl/ghost-render"
+    }
+  ],
+  "education": [
+    {
+      "institution": "UESTC",
+      "area": "Electronic Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2011.09.01",
+      "endDate": "2015.07.01",
+      "gpa": "3.6",
+      "courses": [
+        "Analogue Circuit",
+        "Digital Circuit",
+        "Princlple of Computer",
+        "Signal and System",
+        "Information Theory"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "English",
+      "fluency": "Conversational"
+    },
+    {
+      "language": "Chinese",
       "fluency": "Native speaker"
     }
   ],
@@ -115,11 +250,6 @@
       "name": "Wildlife",
       "keywords": ["Ferrets", "Unicorns"]
     }
-  ]
-  // "references": [
-  //   {
-  //     "name": "Jane Doe",
-  //     "reference": "Reference..."
-  //   }
-  // ]
+  ],
+  "prototype": {}
 }

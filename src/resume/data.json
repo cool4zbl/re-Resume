@@ -9,7 +9,7 @@
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
-    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening....",
+    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
     "location": {
       "city": "Beijing",
       "countryCode": "CH",
@@ -44,13 +44,14 @@
       "time": "Jan 2018 ~ July 2020",
       "startDate": "2018.01",
       "endDate": "2020.07",
-      "description": "负责蚂蚁一站式 A/B 测试科学平台 —— 达尔文前端开发",
+      "description": "Responsible for developing the front-end UI system & JavaScript third-party SDK of the one-stop A/B Testing platform in AntFinicial.",
       "highlights": [
         "ABTest",
         "中台建设 MiddlePlatform",
         "数据可视化 DataVisualization",
         "Open Platform",
         "ThirdParty JavaScript SDK",
+        "To B",
         "协助数据科学家、后端、产品同学",
         "同时主导面向三方开放、降低实验门槛相关工作"
       ]
@@ -63,7 +64,7 @@
       "time": "Oct 2017 ~ Jan 2018",
       "startDate": "2017.10",
       "endDate": "2018.01",
-      "description": "美团地图 - 数据平台开发与维护",
+      "description": "Responsible for developing the front-end UI system of the map data-platform in Meituan.",
       "highlights": ["Map", "Data Platform"]
     },
     {
@@ -74,8 +75,8 @@
       "time": "July 2015 ~ Sep 2017",
       "startDate": "2015.07",
       "endDate": "2017.09",
-      "description": "美团地图 - 数据平台开发与维护",
-      "highlights": ["Map", "Data Platform"]
+      "description": "Responsible for developing and mantaining the PC website and html5 mobile pages, especially the account system",
+      "highlights": ["PC", "To C", "mobile"]
     }
   ],
   "projects": [
@@ -85,11 +86,10 @@
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
-      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "description": "Developed A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other business group in AntFinicial",
       "highlights": [
-        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
-        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
-        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+        "Relized the *data-visualization*",
+        "TechStack： `TypeScript` + `React` + `AntDesign` + `AntV`"
       ],
       "url": ""
     },
