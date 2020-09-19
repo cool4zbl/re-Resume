@@ -8,7 +8,7 @@ interface SummaryProps {
 export default function Summary(props: SummaryProps): React.ReactNode {
   const { data } = props
   return (
-    <div>
+    <div style={{ padding: '1rem 0' }}>
       <SectionHeading>Profile</SectionHeading>
       {data}
     </div>

@@ -14,11 +14,10 @@ const WorkExperience = ({
 
   const renderItem = (item: Resume.Work): React.ReactNode => {
     return (
-      <BaseList.Item key={item.company} style={{ marginBottom: '1.25rem' }}>
+      <BaseList.Item key={item.company} style={{ marginBottom: '1rem' }}>
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.position}
-          // description={<a href={item.website}>{item.company}</a>}
           description={<a href={item.website}>{getCompany(item)}</a>}
           extra={
             <span className={styles.time}>

@@ -25,7 +25,7 @@ export default function Layout({
       <div className={styles.wrapper}>
         <header className={styles.header}>{header}</header>
         <div className={styles.contentWrapper}>
-          <section className={styles.main}>{children}</section>
+          <main className={styles.main}>{children}</main>
           <aside className={styles.sidebar}>{sidebar}</aside>
         </div>
         <footer className={styles.footer}>{footer}</footer>

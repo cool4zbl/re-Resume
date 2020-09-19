@@ -68,6 +68,7 @@ export interface BaseListProps<T> {
   title?: React.ReactNode
   className?: string
   children?: React.ReactNode
+  style?: React.CSSProperties
   renderItem: (item: T, index?: number) => React.ReactNode
 }
 
@@ -90,13 +91,13 @@ function BaseList<T>({
   }
 
   return (
-    <>
+    <section {...rest} className={styles.listWrapper}>
       {title && <SectionHeading>{title}</SectionHeading>}
-      <div {...rest} className={cls}>
+      <div className={cls}>
         {childrenContent}
         {children}
       </div>
-    </>
+    </section>
   )
 }
 
