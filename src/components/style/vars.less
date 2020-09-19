@@ -1,11 +1,7 @@
+/** All varibales */
+
 /** COLORS PALETTE **/
 @pigeon-red: #e74c3c;
-
-@body-bg-color: #fafafa;
-@content-bg-color: #f5f5f5;
-@bg-color: #d7d6da;
-@bg-color1: #e7e7e8;
-@bg-color2: #f1f1f3;
 
 @black: #2d2e33;
 @gray0: #676766;
@@ -13,22 +9,35 @@
 @gray2: #a0a0a1;
 @gray3: #a4a4aa;
 
+@light-gray: #f5f5f5;
+@almost-white: #fbfbfb;
+
 @blue: rgb(24, 88, 122);
-@blue1: rgb(26 89 120);
+@blue1: rgb(26, 89, 120);
 @blue2: #3b7eeb;
 @blue3: #4183c4;
 
 @green0: rgb(40, 127, 127);
 @green1: #54b689;
 
-@text-color: #4f4f4f;
+@bg-color: #d7d6da;
+@bg-color1: #e7e7e8;
+@bg-color2: #f1f1f3;
+
+@body-bg-color: @light-gray;
+@content-bg-color: @almost-white;
+
+// @text-color: #4f4f4f;
+@text-color: #434e5e;
 @print-text-color: #131710;
 
 @hr-color: #eee;
 @border-color: rgba(0, 0, 0, 0.08);
 
-@theme-primary-color: @blue;
-@link-color: @pigeon-red;
+// @theme-primary-color: saturate(@pigeon-red, -10%);
+@theme-primary-color: saturate(@blue1, 20%);
+@link-color: lighten(@pigeon-red, 5%);
+@sub-title-color: saturate(@pigeon-red, -10%);
 @bigname-color: @pigeon-red;
 
 /** SIZE **/

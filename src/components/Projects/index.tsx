@@ -11,8 +11,18 @@ enum ProjectTypeText {
   '1' = 'Open Source',
 }
 
+enum ProjectTypeTextZh {
+  '0' = '商业项目',
+  '1' = '开源项目',
+}
+
+enum ProjectType {
+  'en' = ProjectTypeText,
+  'zh' = ProjectTypeTextZh,
+}
+
 function Projects(props: ProjectsProps): React.ReactNode {
-  const { dataSource, locale } = props
+  const { dataSource, locale = 'en' } = props
 
   const renderItem = (item: Resume.Project): React.ReactNode => {
     return (
@@ -20,7 +30,7 @@ function Projects(props: ProjectsProps): React.ReactNode {
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.title}
-          description={<div>{ProjectTypeText[item.type]}</div>}
+          description={<div>{ProjectType[locale][item.type]}</div>}
           extra={
             <span>
               {formatDate(item.startDate, locale)} ~{' '}

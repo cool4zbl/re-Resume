@@ -24,9 +24,7 @@ const WorkExperience = ({
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.position}
-          description={
-            <span className={styles.company}>{getCompany(item)}</span>
-          }
+          description={<>{getCompany(item)}</>}
           extra={
             <span>
               {formatDate(item.startDate, locale)} ~{' '}
