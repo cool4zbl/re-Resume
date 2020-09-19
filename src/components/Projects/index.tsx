@@ -1,6 +1,7 @@
 import React from 'react'
 import BaseList from '../BaseList'
 import { formatDate } from '../utils/index'
+import { transformText } from '../utils/text'
 
 interface ProjectsProps extends BaseListProps<Resume.Project> {
   locale?: 'en' | 'zh'
@@ -38,10 +39,10 @@ function Projects(props: ProjectsProps): React.ReactNode {
             </span>
           }
         />
-        <div>{item.description}</div>
+        <div>{transformText(item.description)}</div>
         <div>
           {item.highlights.map(high => (
-            <p key={high}>{high}</p>
+            <p key={high}>{transformText(high)}</p>
           ))}
         </div>
       </BaseList.Item>
