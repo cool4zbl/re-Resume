@@ -1,12 +1,16 @@
 import React from 'react'
 import BaseList, { BaseListProps } from '../BaseList'
-import styles from './index.less'
 import { formatDate } from '../utils/index'
+// import styles from './index.less'
+
+interface WorkExpProps extends BaseListProps<Resume.Work> {
+  locale?: 'en' | 'zh'
+}
 
 const WorkExperience = ({
   dataSource,
   locale = 'en',
-}: BaseListProps<Resume.Work>): React.FC => {
+}: WorkExpProps): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
     item.company,
     location && <span key="location">, {item.location}</span>,
@@ -20,13 +24,13 @@ const WorkExperience = ({
           title={item.position}
           description={<a href={item.website}>{getCompany(item)}</a>}
           extra={
-            <span className={styles.time}>
+            <span>
               {formatDate(item.startDate, locale)} ~{' '}
               {formatDate(item.endDate, locale)}
             </span>
           }
         />
-        <div className={styles.desc}>{item.description}</div>
+        <div>{item.description}</div>
       </BaseList.Item>
     )
   }
