@@ -45,6 +45,7 @@ declare module Resume {
   type Project = {
     type: ProjectType
     title: string
+    hide?: boolean
     time?: string
     startDate: string
     endDate: string

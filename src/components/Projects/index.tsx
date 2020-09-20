@@ -1,7 +1,6 @@
 import React from 'react'
 import BaseList from '../BaseList'
-import { formatDate } from '../utils/index'
-import { transformText } from '../utils/text'
+import { formatDate, transformText } from '../utils'
 
 interface ProjectsProps extends BaseListProps<Resume.Project> {
   locale?: 'en' | 'zh'

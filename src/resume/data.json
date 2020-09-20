@@ -136,6 +136,7 @@
     },
     {
       "type": 0,
+      "hide": true,
       "title": "Zerkalo 书影音条目长评",
       "time": "2016.04 - 2016.08",
       "startDate": "2016.04",
@@ -166,6 +167,7 @@
     },
     {
       "type": 0,
+      "hide": true,
       "title": "SNS 社区",
       "time": "2015.12 - Present",
       "description": "参与的大型传统 Web 项目开发，即豆瓣 Web 主站，包括广播、日记和用户主页等",

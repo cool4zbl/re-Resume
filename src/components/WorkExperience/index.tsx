@@ -1,8 +1,7 @@
 import React from 'react'
 import BaseList, { BaseListProps } from '../BaseList'
-import { formatDate } from '../utils/index'
+import { formatDate, transformText } from '../utils'
 // import styles from './index.less'
-import { transformText } from '../utils/text'
 
 interface WorkExpProps extends BaseListProps<Resume.Work> {
   locale?: 'en' | 'zh'
