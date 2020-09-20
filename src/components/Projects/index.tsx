@@ -1,6 +1,6 @@
 import React from 'react'
 import BaseList from '../BaseList'
-import { formatDate, transformText } from '../utils'
+import { formatTimeRange, transformText } from '../utils'
 
 interface ProjectsProps extends BaseListProps<Resume.Project> {
   locale?: 'en' | 'zh'
@@ -33,8 +33,11 @@ function Projects(props: ProjectsProps): React.ReactNode {
           description={<div>{ProjectType[locale][item.type]}</div>}
           extra={
             <span>
-              {formatDate(item.startDate, locale)} ~{' '}
-              {formatDate(item.endDate, locale)}
+              {formatTimeRange({
+                start: item.startDate,
+                end: item.endDate,
+                locale,
+              })}
             </span>
           }
         />

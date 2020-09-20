@@ -1,7 +1,6 @@
 import React from 'react'
 import BaseList, { BaseListProps } from '../BaseList'
-import { formatDate, transformText } from '../utils'
-// import styles from './index.less'
+import { transformText, formatTimeRange } from '../utils'
 
 interface WorkExpProps extends BaseListProps<Resume.Work> {
   locale?: 'en' | 'zh'
@@ -27,8 +26,11 @@ const WorkExperience = ({
           description={<>{getCompany(item)}</>}
           extra={
             <span>
-              {formatDate(item.startDate, locale)} ~{' '}
-              {formatDate(item.endDate, locale)}
+              {formatTimeRange({
+                start: item.startDate,
+                end: item.endDate,
+                locale,
+              })}
             </span>
           }
         />
