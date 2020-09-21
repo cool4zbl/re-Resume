@@ -44,7 +44,7 @@
       "time": "Jan 2018 ~ July 2020",
       "startDate": "2018.01",
       "endDate": "2020.07",
-      "description": "Responsible for developing the front-end UI system & JavaScript third-party SDK of the one-stop A/B Testing platform in AntFinicial.",
+      "description": "Responsible for developing the front-end UI system & JavaScript third-party SDK of the one-stop A/B Testing platform, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial.",
       "highlights": [
         "ABTest",
         "中台建设 MiddlePlatform",
@@ -86,7 +86,7 @@
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
-      "description": "Developed A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other business group in AntFinicial",
+      "description": "Developed Darwin A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial",
       "highlights": [
         "Relized the *data-visualization*",
         "TechStack： `TypeScript` + `React` + `AntDesign` + `AntV`"
@@ -98,11 +98,11 @@
       "title": "Map-Gaia 地图基础数据平台",
       "startDate": "2017.09",
       "endDate": "2018.01",
-      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "description": "The map basic data platform (Web) is responsible for the development, including the functions of producing, managing and publishing map related data, and viewing/editing map POI data. ",
       "highlights": [
-        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
-        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
-        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+        "Use `Vue` to realize the basic business logic of map basic data platform SPA Web",
+        "Realize the visualization of map * * data * *: use Leaflet to realize the display function of map base map and POI data, and use iD editor for secondary development to realize the map editing function",
+        "TechStack： `Vue` + `Vuex` + `Leaflet` + `iD` + `Element-UI`"
       ],
       "url": ""
     },

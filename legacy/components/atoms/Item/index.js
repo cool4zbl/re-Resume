@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { font, palette } from 'styled-theme'
+import styled from 'styled-components'
 
 const StyledLi = styled.li``
 
-const Item = ({ palette, theme, children, ...props }) => {
+const Item = ({ children, ...props }) => {
   if (typeof children === 'string') {
     // replace simply markdown syntax, like `code`, **bold**
     const r = children
@@ -19,11 +18,11 @@ const Item = ({ palette, theme, children, ...props }) => {
 Item.propTypes = {
   palette: PropTypes.string,
   theme: PropTypes.string,
-  children: PropTypes.any
+  children: PropTypes.any,
 }
 
 Item.defaultProps = {
-  palette: 'grayscale'
+  palette: 'grayscale',
 }
 
 export default Item

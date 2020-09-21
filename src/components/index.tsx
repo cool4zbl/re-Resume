@@ -4,7 +4,8 @@
  */
 
 // NOTE: The arguments passed to require.context must be literals!
-const req = require.context('.', true, /\.(ts|js)x?$/)
+// except test files.
+const req = require.context('.', true, /[^.test]\.(ts|js)x?$/)
 
 const exportAll = req => {
   req.keys().forEach(key => {
