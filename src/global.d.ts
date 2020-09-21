@@ -11,7 +11,7 @@ declare module Resume {
 
   interface Skill {
     name: string
-    level: string
+    level?: string
     keywords: string[]
   }
 

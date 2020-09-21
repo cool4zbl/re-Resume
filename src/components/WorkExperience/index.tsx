@@ -41,7 +41,7 @@ const WorkExperience = ({
 
   return (
     <BaseList
-      title="Work Experience"
+      title="Experience"
       dataSource={dataSource}
       renderItem={renderItem}
     />

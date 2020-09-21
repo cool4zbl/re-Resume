@@ -38,9 +38,8 @@ test('Text transform Test', () => {
   //   transformText('TechStack: `react` + `TypeScript` + `AntD`'),
   //   ''
   // )
-
-  assert.strictEqual(
-    transformText('Responsible for something'),
-    'Responsible for something'
-  )
+  // assert.strictEqual(
+  //   transformText('Responsible for something'),
+  //   'Responsible for something'
+  // )
 })
