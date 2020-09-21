@@ -2,13 +2,14 @@ import React from 'react'
 import cls from 'classnames'
 import styles from './index.less'
 
-interface IconProps extends React.FC {
+export type IconProps = {
   icon: string
   fill?: string
   spin?: boolean
   rotate?: number
   style?: React.CSSProperties
   className?: string
+  children?: React.ReactNode
 }
 
 // const fontSize = ({ width, height }): string => {
@@ -16,8 +17,7 @@ interface IconProps extends React.FC {
 //   return size ? `${size / 16}rem` : '1.25em'
 // }
 
-export default function Icon(props: IconProps): React.ReactNode {
-  const { icon, className, spin, ...rest } = props
+function Icon({ icon, className, spin, ...rest }: IconProps): React.ReactNode {
   const svgIcon = require(`!raw-loader!./icons/${icon}.svg`)
 
   const spanCls = cls({
@@ -35,3 +35,4 @@ export default function Icon(props: IconProps): React.ReactNode {
     ></span>
   )
 }
+export default Icon

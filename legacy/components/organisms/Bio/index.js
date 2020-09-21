@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { font, palette } from 'styled-theme'
+import styled from 'styled-components'
+import { palette } from 'styled-theme'
 import { Subtitle, Link, Icon, Item, List, Heading } from 'components'
 
 const Wrapper = styled.section`
@@ -14,7 +14,7 @@ const Span = styled.span`
 
 const keyMap = {
   base: <Icon fill={'none'} icon="map-pin" />,
-  apply: <Icon fill={'none'} icon="activity" />
+  apply: <Icon fill={'none'} icon="activity" />,
 }
 
 const Email = ({ email, ...props }) => {
@@ -88,7 +88,7 @@ Bio.propTypes = {
   email: PropTypes.string,
   blog: PropTypes.string,
   github: PropTypes.string,
-  twitter: PropTypes.string
+  twitter: PropTypes.string,
 }
 
 export default Bio

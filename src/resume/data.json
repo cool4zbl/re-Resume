@@ -10,12 +10,13 @@
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
     "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
-    "location": {
-      "city": "Beijing",
-      "countryCode": "CH",
-      "region": "Beijing"
-    },
+    "location": "Beijing",
     "social": [
+      {
+        "network": "LinkedIn",
+        "username": "Zhang Binliu",
+        "url": "https://www.linkedin.com/in/zhang-binliu-0722a48a"
+      },
       {
         "network": "GitHub",
         "username": "@cool4zbl",

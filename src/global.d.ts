@@ -75,11 +75,13 @@ declare module Resume {
     url: string
   }
 
-  type Location = {
-    city: string
-    countryCode: string
-    region: string
-  }
+  // type Location = {
+  //   city: string
+  //   countryCode: string
+  //   region?: string
+  // }
+  type Location = string
+
   interface IResume {
     basics: Basics
     work: Work[]

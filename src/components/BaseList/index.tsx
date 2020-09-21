@@ -64,7 +64,7 @@ export const BaseListItem: ListItemTypeProps = ({
 }
 
 export interface BaseListProps<T> {
-  dataSource: T[]
+  dataSource?: T[]
   title?: React.ReactNode
   className?: string
   children?: React.ReactNode
