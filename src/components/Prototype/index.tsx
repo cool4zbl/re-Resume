@@ -1,5 +1,5 @@
 import React from 'react'
-import BaseList, { BaseListItem, ItemMeta } from '../BaseList'
+import BaseList, { BaseListItem } from '../BaseList'
 
 /*
  * __proto__, the true me.
@@ -17,7 +17,11 @@ Resume.CommonListProps<Resume.ProtoType>): React.FC {
       dataSource={currentDataSource}
       title="prototype"
       renderItem={(item): React.ReactNode => {
-        return <BaseListItem key={item}>{item}</BaseListItem>
+        return (
+          <BaseListItem key={item} style={{ marginBottom: '.3rem' }}>
+            {item}
+          </BaseListItem>
+        )
       }}
     ></BaseList>
   )

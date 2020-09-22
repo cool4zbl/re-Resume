@@ -21,6 +21,7 @@ enum ProjectType {
   'zh' = ProjectTypeTextZh,
 }
 
+// TODO: Add `code` link to every project.
 function Projects(props: ProjectsProps): React.ReactNode {
   const { dataSource, locale = 'en' } = props
 

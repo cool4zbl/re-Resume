@@ -96,7 +96,7 @@ declare module Resume {
     languages: Language[]
     interests: Interest[]
     prototype: ProtoType[]
-    thanks: string
+    thanks: string[]
   }
 
   type CommonProps = {
