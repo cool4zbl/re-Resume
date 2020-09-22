@@ -13,8 +13,7 @@ const contactsIconStyle = {
 const ContactsIcon = ({ style, ...rest }: IconProps): React.FC => {
   return <Icon style={{ ...style, ...contactsIconStyle }} {...rest} />
 }
-export default function Contacts(props: ContactsProps): React.ReactNode {
-  const { basics } = props
+export default function Contacts({ basics }: ContactsProps): React.ReactNode {
   const { email, website, location, social } = basics
 
   return (

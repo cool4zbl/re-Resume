@@ -1,15 +1,11 @@
 import React from 'react'
-import BaseList, { BaseListProps } from '../BaseList'
+import BaseList from '../BaseList'
 import { transformText, formatTimeRange } from '../utils'
-
-interface WorkExpProps extends BaseListProps<Resume.Work> {
-  locale?: 'en' | 'zh'
-}
 
 const WorkExperience = ({
   dataSource,
   locale = 'en',
-}: WorkExpProps): React.FC => {
+}: Resume.CommonListProps<Resume.Work>): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
     <a href={item.website} key="company">
       <span>{item.company}</span>
@@ -23,7 +19,7 @@ const WorkExperience = ({
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.position}
-          description={<>{getCompany(item)}</>}
+          description={getCompany(item)}
           extra={
             <span>
               {formatTimeRange({

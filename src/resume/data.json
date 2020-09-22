@@ -10,7 +10,7 @@
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
     "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
-    "location": "Beijing",
+    "location": "Beijing, CN",
     "social": [
       {
         "network": "LinkedIn",
@@ -239,9 +239,10 @@
   ],
   "education": [
     {
-      "institution": "UESTC",
+      "institution": "University of Electronic Science and Technology of China (UESTC)",
+      "website": "https://www.uestc.edu.cn",
       "area": "Electronic Engineering",
-      "studyType": "Bachelor",
+      "studyType": "BSc",
       "startDate": "2011.09.01",
       "endDate": "2015.07.01",
       "gpa": "3.6",
@@ -256,12 +257,12 @@
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Conversational"
+      "language": "Chinese",
+      "fluency": "Native"
     },
     {
-      "language": "Chinese",
-      "fluency": "Native speaker"
+      "language": "English",
+      "fluency": "Conversational"
     }
   ],
   "interests": [
@@ -270,5 +271,24 @@
       "keywords": ["Ferrets", "Unicorns"]
     }
   ],
-  "prototype": {}
+  "prototype": [
+    {
+      "name": "Hobbies",
+      "description": [
+        "Lifelong learners and keeps curiosity about the world",
+        "Tool enthusiast / efficiency enthusiast / Vimer",
+        "Have aesthetic design ability, obsessed with all beautiful designs",
+        "Amateurs like reading / taking pictures / listening to music, doing fitness",
+        "Life ideal: Neat."
+      ]
+    },
+    {
+      "name": "Quotes",
+      "description": [
+        "Fake it till you make it.",
+        "God helps one who help themselves"
+      ]
+    }
+  ],
+  "thanks": "I cherish every opportunity to make me better and look forward to working with you. Thank you for your precious time, and wish you success in your work."
 }

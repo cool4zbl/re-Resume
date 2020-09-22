@@ -3,6 +3,8 @@ import classnames from 'classnames'
 import Heading, { SectionHeading } from '../Heading'
 import styles from './index.less'
 
+// TODO: use global className instead of css module className
+
 interface ListItemProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string
   style?: React.CSSProperties

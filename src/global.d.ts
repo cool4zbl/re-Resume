@@ -82,6 +82,11 @@ declare module Resume {
   // }
   type Location = string
 
+  type ProtoType = {
+    name: string
+    description: string[]
+  }
+
   interface IResume {
     basics: Basics
     work: Work[]
@@ -90,10 +95,19 @@ declare module Resume {
     skills: Skill[]
     languages: Language[]
     interests: Interest[]
+    prototype: ProtoType[]
+    thanks: string
   }
 
   type CommonProps = {
     resumeData: IResume
+  }
+
+  type Locale = 'zh' | 'en'
+
+  interface CommonListProps<T> {
+    dataSource?: T[]
+    locale?: Locale
   }
 }
 
