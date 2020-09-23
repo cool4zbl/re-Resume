@@ -2,12 +2,7 @@ import React from 'react'
 import BaseList from '../BaseList'
 import { formatTimeRange } from '../utils/date'
 
-interface EducationProps {
-  dataSource: Resume.Education[]
-  locale?: 'zh' | 'en'
-}
-
-const Education: React.FC<EducationProps> = ({
+const Education: React.FC<Resume.CommonListProps<Resume.Education>> = ({
   dataSource = [],
   locale = 'en',
 }: EducationProps) => {
@@ -17,7 +12,7 @@ const Education: React.FC<EducationProps> = ({
       title="Education"
       renderItem={item => {
         return (
-          <BaseList.Item>
+          <BaseList.Item key={item.institution}>
             <BaseList.Item.Meta
               title={
                 <>

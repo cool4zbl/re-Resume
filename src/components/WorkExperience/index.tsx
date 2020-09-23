@@ -7,10 +7,11 @@ const WorkExperience = ({
   locale = 'en',
 }: Resume.CommonListProps<Resume.Work>): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
-    <a href={item.website} key="company">
-      <span>{item.company}</span>
+    <a href={item.website} key="company" target="_blank" rel="noreferrer">
+      {item.company}
     </a>,
-    location && <span key="location"> - {item.location}</span>,
+    item.location && <span> - </span>,
+    item.location && <span key="location">{item.location}</span>,
   ]
 
   const renderItem = (item: Resume.Work): React.ReactNode => {

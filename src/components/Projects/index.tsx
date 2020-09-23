@@ -21,9 +21,18 @@ enum ProjectType {
   'zh' = ProjectTypeTextZh,
 }
 
-// TODO: Add `code` link to every project.
 function Projects(props: ProjectsProps): React.ReactNode {
   const { dataSource, locale = 'en' } = props
+
+  const getDesc = (item: Resume.Project): React.ReactChildren => [
+    item.github && (
+      <a href={item.github} key="github" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    ),
+    item.github && <span> - </span>,
+    <span key="type">{ProjectType[locale][item.type]}</span>,
+  ]
 
   const renderItem = (item: Resume.Project): React.ReactNode => {
     return (
@@ -31,7 +40,7 @@ function Projects(props: ProjectsProps): React.ReactNode {
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.title}
-          description={<div>{ProjectType[locale][item.type]}</div>}
+          description={getDesc(item)}
           extra={
             <span>
               {formatTimeRange({

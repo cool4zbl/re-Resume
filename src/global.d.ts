@@ -52,6 +52,7 @@ declare module Resume {
     description: string
     highlights: string[]
     url: string
+    github?: string
   }
 
   type Basics = {
