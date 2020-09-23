@@ -10,8 +10,12 @@ const WorkExperience = ({
     <a href={item.website} key="company" target="_blank" rel="noreferrer">
       {item.company}
     </a>,
-    item.location && <span> - </span>,
-    item.location && <span key="location">{item.location}</span>,
+    item.location && (
+      <span key="location">
+        <span key="dash"> - </span>
+        {item.location}
+      </span>
+    ),
   ]
 
   const renderItem = (item: Resume.Work): React.ReactNode => {
@@ -21,15 +25,11 @@ const WorkExperience = ({
           style={{ marginBottom: '.5rem' }}
           title={item.position}
           description={getCompany(item)}
-          extra={
-            <span>
-              {formatTimeRange({
-                start: item.startDate,
-                end: item.endDate,
-                locale,
-              })}
-            </span>
-          }
+          extra={formatTimeRange({
+            start: item.startDate,
+            end: item.endDate,
+            locale,
+          })}
         />
         <div>{transformText(item.description)}</div>
       </BaseList.Item>

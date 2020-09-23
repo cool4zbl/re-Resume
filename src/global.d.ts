@@ -107,7 +107,7 @@ declare module Resume {
   type Locale = 'zh' | 'en'
 
   interface CommonListProps<T> {
-    dataSource?: T[]
+    dataSource: T[]
     locale?: Locale
   }
 }

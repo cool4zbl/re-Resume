@@ -41,15 +41,20 @@
     },
     {
       "name": "Development",
-      "keywords": ["React", "Front-end Engineering", "Node.js"]
+      "keywords": [
+        "React",
+        "Front-end Engineering",
+        "Node.js",
+        "BFF (Backend-for-Frontend)"
+      ]
     },
     {
       "name": "Professional",
       "keywords": [
         "Sharing",
         "Team Player",
-        "Strong Problem Solver",
-        "Effective Commnuication"
+        "Responsible",
+        "Strong Problem Solver"
       ]
     }
   ],
@@ -106,8 +111,8 @@
       "endDate": "2020.04",
       "description": "Developed Darwin A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial",
       "highlights": [
-        "Relized the *data-visualization*",
-        "TechStack： `TypeScript` + `React` + `AntDesign` + `AntV`"
+        "Realized the *data-visualization*",
+        "**TechStack:** `TypeScript` + `React` + `AntDesign` + `AntV`"
       ],
       "url": ""
     },
@@ -120,7 +125,7 @@
       "highlights": [
         "Use `Vue` to realize the basic business logic of map basic data platform SPA Web",
         "Realize the visualization of map * * data * *: use Leaflet to realize the display function of map base map and POI data, and use iD editor for secondary development to realize the map editing function",
-        "TechStack： `Vue` + `Vuex` + `Leaflet` + `iD` + `Element-UI`"
+        "**TechStack:** `Vue` + `Vuex` + `Leaflet` + `iD` + `Element-UI`"
       ],
       "url": ""
     },
@@ -140,8 +145,10 @@
     },
     {
       "type": 0,
-      "title": "Account 帐号系统",
+      "title": "Account System",
       "time": "2015.12 - 2017.09",
+      "startDate": "2015.12",
+      "endDate": "2017.09",
       "description": "负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。",
       "highlights": [
         "使用 `React` 开发的 Mobile + Hybrid 端 **SPA**， 统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；",

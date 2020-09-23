@@ -1,6 +1,6 @@
 {
   "//": "@see https://jsonresume.org/schema/",
-  "///": "Chinese Version",
+  "///": "Chinese version",
   "basics": {
     "name": "ZBL",
     "label": "Full stack Programmer",
@@ -10,13 +10,14 @@
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
-    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening....",
-    "location": {
-      "city": "Beijing",
-      "countryCode": "CH",
-      "region": "Beijing"
-    },
+    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
+    "location": "Beijing, CN",
     "social": [
+      {
+        "network": "LinkedIn",
+        "username": "Zhang Binliu",
+        "url": "https://www.linkedin.com/in/zhang-binliu-0722a48a"
+      },
       {
         "network": "GitHub",
         "username": "@cool4zbl",
@@ -31,9 +32,26 @@
   },
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "name": "Programming",
+      "keywords": [
+        "TypeScript / JavaScript",
+        "CSS / Less / Sass",
+        "Java",
+        "Python"
+      ]
+    },
+    {
+      "name": "Development",
+      "keywords": ["React", "Front-end Engineering", "Node.js"]
+    },
+    {
+      "name": "Professional",
+      "keywords": [
+        "Sharing",
+        "Team Player",
+        "Strong Problem Solver",
+        "Effective Commnuication"
+      ]
     }
   ],
   "work": [
@@ -45,13 +63,14 @@
       "time": "Jan 2018 ~ July 2020",
       "startDate": "2018.01",
       "endDate": "2020.07",
-      "description": "负责蚂蚁一站式 A/B 测试科学平台 —— 达尔文前端开发",
+      "description": "Responsible for developing the front-end UI system & JavaScript third-party SDK of the one-stop A/B Testing platform, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial.",
       "highlights": [
         "ABTest",
         "中台建设 MiddlePlatform",
         "数据可视化 DataVisualization",
         "Open Platform",
         "ThirdParty JavaScript SDK",
+        "To B",
         "协助数据科学家、后端、产品同学",
         "同时主导面向三方开放、降低实验门槛相关工作"
       ]
@@ -64,7 +83,7 @@
       "time": "Oct 2017 ~ Jan 2018",
       "startDate": "2017.10",
       "endDate": "2018.01",
-      "description": "美团地图 - 数据平台开发与维护",
+      "description": "Responsible for developing the front-end UI system of the map data-platform in Meituan.",
       "highlights": ["Map", "Data Platform"]
     },
     {
@@ -75,35 +94,34 @@
       "time": "July 2015 ~ Sep 2017",
       "startDate": "2015.07",
       "endDate": "2017.09",
-      "description": "美团地图 - 数据平台开发与维护",
-      "highlights": ["Map", "Data Platform"]
+      "description": "Responsible for developing and mantaining the PC website and html5 mobile pages, especially the account system",
+      "highlights": ["PC", "To C", "mobile"]
     }
   ],
   "projects": [
     {
       "type": 0,
-      "title": "Darwin A/B Testing Platform",
+      "title": "Darwin - An A/B Testing Platform",
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
-      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "description": "Developed Darwin A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial",
       "highlights": [
-        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
-        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
-        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+        "Relized the *data-visualization*",
+        "TechStack： `TypeScript` + `React` + `AntDesign` + `AntV`"
       ],
       "url": ""
     },
     {
       "type": 0,
-      "title": "Map-Gaia 地图基础数据平台",
+      "title": "Map-Gaia - A Data-Platform of Map",
       "startDate": "2017.09",
       "endDate": "2018.01",
-      "description": "负责开发的地图基础数据平台（Web），包括地图相关数据生产、管理、发布，及查看 / 编辑地图 POI 数据等功能。",
+      "description": "The basic data platform of map (Web) is responsible for the development, including the functions of producing, managing and publishing map related data, and viewing/editing map POI data. ",
       "highlights": [
-        "使用 `Vue` + `Vuex` + `Element-UI` 实现地图基础数据平台 SPA Web 端基本业务逻辑；",
-        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，使用 `iD` 编辑器二次开发，实现地图编辑功能；",
-        "技术栈： `Vue` + `Vuex` + `Leaflet` + `iD`"
+        "Use `Vue` to realize the basic business logic of map basic data platform SPA Web",
+        "Realize the visualization of map * * data * *: use Leaflet to realize the display function of map base map and POI data, and use iD editor for secondary development to realize the map editing function",
+        "TechStack： `Vue` + `Vuex` + `Leaflet` + `iD` + `Element-UI`"
       ],
       "url": ""
     },
@@ -123,8 +141,10 @@
     },
     {
       "type": 0,
-      "title": "Account 帐号系统",
+      "title": "Account System",
       "time": "2015.12 - 2017.09",
+      "startDate": "2015.12",
+      "endDate": "2017.09",
       "description": "负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。",
       "highlights": [
         "使用 `React` 开发的 Mobile + Hybrid 端 **SPA**， 统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；",
@@ -133,10 +153,11 @@
         "使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6",
         "技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`"
       ],
-      "link": ["https://accounts.douban.com/app/register#/"]
+      "url": "https://accounts.douban.com/app/register#/"
     },
     {
       "type": 0,
+      "hide": true,
       "title": "Zerkalo 书影音条目长评",
       "time": "2016.04 - 2016.08",
       "startDate": "2016.04",
@@ -163,10 +184,11 @@
         "一些页面的 view 层通过自己编写 Python 调接口实现",
         "技术栈：`Mako` + `SCSS` + `ES6` + `Python`"
       ],
-      "url": ["https://m.douban.com"]
+      "url": "https://m.douban.com"
     },
     {
       "type": 0,
+      "hide": true,
       "title": "SNS 社区",
       "time": "2015.12 - Present",
       "description": "参与的大型传统 Web 项目开发，即豆瓣 Web 主站，包括广播、日记和用户主页等",
@@ -175,7 +197,7 @@
         "在传统 Web 项目应用组件化思想，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 Mako 模块函数，达到跨项目复用，例如对全站的 `UserCard` 的 HTML & CSS & JS 做了封装，可以跨项目被社区 / 条目等项目复用，提升开发效率",
         "技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`"
       ],
-      "url": ["https://www.douban.com/"]
+      "url": "https://www.douban.com/"
     },
     {
       "type": 1,
@@ -187,8 +209,8 @@
       "highlights": [
         "技术栈： `React` + `styled-component` + `Webpack` + `Unsplash API`"
       ],
-      "url": ["http://zhangbinliu.me/inspiring-me"],
-      "code": "https://github.com/cool4zbl/inspiring-me"
+      "url": "http://zhangbinliu.me/inspiring-me",
+      "github": "https://github.com/cool4zbl/inspiring-me"
     },
     {
       "type": 1,
@@ -201,8 +223,8 @@
         "原子化组件，简洁、简单，支持高度自定义；",
         "技术栈：`TypeScript` + `React`"
       ],
-      "url": ["http://zhangbinliu.me/resume"],
-      "code": "https://github.com/cool4zbl/resume"
+      "url": "http://zhangbinliu.me/resume",
+      "github": "https://github.com/cool4zbl/resume"
     },
     {
       "type": 1,
@@ -214,15 +236,16 @@
         "对生成博客文章链接格式进行了优化，并修复一些小 Bug",
         "技术栈：`Node`"
       ],
-      "url": ["https://github.com/cool4zbl/ghost-render"],
-      "code": "https://github.com/cool4zbl/ghost-render"
+      "url": "https://github.com/cool4zbl/ghost-render",
+      "github": "https://github.com/cool4zbl/ghost-render"
     }
   ],
   "education": [
     {
-      "institution": "UESTC",
+      "institution": "University of Electronic Science and Technology of China (UESTC)",
+      "website": "https://www.uestc.edu.cn",
       "area": "Electronic Engineering",
-      "studyType": "Bachelor",
+      "studyType": "BSc",
       "startDate": "2011.09.01",
       "endDate": "2015.07.01",
       "gpa": "3.6",
@@ -237,12 +260,12 @@
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Conversational"
+      "language": "Chinese",
+      "fluency": "Native"
     },
     {
-      "language": "Chinese",
-      "fluency": "Native speaker"
+      "language": "English",
+      "fluency": "Conversational"
     }
   ],
   "interests": [
@@ -251,5 +274,26 @@
       "keywords": ["Ferrets", "Unicorns"]
     }
   ],
-  "prototype": {}
+  "prototype": [
+    {
+      "name": "Hobbies",
+      "description": [
+        "Lifelong learners and keeps curiosity about the world",
+        "Tool enthusiast / efficiency enthusiast / Vimer",
+        "Have aesthetic design ability, obsessed with all beautiful designs",
+        "Amateurs like reading / taking pictures / listening to music, doing fitness",
+        "Life ideal: Neat."
+      ]
+    },
+    {
+      "name": "Quotes",
+      "description": [
+        "Fake it till you make it.",
+        "God helps one who help themselves"
+      ]
+    }
+  ],
+  "thanks": [
+    "I cherish every opportunity to make me better and look forward to working with you. Thank you for your precious time, and wish you success in your work."
+  ]
 }

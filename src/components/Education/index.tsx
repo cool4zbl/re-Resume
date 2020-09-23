@@ -10,9 +10,12 @@ const Education: React.FC<Resume.CommonListProps<Resume.Education>> = ({
     <BaseList
       dataSource={dataSource}
       title="Education"
-      renderItem={item => {
+      renderItem={(item): React.ReactNode => {
         return (
-          <BaseList.Item key={item.institution}>
+          <BaseList.Item
+            key={item.institution}
+            style={{ marginBottom: '.3rem ' }}
+          >
             <BaseList.Item.Meta
               title={
                 <>
@@ -35,7 +38,11 @@ const Education: React.FC<Resume.CommonListProps<Resume.Education>> = ({
           </BaseList.Item>
         )
       }}
-    />
+    >
+      <BaseList.Item key="gpa" style={{ marginBottom: '.3rem ' }}>
+        <div style={{ fontSize: '0.75rem', color: '#434e5e' }}>GPA: 3.6</div>
+      </BaseList.Item>
+    </BaseList>
   )
 }
 export default Education
