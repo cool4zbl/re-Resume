@@ -1,7 +1,8 @@
+import { Locale } from '../provider/LocaleContext'
 /**
  * Format Time String with current locale
  * @param date Date string or number, like '2020.07'
- * @param locale 'en' | 'zh'
+ * @param locale Locale
  * @returns DateString, like 'Jul 2020'
  * @example
  * ```ts
@@ -11,10 +12,7 @@
  * formatDate('2020.07', 'zh') = '2020.07'
  * ```
  */
-export const formatDate = (
-  date?: string | number,
-  locale?: 'en' | 'zh' = 'en'
-): string => {
+export const formatDate = (date?: string | number, locale?: Locale): string => {
   if (typeof date === 'number') {
     return String(date)
   }
@@ -27,7 +25,7 @@ export const formatDate = (
     return date
   }
 
-  if (locale && locale === 'zh') {
+  if (locale && locale === Locale.zhCN) {
     return date
   }
 
@@ -39,11 +37,11 @@ export const formatDate = (
 export const formatTimeRange = ({
   start,
   end,
-  locale = 'en',
+  locale = Locale.enUS,
 }: {
   start?: string
   end?: string
-  locale?: 'en' | 'zh'
+  locale?: Locale
 } = {}): string => {
   return `${formatDate(start, locale)} ~ ${formatDate(end, locale)}`
 }

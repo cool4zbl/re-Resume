@@ -1,3 +1,5 @@
+import { ILocale } from './components/provider/LocaleContext'
+
 declare module Resume {
   type Interest = {
     name: string
@@ -88,7 +90,7 @@ declare module Resume {
     description: string[]
   }
 
-  interface IResume {
+  type IResume = {
     basics: Basics
     work: Work[]
     projects: Project[]
@@ -104,11 +106,10 @@ declare module Resume {
     resumeData: IResume
   }
 
-  type Locale = 'zh' | 'en'
-
   interface CommonListProps<T> {
     dataSource: T[]
-    locale?: Locale
+    lang?: Lang
+    locale: ILocale
   }
 }
 

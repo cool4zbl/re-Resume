@@ -26,7 +26,7 @@ test('Date Test', () => {
       'Jun 2019 ~ Jul 2020'
   )
   assert(
-    formatTimeRange({ start: '2019.06', end: '2020.07', locale: 'zh' }) ===
+    formatTimeRange({ start: '2019.06', end: '2020.07', lang: 'zh' }) ===
       '2019.06 ~ 2020.07'
   )
   assert.strictEqual(formatTimeRange(), 'Present ~ Present')

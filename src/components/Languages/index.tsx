@@ -3,7 +3,7 @@ import BaseList, { BaseListItem, ItemMeta } from '../BaseList'
 
 export default function Languages({
   dataSource = [],
-}: // locale = 'en',
+}: // lang = 'en',
 Resume.CommonListProps<Resume.Language>): React.FC {
   return (
     <BaseList

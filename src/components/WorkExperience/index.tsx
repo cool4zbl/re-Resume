@@ -4,7 +4,7 @@ import { transformText, formatTimeRange } from '../utils'
 
 const WorkExperience = ({
   dataSource,
-  locale = 'en',
+  lang = 'en',
 }: Resume.CommonListProps<Resume.Work>): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
     <a href={item.website} key="company" target="_blank" rel="noreferrer">
@@ -28,7 +28,7 @@ const WorkExperience = ({
           extra={formatTimeRange({
             start: item.startDate,
             end: item.endDate,
-            locale,
+            lang,
           })}
         />
         <div>{transformText(item.description)}</div>

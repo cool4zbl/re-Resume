@@ -19,7 +19,7 @@ enum ProjectType {
 
 function Projects({
   dataSource,
-  locale = 'en',
+  lang = 'en',
 }: Resume.CommonListProps<Resume.Project>): React.ReactNode {
   const getDesc = (item: Resume.Project): React.ReactNode => (
     <>
@@ -40,7 +40,7 @@ function Projects({
           <span> - </span>
         </span>
       )}
-      <span key="type">{ProjectType[locale][item.type]}</span>
+      <span key="type">{ProjectType[lang][item.type]}</span>
     </>
   )
 
@@ -54,7 +54,7 @@ function Projects({
           extra={formatTimeRange({
             start: item.startDate,
             end: item.endDate,
-            locale,
+            lang,
           })}
         />
         <div>{transformText(item.description)}</div>

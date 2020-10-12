@@ -6,7 +6,7 @@ import BaseList, { BaseListItem } from '../BaseList'
  */
 export default function ProtoType({
   dataSource = [],
-}: // locale = 'en',
+}: // lang = 'en',
 Resume.CommonListProps<Resume.ProtoType>): React.FC {
   const currentDataSource = dataSource.find(
     dt => dt.name.toLowerCase() === 'hobbies'

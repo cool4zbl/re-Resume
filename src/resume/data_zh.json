@@ -67,11 +67,10 @@
       "highlights": [
         "ABTest",
         "中台建设 MiddlePlatform",
-        "数据可视化 DataVisualization",
+        "Data-Visualization",
         "Open Platform",
         "ThirdParty JavaScript SDK",
         "To B",
-        "协助数据科学家、后端、产品同学",
         "同时主导面向三方开放、降低实验门槛相关工作"
       ]
     },
@@ -242,10 +241,10 @@
   ],
   "education": [
     {
-      "institution": "University of Electronic Science and Technology of China (UESTC)",
+      "institution": "电子科技大学 (UESTC)",
       "website": "https://www.uestc.edu.cn",
-      "area": "Electronic Engineering",
-      "studyType": "BSc",
+      "area": "电子信息工程",
+      "studyType": "本科",
       "startDate": "2011.09.01",
       "endDate": "2015.07.01",
       "gpa": "3.6",

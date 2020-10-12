@@ -8,7 +8,7 @@ interface HeadProps {
   basics: Resume.Basics
 }
 
-const Head: React.FC = ({ basics = {} }: HeadProps) => {
+const Head: React.FC<HeadProps> = ({ basics = {} }: HeadProps) => {
   if (!basics) return null
 
   const { name, label, picture, summary: desc, website, url } = basics

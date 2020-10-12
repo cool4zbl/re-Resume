@@ -11,7 +11,8 @@ v2 is out, with a breaking change.
 
 ### Features
 
-- theme config.
+- Intl
+- theme config(ing)
 
 ### Tech Stack
 

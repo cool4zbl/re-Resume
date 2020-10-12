@@ -6,7 +6,7 @@ const qrCodeSrc = require('../../assets/zbl_resume_qrcode.png')
 
 export default function Thanks({
   dataSource,
-}: // locale = 'en',
+}: // lang = 'en',
 Resume.CommonListProps<string>): React.ReactNode {
   return (
     <BaseList

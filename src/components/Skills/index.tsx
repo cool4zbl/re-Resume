@@ -3,12 +3,12 @@ import BaseList from '../BaseList'
 import { BaseListProps } from '../BaseList/index'
 
 interface SkillsProps extends BaseListProps<Resume.Skill> {
-  locale?: 'en' | 'zh'
+  lang?: 'en' | 'zh'
 }
 
 const Skills = ({
   dataSource,
-}: // locale = 'en'
+}: // lang = 'en'
 SkillsProps): React.FC<SkillsProps> => {
   const renderItem = (item: Resume.Skill): React.ReactNode => {
     return (

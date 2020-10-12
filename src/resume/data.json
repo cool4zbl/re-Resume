@@ -32,19 +32,14 @@
   "skills": [
     {
       "name": "Programming",
-      "keywords": [
-        "TypeScript / JavaScript",
-        "CSS / Less / Sass",
-        "Java",
-        "Python"
-      ]
+      "keywords": ["TypeScript / JavaScript", "Java"]
     },
     {
       "name": "Development",
       "keywords": [
         "React",
-        "Front-end Engineering",
         "Node.js",
+        "Front-end Engineering",
         "BFF (Backend-for-Frontend)"
       ]
     },
