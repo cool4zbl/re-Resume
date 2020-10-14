@@ -48,20 +48,23 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
       <Head basics={basics} />
       <ConfigProvider {...configProps}>
         <div className={styles.wrapper}>
-          <header className={styles.header}>
-            <Header basics={basics} hidePicture />
-          </header>
           <div className={styles.toolbar}>
             <LangSwitch {...configProps} />
+            {/* <button>Download</button> */}
           </div>
-          <div className={styles.contentWrapper}>
-            <main className={styles.main}>
-              <Main resumeData={resumeData} />
-            </main>
-            <aside className={styles.sidebar}>
-              <Sidebar resumeData={resumeData} />
-            </aside>
-          </div>
+          <article className={styles.resumeWrapper}>
+            <header className={styles.header}>
+              <Header basics={basics} hidePicture />
+            </header>
+            <div className={styles.contentWrapper}>
+              <main className={styles.main}>
+                <Main resumeData={resumeData} />
+              </main>
+              <aside className={styles.sidebar}>
+                <Sidebar resumeData={resumeData} />
+              </aside>
+            </div>
+          </article>
           <footer className={styles.footer}>
             <Footer basics={basics} />
           </footer>

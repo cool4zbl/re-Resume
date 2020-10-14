@@ -2,7 +2,7 @@
   "//": "@see https://jsonresume.org/schema/",
   "basics": {
     "name": "ZBL",
-    "label": "Full stack Programmer",
+    "title": "Full stack Programmer",
     "experience": "5+ years",
     "email": "i@zhangbinliu.me",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",

@@ -9,29 +9,13 @@
 
 .wrapper {
   min-height: 100vh;
-  margin: 0 auto;
-
-  // @media @desktop {
-  //   padding: 2rem 20vw;
-  // }
-  // @media @tablet {
-  //   padding: 2rem 10vw;
-  // }
-  // @media @phone {
-  //   padding: 2rem 8vw;
-  // }
-}
-
-.header {
-  width: 100%;
-  // height: 15vh;
-  // line-height: 15vh;
-}
-
-.toolbar,
-.contentWrapper {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 3rem auto;
+  // padding: 2rem;
+}
+
+.resumeWrapper {
+  background: @content-bg-color;
 }
 
 .toolbar {
@@ -40,8 +24,9 @@
 }
 
 .contentWrapper {
+  border-top: 1px solid @border-color;
   background: @content-bg-color;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;

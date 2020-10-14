@@ -16,36 +16,41 @@ const ContactsIcon = ({ style, ...rest }: IconProps): React.FC => {
 export default function Contacts({ basics }: ContactsProps): React.ReactNode {
   const { email, website, location, social } = basics
 
+  const dataSource = [
+    {
+      network: 'mail',
+      url: `mailto:${email}`,
+      username: email,
+    },
+    {
+      network: 'link',
+      url: website,
+      username: website,
+    },
+    {
+      network: 'map-pin',
+      username: location,
+    },
+    ...social,
+  ]
+
   return (
     <div>
-      <BaseList title="Contacts">
-        <BaseList.Item key="email">
-          <ContactsIcon icon="mail" />
-          <a href={`mailto:${email}`}>{email}</a>
-        </BaseList.Item>
-        <BaseList.Item key="website">
-          <ContactsIcon icon="link" />
-          <a href={website} target="_blank" rel="noreferrer">
-            {website}
-          </a>
-        </BaseList.Item>
-        <BaseList.Item key="location">
-          <ContactsIcon icon="map-pin" />
-          {location}
-        </BaseList.Item>
-      </BaseList>
-
       <BaseList
-        dataSource={social}
+        dataSource={dataSource}
         renderItem={(item: Resume.Social): React.ReactNode => (
-          <BaseList.Item key={item.network}>
+          <BaseList.Item key={item.network} style={{ marginBottom: '.2rem' }}>
             <ContactsIcon icon={item.network.toLowerCase()} />
-            <a href={item.url} target="_blank" rel="noreferrer">
-              {item.username}
-            </a>
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noreferrer">
+                {item.username}
+              </a>
+            ) : (
+              item.username
+            )}
           </BaseList.Item>
         )}
-      ></BaseList>
+      />
     </div>
   )
 }
