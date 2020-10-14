@@ -10,7 +10,7 @@
   flex: 0 0 70%;
   max-width: 70%;
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
 }
 
 .avatar {
@@ -21,6 +21,7 @@
   margin-right: 3rem;
   margin-top: 1rem;
 }
+
 .contacts {
   padding: 0 1.5rem;
   border-left: 1px solid @border-color;
@@ -62,4 +63,11 @@
     9px 9px rgba(226, 44, 41, 0.84), 10px 10px rgba(226, 44, 41, 0.76),
     11px 11px rgba(226, 44, 41, 0.65), 12px 12px rgba(226, 44, 41, 0.5),
     13px 13px rgba(226, 44, 41, 0.31), 14px 14px rgba(226, 44, 41, 0.08);
+}
+
+@media only screen and (max-width: @mobile) {
+  .headerWrapper {
+    text-align: center;
+    align-items: center;
+  }
 }
