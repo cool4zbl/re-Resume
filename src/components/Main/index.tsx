@@ -8,10 +8,10 @@ export default function Main(props: Resume.CommonProps): React.ReactNode {
   const { basics, work, projects } = resumeData
 
   return (
-    <div>
+    <>
       <Summary data={basics?.summary} />
       <WorkExp dataSource={work} />
       <Projects dataSource={projects} />
-    </div>
+    </>
   )
 }

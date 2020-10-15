@@ -1,7 +1,16 @@
-import React, { useContext, useEffect } from 'react'
-import LocaleContext, { ILocale } from './LocaleContext'
+import React, { useContext } from 'react'
+import LocaleContext from './LocaleContext'
 import defaultLocaleData from '../intl/default'
 import { formatTimeRange } from '../utils/date'
+
+export interface ILocale {
+  locale: Locale
+  [key: string]: any
+  localeUtils: {
+    [key: string]: any
+    formatTimeRange?: (obj: object) => string
+  }
+}
 
 export interface LocaleReceiverProps {
   componentName?: string

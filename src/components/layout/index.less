@@ -1,7 +1,18 @@
 @import '../style/global';
 
-body {
-  background: @body-bg-color;
+:global {
+  html {
+    font-size: @mobile-base-font-size;
+  }
+
+  // html.cn-mode {
+  //   font-size: @mobile-base-font-size-cn;
+  // }
+
+  body {
+    background: @body-bg-color;
+    // font-size: 0.9rem;
+  }
 }
 
 .wrapper {
@@ -48,12 +59,24 @@ body {
 }
 
 @media only screen and (min-width: @breakpoint-lg) {
-  body {
-    background: @body-bg-color;
+  :global {
+    html {
+      font-size: @base-font-size;
+    }
+    // html.cn-mode {
+    //   font-size: @base-font-size-cn;
+    // }
+    body {
+      background: @body-bg-color;
+    }
   }
 
   .resumeWrapper {
     background: @content-bg-color;
+  }
+
+  .toolbar {
+    padding: 0.5rem 0;
   }
 
   .contentWrapper {
@@ -63,12 +86,12 @@ body {
     flex: 4;
     max-width: 70%;
     padding: 0 2rem;
+    border-right: 1px solid @border-color;
   }
 
   .sidebar {
     min-height: 800px;
     max-width: 30%;
     flex: 1 0 30%;
-    border-left: 1px solid @border-color;
   }
 }

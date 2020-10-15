@@ -6,7 +6,8 @@ import Sidebar from '../Sidebar'
 import Main from '../Main'
 import ConfigProvider from '../provider/index'
 import LangSwitch from '../LangSwitch'
-import { Locale, ILocale } from '../provider/LocaleContext'
+import { Locale } from '../provider/LocaleContext'
+import { ILocale } from '../provider/LocaleReceiver'
 import { defaultLocale, zh } from '../intl'
 
 import styles from './index.less'
@@ -15,7 +16,7 @@ interface LayoutProps {
   header?: ReactNode
   footer?: ReactNode
   sidebar?: ReactNode
-  children: ReactNode
+  children?: ReactNode
   data: {
     default: Resume.IResume
     [key: string]: Resume.IResume
@@ -33,9 +34,21 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
   const changeLocale = (localeCode: Locale): void => {
     if (localeCode === Locale.enUS) {
       setLocale({ ...zh })
+      toggleCNClass(true)
       return
     }
+    toggleCNClass(false)
     setLocale({ ...defaultLocale })
+  }
+
+  const toggleCNClass = (attach: boolean) => {
+    const CNClass = 'cn-mode'
+    const htmlTag = document.querySelector('html')
+    if (attach) {
+      htmlTag?.classList.add(CNClass)
+      return
+    }
+    htmlTag?.classList.remove(CNClass)
   }
 
   const configProps = {

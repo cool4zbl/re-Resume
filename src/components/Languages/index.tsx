@@ -1,25 +1,27 @@
 import React from 'react'
 import BaseList, { BaseListItem, ItemMeta } from '../BaseList'
+import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
 export default function Languages({
   dataSource = [],
-}: // lang = 'en',
-Resume.CommonListProps<Resume.Language>): React.FC {
+}: Resume.CommonListProps<Resume.Language>): React.FC {
   return (
-    <BaseList
-      dataSource={dataSource}
-      title="languages"
-      renderItem={(item): React.ReactNode => {
-        return (
-          <BaseListItem key={item.language}>
-            <ItemMeta
-              style={{ marginBottom: '.3rem' }}
-              title={item.language}
-              extra={item.fluency}
-            />
-          </BaseListItem>
-        )
-      }}
-    ></BaseList>
+    <LocaleReceiver componentName="languages">
+      {(locale: ILocale) => (
+        <BaseList
+          dataSource={dataSource}
+          title={locale.title}
+          renderItem={(item): React.ReactNode => (
+            <BaseListItem key={item.language}>
+              <ItemMeta
+                style={{ marginBottom: '.3rem' }}
+                title={item.language}
+                extra={item.fluency}
+              />
+            </BaseListItem>
+          )}
+        />
+      )}
+    </LocaleReceiver>
   )
 }

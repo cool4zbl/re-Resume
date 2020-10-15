@@ -1,15 +1,9 @@
 import React from 'react'
 import BaseList from '../BaseList'
 import { BaseListProps } from '../BaseList/index'
+import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
-interface SkillsProps extends BaseListProps<Resume.Skill> {
-  lang?: 'en' | 'zh'
-}
-
-const Skills = ({
-  dataSource,
-}: // lang = 'en'
-SkillsProps): React.FC<SkillsProps> => {
+const Skills = ({ dataSource }: BaseListProps<Resume.Skill>) => {
   const renderItem = (item: Resume.Skill): React.ReactNode => {
     return (
       <BaseList.Item key={item.name} style={{ marginBottom: '.5rem' }}>
@@ -21,11 +15,15 @@ SkillsProps): React.FC<SkillsProps> => {
     )
   }
   return (
-    <BaseList
-      title="skills"
-      dataSource={dataSource}
-      renderItem={renderItem}
-    ></BaseList>
+    <LocaleReceiver componentName="skills">
+      {(locale: ILocale) => (
+        <BaseList
+          title={locale.title}
+          dataSource={dataSource}
+          renderItem={renderItem}
+        />
+      )}
+    </LocaleReceiver>
   )
 }
 

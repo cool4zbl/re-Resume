@@ -1,5 +1,5 @@
 import assert from 'assert'
-import { formatDate, formatTimeRange, transformText } from './index'
+import { formatDate, formatTimeRange } from './index'
 
 test('Date Test', () => {
   assert.strictEqual(formatDate(), 'Present')
@@ -33,13 +33,13 @@ test('Date Test', () => {
 })
 
 // TODO: react component test.
-test('Text transform Test', () => {
-  // assert.strictEqual(
-  //   transformText('TechStack: `react` + `TypeScript` + `AntD`'),
-  //   ''
-  // )
-  // assert.strictEqual(
-  //   transformText('Responsible for something'),
-  //   'Responsible for something'
-  // )
-})
+// test('Text transform Test', () => {
+// assert.strictEqual(
+//   transformText('TechStack: `react` + `TypeScript` + `AntD`'),
+//   ''
+// )
+// assert.strictEqual(
+//   transformText('Responsible for something'),
+//   'Responsible for something'
+// )
+// })

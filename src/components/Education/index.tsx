@@ -1,7 +1,6 @@
 import React from 'react'
 import BaseList from '../BaseList'
-import LocaleReceiver from '../provider/LocaleReceiver'
-import { ILocale } from '../provider/LocaleContext'
+import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
 const Education = ({
   dataSource = [],
@@ -19,14 +18,9 @@ const Education = ({
                 style={{ marginBottom: '.3rem ' }}
               >
                 <BaseList.Item.Meta
-                  title={
-                    locale.studyTitle
-                      .replace('$studyType', item.studyType)
-                      .replace('$area', item.area)
-                    // <>
-                    //   {} in {item.area}
-                    // </>
-                  }
+                  title={locale.studyTitle
+                    .replace('$studyType', item.studyType)
+                    .replace('$area', item.area)}
                   description={
                     <a href={item.website} target="_blank" rel="noreferrer">
                       {item.institution}

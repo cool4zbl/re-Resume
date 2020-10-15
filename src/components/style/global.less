@@ -6,123 +6,127 @@
   box-sizing: border-box;
 }
 
-html {
-  font: 100%/1.625em '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
-    'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-
-  // TODO: 修改中文版 base font size & line-height: 1.6
-  font-size: @base-font-size;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-
-body {
-  overflow-x: hidden;
-  margin: 0;
-  color: @text-color;
-  line-height: 1.5;
-  // EN body font size: 17px
-  // CH body font size: 15px
-  font-size: 0.85rem;
-  font-weight: normal;
-  font-family: @sans-serif;
-  word-wrap: break-word;
-  border-top: 0.3rem solid @pigeon-red;
-  padding: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: @link-color;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-article,
-aside,
-blockquote,
-body,
-button,
-code,
-dd,
-details,
-div,
-dl,
-dt,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-hr,
-input,
-legend,
-li,
-menu,
-nav,
-ol,
-p,
-pre,
-section,
-td,
-textarea,
-th,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-hr {
-  height: 4px;
-  height: 1px;
-  padding: 0;
-  margin: 1rem 0;
-  border: 0 none;
-  overflow: hidden;
-  box-sizing: content-box;
-  border-bottom: 1px solid @hr-color;
-}
-
-// TODO:
-@media print {
+:global {
   html {
-    font-size: 13px;
+    font: 100%/1.625em '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+      'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    box-sizing: border-box;
+    overflow-y: scroll;
   }
+
   body {
-    border: 0;
-  }
-  table,
-  pre {
-    page-break-inside: avoid;
-  }
-  pre {
+    overflow-x: hidden;
+    margin: 0;
+    color: @text-color;
+    // TODO: 修改中文版 base font size & line-height: 1.6
+    line-height: 1.5;
+    // EN body font size: 17px
+    // CH body font size: 15px
+    font-weight: normal;
+    font-family: @sans-serif;
     word-wrap: break-word;
+    border-top: 0.3rem solid @pigeon-red;
+    padding: 30px;
   }
-  .wrapper {
-    border-top: 1.2rem solid @pigeon-red;
-    border-bottom: 1.2rem solid @black;
+
+  a {
+    text-decoration: none;
+    color: @link-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  article,
+  aside,
+  blockquote,
+  body,
+  button,
+  code,
+  dd,
+  details,
+  div,
+  dl,
+  dt,
+  fieldset,
+  figcaption,
+  figure,
+  footer,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  hgroup,
+  hr,
+  input,
+  legend,
+  li,
+  menu,
+  nav,
+  ol,
+  p,
+  pre,
+  section,
+  td,
+  textarea,
+  th,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  hr {
+    height: 4px;
+    height: 1px;
+    padding: 0;
+    margin: 1rem 0;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px solid @hr-color;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  // TODO:
+  @media print {
+    html {
+      font-size: 13px;
+    }
+    body {
+      border: 0;
+    }
+    table,
+    pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+    .wrapper {
+      border-top: 1.2rem solid @pigeon-red;
+      border-bottom: 1.2rem solid @black;
+    }
   }
 }

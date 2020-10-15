@@ -6,6 +6,7 @@
     "target": "es5",
     "lib": ["es6", "dom", "esnext.asynciterable"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

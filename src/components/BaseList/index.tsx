@@ -2,6 +2,8 @@ import React from 'react'
 import classnames from 'classnames'
 import Heading, { SectionHeading } from '../Heading'
 import styles from './index.less'
+import LocaleContext from '../provider/LocaleContext'
+import { Locale } from '../provider/LocaleContext'
 
 // TODO: use global className instead of css module className
 
@@ -29,13 +31,17 @@ export const ItemMeta: React.FC<ListItemMetaProps> = ({
 }: ListItemMetaProps) => {
   const metaCls = classnames(styles.meta, className)
 
+  const curLocale = React.useContext(LocaleContext)?.locale
+  const descCls = classnames(
+    styles.itemDescription,
+    curLocale.locale === Locale.zhCN ? '' : 'italic'
+  )
+
   return (
     <div {...others} className={metaCls}>
       {title && <Heading className={styles.itemTitle}>{title}</Heading>}
       {extra && <div className={styles.extra}>{extra}</div>}
-      {description && (
-        <div className={styles.itemDescription}>{description}</div>
-      )}
+      {description && <div className={descCls}>{description}</div>}
     </div>
   )
 }

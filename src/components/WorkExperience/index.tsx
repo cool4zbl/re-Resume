@@ -1,10 +1,10 @@
 import React from 'react'
 import BaseList from '../BaseList'
-import { transformText, formatTimeRange } from '../utils'
+import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
+import { transformText } from '../utils'
 
 const WorkExperience = ({
   dataSource,
-  lang = 'en',
 }: Resume.CommonListProps<Resume.Work>): React.FC => {
   const getCompany = (item: Resume.Work): React.ReactChildren => [
     <a href={item.website} key="company" target="_blank" rel="noreferrer">
@@ -18,17 +18,16 @@ const WorkExperience = ({
     ),
   ]
 
-  const renderItem = (item: Resume.Work): React.ReactNode => {
+  const renderItem = (locale, item: Resume.Work): React.ReactNode => {
     return (
       <BaseList.Item key={item.company} style={{ marginBottom: '1rem' }}>
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
           title={item.position}
           description={getCompany(item)}
-          extra={formatTimeRange({
+          extra={locale?.localeUtil.formatTimeRange({
             start: item.startDate,
             end: item.endDate,
-            lang,
           })}
         />
         <div>{transformText(item.description)}</div>
@@ -37,11 +36,15 @@ const WorkExperience = ({
   }
 
   return (
-    <BaseList
-      title="Experience"
-      dataSource={dataSource}
-      renderItem={renderItem}
-    />
+    <LocaleReceiver componentName="experience">
+      {(locale: ILocale) => (
+        <BaseList
+          title={locale.title}
+          dataSource={dataSource}
+          renderItem={renderItem.bind(null, locale)}
+        />
+      )}
+    </LocaleReceiver>
   )
 }
 

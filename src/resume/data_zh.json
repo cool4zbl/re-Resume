@@ -10,8 +10,8 @@
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
-    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
-    "location": "Beijing, CN",
+    "summary": "前端工程师，五年大型网站开发经验, 擅长中台以及 JS SDK 开发。目标是全栈。",
+    "location": "北京",
     "social": [
       {
         "network": "LinkedIn",
@@ -33,12 +33,7 @@
   "skills": [
     {
       "name": "Programming",
-      "keywords": [
-        "TypeScript / JavaScript",
-        "CSS / Less / Sass",
-        "Java",
-        "Python"
-      ]
+      "keywords": ["TypeScript / JavaScript", "CSS / Less / Sass", "Java"]
     },
     {
       "name": "Development",
@@ -56,10 +51,10 @@
   ],
   "work": [
     {
-      "company": "Ant Finicial",
+      "company": "蚂蚁金服",
       "website": "https://antfin.com",
-      "position": "FrontEnd Specialist",
-      "location": "Beijing",
+      "position": "前端技术专家",
+      "location": "北京",
       "time": "Jan 2018 ~ July 2020",
       "startDate": "2018.01",
       "endDate": "2020.07",
@@ -75,10 +70,10 @@
       ]
     },
     {
-      "company": "Meituan",
-      "position": "FrontEnd Engineer II",
+      "company": "美团",
+      "position": "高级前端工程师",
       "website": "https://meituan.com",
-      "location": "Beijing",
+      "location": "北京",
       "time": "Oct 2017 ~ Jan 2018",
       "startDate": "2017.10",
       "endDate": "2018.01",
@@ -86,10 +81,10 @@
       "highlights": ["Map", "Data Platform"]
     },
     {
-      "company": "Douban",
-      "position": "FrontEnd Engineer",
+      "company": "豆瓣",
+      "position": "前端工程师",
       "website": "https://meituan.com",
-      "location": "Beijing",
+      "location": "北京",
       "time": "July 2015 ~ Sep 2017",
       "startDate": "2015.07",
       "endDate": "2017.09",

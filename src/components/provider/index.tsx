@@ -1,6 +1,6 @@
 // all providers, including `locale` & `site`
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import SiteContext from './SiteContext'
 import LocaleContext, { Lang, Locale } from './LocaleContext'
 import LocaleReceiver from './LocaleReceiver'
@@ -21,29 +21,23 @@ function ConfigProvider({
   locale = defaultLocale,
   componentName = 'global',
 }: ConfigProviderProps) {
-  const [isMobile, setIsMobile] = useState(false)
-  const RESPONSIBLE_WIDTH = 768
-  const updateMobileMode = (): void => {
-    const currentIsMobile = window.innerWidth < RESPONSIBLE_WIDTH
-    if (currentIsMobile !== isMobile) {
-      setIsMobile(currentIsMobile)
-    }
-  }
+  // const [isMobile, setIsMobile] = useState(false)
+  // const RESPONSIBLE_WIDTH = 768
+  // const updateMobileMode = (): void => {
+  //   const currentIsMobile = window.innerWidth < RESPONSIBLE_WIDTH
+  //   if (currentIsMobile !== isMobile) {
+  //     setIsMobile(currentIsMobile)
+  //   }
+  // }
 
-  useEffect(() => {
-    updateMobileMode()
-    window.addEventListener('resize', updateMobileMode)
+  // useEffect(() => {
+  //   updateMobileMode()
+  //   window.addEventListener('resize', updateMobileMode)
 
-    return (): void => {
-      window.removeEventListener('resize', updateMobileMode)
-    }
-  }, [])
-
-  const config = {
-    isMobile,
-    locale,
-  }
-  console.log('provider config', config)
+  //   return (): void => {
+  //     window.removeEventListener('resize', updateMobileMode)
+  //   }
+  // }, [])
 
   /**
    * render all providers
