@@ -37,7 +37,8 @@ export default function Header(props: HeaderProps): React.FC {
           <div className={styles.primary}>
             <a href={website} target="_blank" rel="noreferrer">
               <Heading level={1} className={styles.name}>
-                {`<${name} />`}
+                {/* {`<${name} />`} */}
+                {name}
               </Heading>
             </a>
             <div className={styles.title}>{title}</div>

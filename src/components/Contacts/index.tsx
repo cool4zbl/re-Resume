@@ -35,22 +35,20 @@ export default function Contacts({ basics }: ContactsProps): React.ReactNode {
   ]
 
   return (
-    <div>
-      <BaseList
-        dataSource={dataSource}
-        renderItem={(item: Resume.Social): React.ReactNode => (
-          <BaseList.Item key={item.network} style={{ marginBottom: '.2rem' }}>
-            <ContactsIcon icon={item.network.toLowerCase()} />
-            {item.url ? (
-              <a href={item.url} target="_blank" rel="noreferrer">
-                {item.username}
-              </a>
-            ) : (
-              item.username
-            )}
-          </BaseList.Item>
-        )}
-      />
-    </div>
+    <BaseList
+      dataSource={dataSource}
+      renderItem={(item: Resume.Social): React.ReactNode => (
+        <BaseList.Item key={item.network} style={{ marginBottom: '.2rem' }}>
+          <ContactsIcon icon={item.network.toLowerCase()} />
+          {item.url ? (
+            <a href={item.url} target="_blank" rel="noreferrer">
+              {item.username}
+            </a>
+          ) : (
+            item.username
+          )}
+        </BaseList.Item>
+      )}
+    />
   )
 }

@@ -1,8 +1,9 @@
 @import '../style/vars';
 
 .headerWrapper {
-  display: flex;
   padding: 1rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .information {
@@ -17,8 +18,7 @@
   max-width: 128px;
   max-height: 128px;
   border-radius: 50%;
-  margin-right: 3rem;
-  margin-top: 1rem;
+  margin: 1rem 3rem 0 0;
 }
 
 .contacts {
@@ -32,7 +32,7 @@
   margin: 0;
   color: @bigname-color;
   font-weight: 900;
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-family: @sans-serif;
   // letter-spacing: 0.4rem;
 }
@@ -40,7 +40,6 @@
 .title {
   font-size: 1.5rem;
   font-weight: 300;
-  // color: @bigname-color;
 }
 
 .bigNameWrapper {
@@ -64,9 +63,30 @@
     13px 13px rgba(226, 44, 41, 0.31), 14px 14px rgba(226, 44, 41, 0.08);
 }
 
-@media only screen and (max-width: @breakpoint-md) {
-  .headerWrapper {
-    text-align: center;
+@media only screen and (max-width: @breakpoint-lg) {
+  .headerWrapper,
+  .information {
+    flex-direction: column;
     align-items: center;
+  }
+
+  .headerWrapper {
+    padding: 1.5rem;
+  }
+  .avatar {
+    margin: 0 auto;
+  }
+  .information {
+    text-align: center;
+  }
+
+  .information,
+  .contacts {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .contacts {
+    border-left: 0;
   }
 }

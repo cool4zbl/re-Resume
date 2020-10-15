@@ -6,7 +6,7 @@ interface FooterProps {
 }
 
 export default function Footer(props: FooterProps): React.ReactNode {
-  const { name, website } = props.basics
+  const { website } = props.basics
 
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Footer(props: FooterProps): React.ReactNode {
         <Icon icon="react" spin />
         by{' '}
         <a href={website} target="_blank" rel="noreferrer">
-          {name}
+          ZBL
         </a>
       </div>
     </div>
