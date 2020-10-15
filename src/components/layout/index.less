@@ -1,60 +1,72 @@
 @import '../style/global';
 
+body {
+  background: @body-bg-color;
+}
+
 .wrapper {
   min-height: 100vh;
   max-width: 1000px;
   margin: 3rem auto;
-  // padding: 2rem;
-}
-
-.resumeWrapper {
   background: @content-bg-color;
 }
 
 .toolbar {
-  padding: 0.5rem 0;
+  background: @body-bg-color;
+  padding: 0.5rem 1.5rem;
   text-align: right;
 }
 
 .contentWrapper {
   border-top: 1px solid @border-color;
-  background: @content-bg-color;
   padding: 1rem 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
 .main {
-  flex: 4;
-  max-width: 70%;
-  box-sizing: border-box;
   padding: 0 2rem;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .sidebar {
-  padding: 0 1.5rem;
-  border-left: 1px solid @border-color;
-  max-width: 30%;
-  flex: 1 0 30%;
   height: 100%;
-  min-height: 800px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1.5rem;
 }
 
 .footer {
+  background: @body-bg-color;
   margin-top: auto;
+  padding: 2rem 2rem 0;
+  text-align: center;
 }
 
-@media only screen and (max-width: @mobile) {
-  .header {
-    text-align: center;
+@media only screen and (min-width: @breakpoint-lg) {
+  body {
+    background: @body-bg-color;
+  }
+
+  .resumeWrapper {
+    background: @content-bg-color;
+  }
+
+  .contentWrapper {
+    flex-direction: row;
   }
   .main {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 4;
+    max-width: 70%;
   }
+
   .sidebar {
-    flex: 0 0 100%;
-    max-width: 100%;
+    min-height: 800px;
+    max-width: 30%;
+    flex: 1 0 30%;
+    border-left: 1px solid @border-color;
   }
 }

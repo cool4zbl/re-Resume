@@ -29,15 +29,11 @@
 .itemTitle {
   margin: 0;
   font-size: 1rem;
-  // color: @theme-primary-color;
   color: @sub-title-color;
 }
 
 /** time or ... */
 .extra {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-size: 0.75rem;
   color: #9e9e9e;
 }
@@ -47,4 +43,13 @@
   font-style: italic;
   // font-weight: 500;
   color: @gray1;
+}
+
+@media only screen and (min-width: @breakpoint-lg) {
+  /** time or ... */
+  .extra {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

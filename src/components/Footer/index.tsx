@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './index.less'
 import Icon from '../Icon'
 
 interface FooterProps {
@@ -10,7 +9,7 @@ export default function Footer(props: FooterProps): React.ReactNode {
   const { name, website } = props.basics
 
   return (
-    <div className={styles.footer}>
+    <div>
       Fake it till you make it. 💪
       <div>
         Made with

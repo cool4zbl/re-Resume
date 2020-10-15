@@ -2,7 +2,6 @@
 
 .headerWrapper {
   display: flex;
-  background: @content-bg-color;
   padding: 1rem 0;
 }
 
@@ -65,7 +64,7 @@
     13px 13px rgba(226, 44, 41, 0.31), 14px 14px rgba(226, 44, 41, 0.08);
 }
 
-@media only screen and (max-width: @mobile) {
+@media only screen and (max-width: @breakpoint-md) {
   .headerWrapper {
     text-align: center;
     align-items: center;
