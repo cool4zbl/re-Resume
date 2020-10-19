@@ -3,14 +3,25 @@
 :global {
   html {
     font-size: @mobile-base-font-size;
+    // line-height: 1.5;
+    line-height: 30px;
   }
 
-  // html.cn-mode {
-  //   font-size: @mobile-base-font-size-cn;
-  // }
+  html.cn-mode {
+    font-size: @mobile-base-font-size-cn;
+    // line-height: 30px;
+  }
 
   body {
+    overflow-x: hidden;
+    border-top: 6px solid @pigeon-red;
+    padding: 30px;
+    margin: 0;
+    font-weight: normal;
+    font-family: @sans-serif;
+    word-wrap: break-word;
     background: @body-bg-color;
+    color: @text-color;
     // font-size: 0.9rem;
   }
 }
@@ -63,9 +74,9 @@
     html {
       font-size: @base-font-size;
     }
-    // html.cn-mode {
-    //   font-size: @base-font-size-cn;
-    // }
+    html.cn-mode {
+      font-size: @base-font-size-cn;
+    }
     body {
       background: @body-bg-color;
     }

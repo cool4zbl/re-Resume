@@ -47,11 +47,11 @@ function Projects({
           })}
         />
         <div>{transformText(item.description)}</div>
-        <div>
+        <ul style={{ paddingLeft: '2rem' }}>
           {item.highlights.map(high => (
-            <p key={high}>{transformText(high)}</p>
+            <li key={high}>{transformText(high)}</li>
           ))}
-        </div>
+        </ul>
       </BaseList.Item>
     )
   }

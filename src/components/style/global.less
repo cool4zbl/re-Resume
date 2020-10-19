@@ -16,21 +16,6 @@
     overflow-y: scroll;
   }
 
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    color: @text-color;
-    // TODO: 修改中文版 base font size & line-height: 1.6
-    line-height: 1.5;
-    // EN body font size: 17px
-    // CH body font size: 15px
-    font-weight: normal;
-    font-family: @sans-serif;
-    word-wrap: break-word;
-    border-top: 0.3rem solid @pigeon-red;
-    padding: 30px;
-  }
-
   a {
     text-decoration: none;
     color: @link-color;
@@ -105,14 +90,26 @@
     border-bottom: 1px solid @hr-color;
   }
 
+  /* Common */
   .italic {
     font-style: italic;
+  }
+
+  .small-text {
+    font-size: 0.85rem;
+  }
+  .light-desc {
+    color: #434e5e;
+  }
+  .time,
+  .extra {
+    color: @gray1; //#9e9e9e;
   }
 
   // TODO:
   @media print {
     html {
-      font-size: 13px;
+      font-size: 10px;
     }
     body {
       border: 0;
@@ -123,10 +120,6 @@
     }
     pre {
       word-wrap: break-word;
-    }
-    .wrapper {
-      border-top: 1.2rem solid @pigeon-red;
-      border-bottom: 1.2rem solid @black;
     }
   }
 }

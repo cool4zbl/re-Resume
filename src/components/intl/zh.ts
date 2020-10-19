@@ -30,4 +30,7 @@ export default {
   thanks: {
     title: '衷心感谢',
   },
+  articles: {
+    title: '技术文章',
+  },
 }

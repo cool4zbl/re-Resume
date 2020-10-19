@@ -27,13 +27,13 @@ const Education = ({
                     </a>
                   }
                 />
-                <div style={{ fontSize: '0.75rem', color: '#9e9e9e' }}>
+                <div className="small-text time">
                   {locale?.localeUtil.formatTimeRange({
                     start: item.startDate,
                     end: item.endDate,
                   })}
                 </div>
-                <div style={{ fontSize: '0.75rem', color: '#434e5e' }}>
+                <div className="small-text light-desc">
                   {locale.gpa}: {item.gpa}
                 </div>
               </BaseList.Item>

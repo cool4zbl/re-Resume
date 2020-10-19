@@ -11,7 +11,7 @@ v2 is out, with a breaking change.
 
 ### Features
 
-- Intl
+- Intl with responsive font size
 - theme config(ing)
 
 ### Tech Stack

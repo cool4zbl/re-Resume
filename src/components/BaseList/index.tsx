@@ -1,9 +1,8 @@
 import React from 'react'
 import classnames from 'classnames'
 import Heading, { SectionHeading } from '../Heading'
+import LocaleContext, { Locale } from '../provider/LocaleContext'
 import styles from './index.less'
-import LocaleContext from '../provider/LocaleContext'
-import { Locale } from '../provider/LocaleContext'
 
 // TODO: use global className instead of css module className
 
@@ -65,9 +64,9 @@ export const BaseListItem: ListItemTypeProps = ({
   const itemCls = classnames(styles.item, className)
 
   return (
-    <li {...rest} className={itemCls}>
+    <div {...rest} className={itemCls}>
       {children}
-    </li>
+    </div>
   )
 }
 
@@ -93,7 +92,7 @@ function BaseList<T>({
   let childrenContent = null
   if (typeof renderItem === 'function') {
     const dataSourceItems = dataSource.map((ds, index) => renderItem(ds, index))
-    childrenContent = <ul className={cls}>{dataSourceItems}</ul>
+    childrenContent = <div className={cls}>{dataSourceItems}</div>
     // childrenContent = React.Children.map(dataSourceItems, (child) => (
     // ))
   }

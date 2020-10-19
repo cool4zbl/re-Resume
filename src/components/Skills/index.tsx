@@ -1,16 +1,19 @@
 import React from 'react'
-import BaseList from '../BaseList'
-import { BaseListProps } from '../BaseList/index'
+import BaseList, { BaseListProps } from '../BaseList'
 import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
 const Skills = ({ dataSource }: BaseListProps<Resume.Skill>) => {
   const renderItem = (item: Resume.Skill): React.ReactNode => {
     return (
-      <BaseList.Item key={item.name} style={{ marginBottom: '.5rem' }}>
+      <BaseList.Item key={item.name}>
         <BaseList.Item.Meta title={item.name} />
-        {item.keywords.map(word => (
-          <p key={word}>{word}</p>
-        ))}
+        <ul style={{ listStyle: 'none' }}>
+          {item.keywords.map(word => (
+            <li key={word} style={{ marginBottom: '.3rem' }}>
+              {word}
+            </li>
+          ))}
+        </ul>
       </BaseList.Item>
     )
   }

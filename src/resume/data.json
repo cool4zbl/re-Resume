@@ -31,24 +31,22 @@
   },
   "skills": [
     {
-      "name": "Programming",
-      "keywords": ["TypeScript / JavaScript", "Java"]
-    },
-    {
-      "name": "Development",
+      "name": "Technology",
       "keywords": [
-        "React",
+        "TypeScript / JavaScript",
+        "React / Ant Design",
         "Node.js",
         "Front-end Engineering",
-        "BFF (Backend-for-Frontend)"
+        "BFF (Backend-for-Frontend)",
+        "Middle-platform Tech"
       ]
     },
     {
       "name": "Professional",
       "keywords": [
-        "Sharing",
-        "Team Player",
+        "Passion",
         "Responsible",
+        "Sharing / Team Player",
         "Strong Problem Solver"
       ]
     }

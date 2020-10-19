@@ -31,4 +31,7 @@ export default {
   thanks: {
     title: 'Thanks',
   },
+  articles: {
+    title: 'Tech Thoughts',
+  },
 }
