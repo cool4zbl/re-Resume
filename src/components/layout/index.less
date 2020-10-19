@@ -36,7 +36,7 @@
 
 .toolbar {
   background: @body-bg-color;
-  padding: 0.5rem 1.5rem;
+  padding: 10px 0;
   text-align: right;
 }
 
@@ -86,10 +86,6 @@
     background: @content-bg-color;
   }
 
-  .toolbar {
-    padding: 0.5rem 0;
-  }
-
   .contentWrapper {
     flex-direction: row;
   }
@@ -106,3 +102,17 @@
     flex: 1 0 30%;
   }
 }
+
+// @media (max-width: @breakpoint-sm) {
+//   :global {
+//     html {
+//       font-size: @base-font-size;
+//     }
+//     html.cn-mode {
+//       font-size: @base-font-size-cn;
+//     }
+//     body {
+//       background: @body-bg-color;
+//     }
+//   }
+// }

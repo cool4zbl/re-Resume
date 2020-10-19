@@ -9,7 +9,7 @@ const Skills = ({ dataSource }: BaseListProps<Resume.Skill>) => {
         <BaseList.Item.Meta title={item.name} />
         <ul style={{ listStyle: 'none' }}>
           {item.keywords.map(word => (
-            <li key={word} style={{ marginBottom: '.3rem' }}>
+            <li key={word} style={{ marginBottom: '.2rem' }}>
               {word}
             </li>
           ))}
