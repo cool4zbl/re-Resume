@@ -9,7 +9,11 @@
     "phone": "185-xxxx-xxxx",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
-    "summary": "I am a front-end engineer based in Beijing with 5+ years of experience in front-end development, especially in JS SDK dev and Middle-Platform opening. I consider myself a highly-focused and self-motivated person, and I am excited with the opportunity to showcase my technical skills with your company.",
+    "summary": [
+      "Self-driving front-end engineer with five years of experience in large-scale website development, proficient with JavaScript and web technologies, understanding Java, and skilled in using React eco-system tools to build high-performance front-end applications;",
+      "Data-driven, with two years of data middle-platform experience, can find problems from data and solve them. And have an acquaintance with A/B testing(especially UI experiments) and growth hacking.",
+      "Focus the Web trends, willingness to share, passion for exploring the best practices of front-end architecture, and practice new technologies to serve business and team."
+    ],
     "location": "Beijing, CN",
     "social": [
       {
@@ -34,43 +38,34 @@
       "name": "Technology",
       "keywords": [
         "TypeScript / JavaScript",
-        "React / Ant Design",
-        "Node.js",
-        "Front-end Engineering",
-        "BFF (Backend-for-Frontend)",
-        "Middle-platform Tech"
+        "React / Node.js / Front-end Engineering",
+        "Java, C/C++ (Knowledge level)"
       ]
     },
     {
       "name": "Professional",
       "keywords": [
-        "Passion",
-        "Responsible",
-        "Sharing / Team Player",
-        "Strong Problem Solver"
+        "Passion & Responsible",
+        "Quick learner & Problem Solver",
+        "Sharing & Team Player"
       ]
     }
   ],
   "work": [
     {
-      "company": "Ant Finicial",
-      "website": "https://antfin.com",
-      "position": "FrontEnd Specialist",
+      "company": "Ant Group",
+      "website": "https://antgroup.com",
+      "position": "Senior FrontEnd Engineer",
       "location": "Beijing",
       "time": "Jan 2018 ~ July 2020",
       "startDate": "2018.01",
       "endDate": "2020.07",
-      "description": "Responsible for developing the front-end UI system & JavaScript third-party SDK of the one-stop A/B Testing platform, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial.",
-      "highlights": [
-        "ABTest",
-        "中台建设 MiddlePlatform",
-        "数据可视化 DataVisualization",
-        "Open Platform",
-        "ThirdParty JavaScript SDK",
-        "To B",
-        "协助数据科学家、后端、产品同学",
-        "同时主导面向三方开放、降低实验门槛相关工作"
-      ]
+      "description": [
+        "Responsible for the front-end development of \"Darwin\" -- an internal one-stop A/B testing platform for Ant Group.",
+        "Designed and carried out the front-end of Darwin A/B testing platform and runtime experiment SDK in an all-around way to fulfill the UI experiments' value, implemented and perfected the full-link front-end A/B Testing solution from 0 to 1.",
+        "Covered all scenarios of front-end experiments of Ant Group, helping businesses to use A/B testing adequately, and boosted data-driven business optimization and growth."
+      ],
+      "highlights": []
     },
     {
       "company": "Meituan",
@@ -80,7 +75,11 @@
       "time": "Oct 2017 ~ Jan 2018",
       "startDate": "2017.10",
       "endDate": "2018.01",
-      "description": "Responsible for developing the front-end UI system of the map data-platform in Meituan.",
+      "description": [
+        "Responsible for the development and maintenance of Map-Gaia front-end of Meituan's internal map data platform, and realized the functions of map data production, management, publishing, viewing/editing map POI data, etc., helping operations to edit better and maintain map data",
+        "Accomplished the platform front-end business logic by using `Vue` + `Vuex` + `ElementUI`",
+        "Implemented the map data-visualization: realized the function of displaying the map base layer and POI data by using Leaflet, achieved the customized map editing feature based on the custom development of `iD` editor."
+      ],
       "highlights": ["Map", "Data Platform"]
     },
     {
@@ -91,8 +90,11 @@
       "time": "July 2015 ~ Sep 2017",
       "startDate": "2015.07",
       "endDate": "2017.09",
-      "description": "Responsible for developing and mantaining the PC website and html5 mobile pages, especially the account system",
-      "highlights": ["PC", "To C", "mobile"]
+      "description": [
+        "Responsible for the development and maintenance of PC & Mobile & Hybrid front-end pages of Douban, including Douban Movie, Douban Books, Douban Music, SNS, account system, etc. Implemented new features while continuously refactoring and optimizing, improved product iteration efficiency and user experience, and serving hundreds of millions of users.",
+        "Achieved the front-end development of the whole website account system (Mobile and Hybrid) by using `React`, integrated the Account system of Douban's multiple APP platforms(Douban APP, Douban Read, Douban FM, Douban Movie) and were compatible with multi-version and multi-system"
+      ],
+      "highlights": []
     }
   ],
   "projects": [
@@ -183,19 +185,7 @@
       ],
       "url": "https://m.douban.com"
     },
-    {
-      "type": 0,
-      "hide": true,
-      "title": "SNS 社区",
-      "time": "2015.12 - Present",
-      "description": "参与的大型传统 Web 项目开发，即豆瓣 Web 主站，包括广播、日记和用户主页等",
-      "highlights": [
-        "使用`jQuery` 编写转播对话框插件，开发了 Web 广播转播功能，同时对历史遗留代码进行了重构",
-        "在传统 Web 项目应用组件化思想，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 Mako 模块函数，达到跨项目复用，例如对全站的 `UserCard` 的 HTML & CSS & JS 做了封装，可以跨项目被社区 / 条目等项目复用，提升开发效率",
-        "技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`"
-      ],
-      "url": "https://www.douban.com/"
-    },
+
     {
       "type": 1,
       "title": "每日鸡血 Inspiring Me",
@@ -262,7 +252,7 @@
     },
     {
       "language": "English",
-      "fluency": "Conversational"
+      "fluency": "Working knowledge"
     }
   ],
   "interests": [
@@ -278,8 +268,8 @@
         "Lifelong learners and keeps curiosity about the world",
         "Tool enthusiast / efficiency enthusiast / Vimer",
         "Have aesthetic design ability, obsessed with all beautiful designs",
-        "Amateurs like reading / taking pictures / listening to music, doing fitness",
-        "Life ideal: Neat."
+        "Amateurs like reading / taking pictures / listening to music, doing fitness and cooking",
+        "Life tenet: Work hard, play hard."
       ]
     },
     {

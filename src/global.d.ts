@@ -67,7 +67,7 @@ declare module Resume {
     picture: string
     phone: string
     website: string
-    summary: string
+    summary: string | string[]
     location: Location
     social: Social[]
   }

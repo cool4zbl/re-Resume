@@ -1,5 +1,5 @@
 import React from 'react'
-import BaseList from '../BaseList'
+import BaseList, { BaseListUL } from '../BaseList'
 import { transformText } from '../utils'
 import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
@@ -47,11 +47,7 @@ function Projects({
           })}
         />
         <div>{transformText(item.description)}</div>
-        <ul style={{ paddingLeft: '2rem' }}>
-          {item.highlights.map(high => (
-            <li key={high}>{transformText(high)}</li>
-          ))}
-        </ul>
+        <BaseListUL dataSource={item.highlights} />
       </BaseList.Item>
     )
   }

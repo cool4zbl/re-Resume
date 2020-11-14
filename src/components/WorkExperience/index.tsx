@@ -1,8 +1,11 @@
 import React from 'react'
-import BaseList from '../BaseList'
+import BaseList, { BaseListUL } from '../BaseList'
 import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
-import { transformText } from '../utils'
 
+/**
+ * TODO: two style,
+ * one is emphasize `job title`, another is emphasize the `company`.
+ * */
 const WorkExperience = ({
   dataSource,
 }: Resume.CommonListProps<Resume.Work>): React.FC => {
@@ -30,7 +33,8 @@ const WorkExperience = ({
             end: item.endDate,
           })}
         />
-        <div>{transformText(item.description)}</div>
+
+        <BaseListUL dataSource={item.description} />
       </BaseList.Item>
     )
   }

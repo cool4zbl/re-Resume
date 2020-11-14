@@ -1,6 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 import Heading, { SectionHeading } from '../Heading'
+import { transformText } from '../utils'
 import LocaleContext, { Locale } from '../provider/LocaleContext'
 import styles from './index.less'
 
@@ -105,6 +106,33 @@ function BaseList<T>({
         {children}
       </div>
     </section>
+  )
+}
+
+export interface BaseListULProps<T> {
+  dataSource?: T[]
+  className?: string
+  children?: React.ReactNode
+  style?: React.CSSProperties
+}
+
+export function BaseListUL<T>({
+  dataSource = [],
+  className,
+  children,
+  ...rest
+}: BaseListULProps<T>): React.ReactNode {
+  const cls = classnames(className)
+
+  return (
+    <ul {...rest} className={cls} style={{ paddingLeft: '2rem' }}>
+      {dataSource.map(data => (
+        <li key={data} style={{ marginBottom: '.2rem' }}>
+          {transformText(data)}
+        </li>
+      ))}
+      {children}
+    </ul>
   )
 }
 
