@@ -93,7 +93,7 @@ function BaseList<T>({
   let childrenContent = null
   if (typeof renderItem === 'function') {
     const dataSourceItems = dataSource.map((ds, index) => renderItem(ds, index))
-    childrenContent = <div className={cls}>{dataSourceItems}</div>
+    childrenContent = <div>{dataSourceItems}</div>
     // childrenContent = React.Children.map(dataSourceItems, (child) => (
     // ))
   }

@@ -1,6 +1,7 @@
 @import '../style/vars';
 
 .listWrapper {
+  overflow: hidden;
   // TODO: use `margin` when printing
   padding: 1rem 0;
 }
@@ -22,6 +23,7 @@
 }
 
 .meta {
+  overflow: hidden;
   position: relative;
   margin-bottom: 0.25rem;
 }
@@ -39,15 +41,19 @@
 }
 
 .itemDescription {
+  clear: both;
   font-size: 0.85rem;
   color: @gray1;
 }
 
 @media only screen and (min-width: @breakpoint-lg) {
+  .itemTitle {
+    float: left;
+    max-width: 75%;
+  }
   /** time or ... */
   .extra {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
+    // max-width: 25%;
   }
 }
