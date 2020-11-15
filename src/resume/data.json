@@ -102,18 +102,41 @@
       "type": 0,
       "title": "Darwin \"Multi-terminal and Multi-domain\": Open A/B Testing middle-platform from 0 to 1",
       "time": "Jan 2018 ~ Apr 2020",
-      "startDate": "2018.01",
+      "startDate": "2018.06",
       "endDate": "2020.04",
-      "description": "Developed Darwin A/B Testing Platform UI, and built the whole open SDK system (including Vanilla JS SDK and component SDK) from 0 to 1, providing a SaaS to other 10+ business groups, 100+ system in AntFinicial",
+      "description": "Opened middle-platform to reduce the cost and lower the threshold of UI experiments",
       "highlights": [
-        "Realized the *data-visualization*",
-        "**TechStack:** `TypeScript` + `React` + `AntDesign` + `AntV`"
+        "Cooperated with back-ends, through SaaS-based diversion service, combined with lightweight front-end SDK, designed and implemented Darwin A/B Testing runtime SDK: JS SDK & mini-program SDK & A/B component (including React, Vue, mini-program) & Egg plugin(Node.js), which closely followed the eco-system of Ant Group front-end applications and provided a unified and easy-use front-end A/B access solution, including Alipay H5, mobile H5, and mini-program scenarios",
+        "The JS SDK's main functions included A/B testing diversion parameters acquisition, A/B testing data collecting/logging, audience configuring, caching, etc.",
+        "Analyzed the logging data of SDK, refined its performance. In the end, the SDK size is 43kB(8KB after gzip), and the success rate of getting A/B parameters is 95% - 99.9%, smoothing out various end differences and providing a unified API to the SDK user; SDK had been downloaded 20,000+ times and had served 10+ BU and 1000+ experiments among Ant Groups. Plus, it had experienced tens of millions of traffic tests",
+        "Led the cooperation between Darwin and various third-party platforms, like \"Conjunction with Morpho (An internal building platform)\", which helped operations use the A/B testing tool in marketing activities and efficiently; Developed a mini-program IDE A/B testing extension to provide A/B testing ability to developers; Supported opening by functional module, etc.",
+        "Integrated by the amount to 6+ business units, 30+ internal platform products, and empowered AB Testing ability in the business",
+        "**Tech Stack**: `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
       ],
       "url": ""
     },
     {
       "type": 0,
+      "title": "Darwin: Platform construction of scientific authority from 1 to 10",
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.04",
+      "description": "Developed the platform to build various A/B testing capabilities",
+      "highlights": [
+        "Built the one-stop A/B testing platform Darwin as a front-end core developer with PMs, UI designers, back-ends, and data scientists(30 colleagues in total)",
+        "Landed and improved various basic and high-level A/B testing capabilities, such as the life cycle of an A/B test, metric system productization, automatic decision-making, real-time monitoring, multi-dimensional analysis, and experiments-dashboard, etc., helping the platform to realize the construction of scientific authority platform from 1 to 10",
+        "Carried out code clean continuously and had unified the tech stack, solved heavy historical burden and chaotic architecture, and abstracted the domain model layer. Packaged some fundamental or data visualization components based on Ant Design and Ant Vision",
+        "Established the quality assurance system (front-end monitoring, promotion of TS application, etc.), which resulted in improving R&D efficiency by 30%",
+        "Surveyed some famous A/B testing platforms, explored and enhanced some useful features with designers to continuously optimize our user experience, made the platform easy to use and gained a good user reputation",
+        "Tech Stack: `TypeScript` + `React` + `AntDesign` + `AntVision`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 0,
+      "hide": true,
       "title": "Map-Gaia - A Data-Platform of Map",
+      "time": "Sep 2017 ~ Jan 2018",
       "startDate": "2017.09",
       "endDate": "2018.01",
       "description": "The basic data platform of map (Web) is responsible for the development, including the functions of producing, managing and publishing map related data, and viewing/editing map POI data. ",
@@ -125,106 +148,19 @@
       "url": ""
     },
     {
-      "type": 0,
-      "title": "Creator 创作者社区",
-      "time": "2017.05 - 2017.09",
-      "startDate": "2017.05",
-      "endDate": "2017.09",
-      "description": "负责开发的创作者社区平台（Web + Mobile + Hybrid），包括创作者作品申请、作品管理后台及创作者作品展示功能。",
-      "highlights": [
-        "使用 `React` + `Redux` 开发的Web + Mobile + Hybrid **多端SPA**，通过 Ajax 与后端进行所有数据通信；",
-        "使用`Redux` + `normalizr` + `Immutable.js` 作**状态管理**，实现复杂的页面交互；",
-        "技术栈： `React` + `React-Router` + `Redux` + `Webpack`"
-      ],
-      "url": "https://www.douban.com/verify/apply/"
-    },
-    {
-      "type": 0,
-      "title": "Account System",
-      "time": "2015.12 - 2017.09",
-      "startDate": "2015.12",
-      "endDate": "2017.09",
-      "description": "负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。",
-      "highlights": [
-        "使用 `React` 开发的 Mobile + Hybrid 端 **SPA**， 统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；",
-        "使用 `Webpack` `code-splitting` 技术使各个功能的页面代码**按需加载**，页面打开时间减少了 20%，提高了用户体验；",
-        "模块化开发组件且加入**单元测试**，降低线上出错概率的同时提高了开发效率",
-        "使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6",
-        "技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`"
-      ],
-      "url": "https://accounts.douban.com/app/register#/"
-    },
-    {
-      "type": 0,
-      "hide": true,
-      "title": "Zerkalo 书影音条目长评",
-      "time": "2016.04 - 2016.08",
-      "startDate": "2016.04",
-      "endDate": "2016.08",
-      "description": "负责开发的传统 PC 页面重构，应用新设计重构豆瓣全站 Web 端条目，包括书影音、游戏、舞台剧等所有条目的长评页面，并加入长评赞赏新功能。",
-      "highlights": [
-        "**三个月重构项目**，整合之前分散在五个大型项目中的长评 `Mako`模板代码，按页面模块布局拆分并基本重写了样式文件；",
-        "将之前超两千行的主站 `douban.js` 按功能模块拆分，使用 Vanilla JavaScript 重构需要的功能代码并`Webpack` 打包加载，提升页面的性能，方便调试和维护；",
-        "交互上把所有传统表单提交操作改为 Ajax 与后端通信，提升用户体验，并解决了多个项目不同域名下的 **CORS 跨域**问题；",
-        "技术栈：`Mako` + `SCSS` + `ES6` + `Webpack`"
-      ],
-      "url": "https://movie.douban.com/review/8004640/"
-    },
-    {
-      "type": 0,
-      "title": "Talion 豆瓣手机版",
-      "time": "2015.12 - 2017.09",
-      "startDate": "2015.12",
-      "endDate": "2017.09",
-      "description": "参与开发的移动版的豆瓣，具备 PC Web 有的基本功能",
-      "highlights": [
-        "对整个移动端进行了 **SEO** 和分享至微信的优化，给整站带来更多的流量及给用户更好的分享效果；",
-        "应用模块化、组件化思想开发传统移动端页面，广泛使用 `ES6 template literals` + `Fetch API` + `SCSS`，根据设计稿开发对应组件， 方便复用和快速生成页面，提高开发效率；",
-        "一些页面的 view 层通过自己编写 Python 调接口实现",
-        "技术栈：`Mako` + `SCSS` + `ES6` + `Python`"
-      ],
-      "url": "https://m.douban.com"
-    },
-
-    {
-      "type": 1,
-      "title": "每日鸡血 Inspiring Me",
-      "time": "2017.07",
-      "startDate": "2017.07",
-      "endDate": "2017.07",
-      "description": "一个带来每日正能量的页面，展示随机生成的鼓舞人心的图片和名人名言；",
-      "highlights": [
-        "技术栈： `React` + `styled-component` + `Webpack` + `Unsplash API`"
-      ],
-      "url": "http://zhangbinliu.me/inspiring-me",
-      "github": "https://github.com/cool4zbl/inspiring-me"
-    },
-    {
       "type": 1,
       "title": "re-Resume 2.0",
-      "time": "2017.08",
-      "startDate": "2017.08",
-      "endDate": "2017.08",
-      "description": "一个排版良好，具有设计感的响应式简历模板生成器；",
+      "time": "Aug 2020 ~ Oct 2020",
+      "startDate": "2020.08",
+      "endDate": "2020.10",
+      "description": "Yet another responsive resume template-builder with good typography and design sense.",
       "highlights": [
-        "原子化组件，简洁、简单，支持高度自定义；",
-        "技术栈：`TypeScript` + `React`"
+        "Concise, simple, and configurable, without excessive dependence",
+        "SEO optimization",
+        "**Tech stack**: `TypeScript` + `React`"
       ],
       "url": "http://zhangbinliu.me/resume",
       "github": "https://github.com/cool4zbl/resume"
-    },
-    {
-      "type": 1,
-      "title": "Ghost-render",
-      "startDate": "2017.06",
-      "endDate": "2017.06",
-      "description": "一个使用 Ghost 及其默认主题 Casper 的静态博客生成器 ",
-      "highlights": [
-        "对生成博客文章链接格式进行了优化，并修复一些小 Bug",
-        "技术栈：`Node`"
-      ],
-      "url": "https://github.com/cool4zbl/ghost-render",
-      "github": "https://github.com/cool4zbl/ghost-render"
     }
   ],
   "education": [
@@ -265,10 +201,10 @@
     {
       "name": "Hobbies",
       "description": [
-        "Lifelong learners and keeps curiosity about the world",
-        "Tool enthusiast / efficiency enthusiast / Vimer",
-        "Have aesthetic design ability, obsessed with all beautiful designs",
-        "Amateurs like reading / taking pictures / listening to music, doing fitness and cooking",
+        "A lifelong learner, always keeping curious about the world",
+        "Tool enthusiast / Productivity-driven(Efficiency-driven) / Vimer",
+        "Obsessed with all aesthetic designs",
+        "Like reading, taking pictures, listening to music and doing fitness in spare time",
         "Life tenet: Work hard, play hard."
       ]
     },
