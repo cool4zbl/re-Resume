@@ -11,9 +11,17 @@ interface HeadProps {
 const Head: React.FC<HeadProps> = ({ basics = {} }: HeadProps) => {
   if (!basics) return null
 
-  const { name, label, picture, summary: desc, website, url } = basics
+  const {
+    name,
+    label,
+    title: position,
+    picture,
+    summary: desc,
+    website,
+    url,
+  } = basics
 
-  const title = `${name} - ${label} - resume`
+  const title = `${name} - ${label || position} - resume`
   // Redirect to resume url or personal website.
   const resumeURL = url || website
 
