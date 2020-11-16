@@ -2,7 +2,7 @@
   "//": "@see https://jsonresume.org/schema/",
   "///": "Chinese version",
   "basics": {
-    "name": "ZBL",
+    "name": "张滨浏",
     "title": "高级前端工程师",
     "experience": "5+ 经验",
     "email": "i@zhangbinliu.me",
@@ -269,12 +269,12 @@
   ],
   "languages": [
     {
-      "language": "Chinese",
-      "fluency": "Native"
+      "language": "中文",
+      "fluency": "母语"
     },
     {
-      "language": "English",
-      "fluency": "Conversational"
+      "language": "英语",
+      "fluency": "中等水平"
     }
   ],
   "interests": [

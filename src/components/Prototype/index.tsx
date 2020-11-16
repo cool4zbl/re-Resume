@@ -19,13 +19,9 @@ export default function ProtoType({
         <BaseList
           dataSource={currentDataSource}
           title={locale.title}
-          renderItem={(item): React.ReactNode => {
-            return (
-              <BaseListItem key={item} style={{ marginBottom: '.3rem' }}>
-                {item}
-              </BaseListItem>
-            )
-          }}
+          renderItem={(item): React.ReactNode => (
+            <BaseListItem key={item}>{item}</BaseListItem>
+          )}
         />
       )}
     </LocaleReceiver>

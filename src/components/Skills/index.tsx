@@ -1,5 +1,5 @@
 import React from 'react'
-import BaseList, { BaseListProps } from '../BaseList'
+import BaseList, { BaseListProps, BaseListUL } from '../BaseList'
 import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
 const Skills = ({ dataSource }: BaseListProps<Resume.Skill>) => {
@@ -7,13 +7,7 @@ const Skills = ({ dataSource }: BaseListProps<Resume.Skill>) => {
     return (
       <BaseList.Item key={item.name}>
         <BaseList.Item.Meta title={item.name} />
-        <ul className="small-text" style={{ listStyle: 'none' }}>
-          {item.keywords.map(word => (
-            <li key={word} style={{ marginBottom: '.2rem' }}>
-              {word}
-            </li>
-          ))}
-        </ul>
+        <BaseListUL style={{ paddingLeft: 0 }} dataSource={item.keywords} />
       </BaseList.Item>
     )
   }

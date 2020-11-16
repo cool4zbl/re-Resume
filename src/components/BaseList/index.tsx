@@ -120,12 +120,13 @@ export function BaseListUL<T>({
   dataSource = [],
   className,
   children,
+  style,
   ...rest
 }: BaseListULProps<T>): React.ReactNode {
   const cls = classnames(className)
 
   return (
-    <ul {...rest} className={cls} style={{ paddingLeft: '2rem' }}>
+    <ul {...rest} className={cls} style={{ paddingLeft: '2rem', ...style }}>
       {dataSource.map(data => (
         <li key={data} style={{ marginBottom: '.2rem' }}>
           {transformText(data)}
