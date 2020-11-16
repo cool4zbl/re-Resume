@@ -127,8 +127,15 @@ export function BaseListUL<T>({
 
   return (
     <ul {...rest} className={cls} style={{ paddingLeft: '2rem', ...style }}>
-      {dataSource.map(data => (
-        <li key={data} style={{ marginBottom: '.2rem' }}>
+      {dataSource.map((data, index) => (
+        <li
+          key={data}
+          style={
+            index !== dataSource.length - 1
+              ? { marginBottom: '.2rem' }
+              : undefined
+          }
+        >
           {transformText(data)}
         </li>
       ))}

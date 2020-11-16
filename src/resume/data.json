@@ -109,7 +109,7 @@
       "highlights": [
         "Cooperated with back-ends, through SaaS-based diversion service, designed and implemented Darwin A/B testing front-end runtime SDK: JS SDK & mini-program SDK & A/B component (including React, Vue, Alipay mini-program) & Egg plugin(Node.js), which closely followed the eco-system of Ant Group front-end apps and provided a unified and easy-use front-end A/B access solution",
         "JS SDK's main functions included A/B testing diversion parameters acquisition, A/B testing data collecting/logging, audience configuring, caching, etc. Analyzed logging data and refined the performance. In the end, SDK size was 43kB(8kB after gzip), and the success rate of getting parameters was 95%-99.9%, smoothing out various end differences; SDK had been downloaded above 20,000+ times, serving 10+ BUs, 1,000+ experiments, and had experienced tens of millions of traffic tests",
-        "Led the cooperation between Darwin and various third-party platforms, like \"Conjunction with Morpho (An internal building platform),\" which helped operations use the A/B testing tool in marketing activities and efficiently; Supported opening by functional module, etc.",
+        "Led the cooperation between Darwin and various third-party platforms, like \"Darwin conjunction with Morpho (An internal page-building platform),\" and Alipay mini program IDE A/B testing extension, to help operations and developers respectively",
         "Integrated by the amount to 6+ business units, 30+ internal platform products, and empowered AB Testing ability in the business",
         "**Tech Stack**: `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
       ],
@@ -127,23 +127,8 @@
         "Landed and improved various basic and high-level A/B testing capabilities, such as the life cycle of A/B tests, metric system productization, automatic decision-making, real-time monitoring, multi-dimensional analysis, and dashboard, etc., helping the platform to realize the construction of scientific authority platform from 1 to 10",
         "Carried out code clean continuously and had unified the tech stack, solved heavy historical burden and chaotic architecture, and abstracted the domain model layer. Packaged some fundamental or data visualization components based on Ant Design and Ant Vision",
         "Established the quality assurance system (front-end monitoring, promotion of TypeScript, etc.), which resulted in improving R&D efficiency by 30%",
-        "Surveyed some famous A/B testing platforms, explored and enhanced some useful features with designers to continuously optimize our user experience, made the platform easy to use and gained a good user reputation",
+        "Surveyed 5+ famous A/B testing platforms, explored and enhanced some useful features with designers, made the platform easy to use and gained a good user reputation",
         "**Tech Stack**: `TypeScript` + `React` + `AntDesign` + `AntVision`"
-      ],
-      "url": ""
-    },
-    {
-      "type": 0,
-      "hide": true,
-      "title": "Map-Gaia - A Data-Platform of Map",
-      "time": "Sep 2017 ~ Jan 2018",
-      "startDate": "2017.09",
-      "endDate": "2018.01",
-      "description": "The basic data platform of map (Web) is responsible for the development, including the functions of producing, managing and publishing map related data, and viewing/editing map POI data. ",
-      "highlights": [
-        "Use `Vue` to realize the basic business logic of map basic data platform SPA Web",
-        "Realize the visualization of map * * data * *: use Leaflet to realize the display function of map base map and POI data, and use iD editor for secondary development to realize the map editing function",
-        "**TechStack:** `Vue` + `Vuex` + `Leaflet` + `iD` + `Element-UI`"
       ],
       "url": ""
     },
