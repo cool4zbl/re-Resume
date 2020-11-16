@@ -56,6 +56,12 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
     locale,
   }
 
+  const DownloadBtn = () => (
+    <button className="btn" onClick={() => console.log('OPDF')}>
+      PDF
+    </button>
+  )
+
   return (
     <>
       <Head basics={basics} />
@@ -63,7 +69,7 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
         <div className={styles.wrapper}>
           <div className={styles.toolbar}>
             <LangSwitch {...configProps} />
-            {/* <button>Download</button> */}
+            <DownloadBtn />
           </div>
           <article className={styles.resumeWrapper}>
             <header className={styles.header}>

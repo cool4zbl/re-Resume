@@ -106,20 +106,19 @@
     color: @gray1; //#9e9e9e;
   }
 
-  // TODO:
-  @media print {
-    html {
-      font-size: 10px;
+  .btn {
+    &:active,
+    &:focus {
+      outline: 0;
     }
-    body {
-      border: 0;
-    }
-    table,
-    pre {
-      page-break-inside: avoid;
-    }
-    pre {
-      word-wrap: break-word;
-    }
+
+    width: 80px;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    color: @pigeon-red;
+    height: 32px; // 1.6rem;
+    border-radius: 2px;
+    padding: 0 6px;
   }
 }

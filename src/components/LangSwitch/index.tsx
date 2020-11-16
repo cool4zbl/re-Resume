@@ -1,6 +1,5 @@
 import React from 'react'
 import { Locale, ILocale } from '../provider/LocaleContext'
-import styles from './index.less'
 
 interface LangSwitchProps {
   locale: ILocale
@@ -10,7 +9,7 @@ interface LangSwitchProps {
 export default function LangSwitch({ locale, changeLocale }: LangSwitchProps) {
   return (
     <button
-      className={styles.btn}
+      className="btn"
       value={locale.locale}
       onClick={(e: Event) => changeLocale(e.target.value)}
     >

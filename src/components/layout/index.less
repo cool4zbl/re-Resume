@@ -37,6 +37,9 @@
   background: @body-bg-color;
   padding: 10px 0;
   text-align: right;
+  button {
+    margin-left: 4px;
+  }
 }
 
 .contentWrapper {
@@ -115,3 +118,25 @@
 //     }
 //   }
 // }
+
+// TODO:
+@media print {
+  .toolbar {
+    display: none;
+  }
+  :global {
+    html {
+      font-size: 10px;
+    }
+    // body {
+    //   border: 0;
+    // }
+    table,
+    pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+  }
+}
