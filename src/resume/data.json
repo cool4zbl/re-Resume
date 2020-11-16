@@ -128,7 +128,7 @@
         "Carried out code clean continuously and had unified the tech stack, solved heavy historical burden and chaotic architecture, and abstracted the domain model layer. Packaged some fundamental or data visualization components based on Ant Design and Ant Vision",
         "Established the quality assurance system (front-end monitoring, promotion of TS application, etc.), which resulted in improving R&D efficiency by 30%",
         "Surveyed some famous A/B testing platforms, explored and enhanced some useful features with designers to continuously optimize our user experience, made the platform easy to use and gained a good user reputation",
-        "Tech Stack: `TypeScript` + `React` + `AntDesign` + `AntVision`"
+        "**Tech Stack**: `TypeScript` + `React` + `AntDesign` + `AntVision`"
       ],
       "url": ""
     },
@@ -157,7 +157,7 @@
       "highlights": [
         "Concise, simple, and configurable, without excessive dependence",
         "SEO optimization",
-        "**Tech stack**: `TypeScript` + `React`"
+        "**Tech Stack**: `TypeScript` + `React`"
       ],
       "url": "http://zhangbinliu.me/resume",
       "github": "https://github.com/cool4zbl/resume"

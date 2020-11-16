@@ -3,7 +3,7 @@ import BaseList, { BaseListItem } from '../BaseList'
 import LocaleReceiver, { ILocale } from '../provider/LocaleReceiver'
 
 /* TODO: 打印需要 */
-// const qrCodeSrc = require('../../assets/zbl_resume_qrcode.png')
+const qrCodeSrc = require('../../assets/zbl_resume_qrcode.png')
 
 export default function Thanks({
   dataSource,
@@ -20,9 +20,11 @@ export default function Thanks({
             </BaseListItem>
           )}
         >
-          {/* <BaseListItem key="image" style={{ marginBottom: '.3rem' }}>
-        <img src={qrCodeSrc} width="100" height="100" />
-      </BaseListItem> */}
+          <div className="qrcode">
+            <BaseListItem key="image" style={{ marginBottom: '.3rem' }}>
+              <img src={qrCodeSrc} width="80" height="80" />
+            </BaseListItem>
+          </div>
         </BaseList>
       )}
     </LocaleReceiver>

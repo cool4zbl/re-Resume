@@ -29,7 +29,7 @@ export default function Header(props: HeaderProps): React.FC {
         <div className={styles.information}>
           {hidePicture && (
             <img
-              className={styles.avatar}
+              className={`${styles.avatar} avatar`}
               src={picture}
               alt={`${name} avatar`}
             />
@@ -55,7 +55,6 @@ export default function Header(props: HeaderProps): React.FC {
 
   return (
     <div className={styles.headerWrapper}>
-      {/* <BigName /> */}
       <Header />
     </div>
   )
