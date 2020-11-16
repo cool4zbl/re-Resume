@@ -133,15 +133,19 @@
     html {
       font-size: 10pt;
       line-height: 1.2;
-      font-family: 'Times', 'Avenir', Helvetica, sans-serif;
+      font-family: @print-font;
     }
     html.cn-mode {
-      font-size: 10pt;
+      font-family: @print-font-cn;
+      line-height: 1.4;
     }
     body {
       background: white;
       border: 0;
       padding: 0;
+    }
+    .small-text {
+      font-size: 9pt;
     }
     table,
     pre {
