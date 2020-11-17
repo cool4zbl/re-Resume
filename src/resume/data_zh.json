@@ -69,9 +69,9 @@
       "startDate": "2017.10",
       "endDate": "2018.01",
       "description": [
-        "负责美团内部地图数据平台 Map-Gaia 前端开发与维护，实现了地图数据生产、管理、发布、查看 / 编辑地图 POI 数据等功能，帮助运营更好地编辑维护地图数据",
-        "使用 `Vue` + `Vuex` + `Element-UI` 实现平台前端业务逻辑；",
-        "实现地图**数据可视化**：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，同时基于 `iD` 编辑器二次开发，实现定制化的地图编辑功能；"
+        "负责美团内部地图数据平台 Map-Gaia 前端开发与维护，实现了地图数据生产和管理、查看 / 编辑地图 POI 数据等功能，帮助运营更好地编辑维护地图数据",
+        "使用 `Vue` + `Vuex` + `Element-UI` 实现平台前端业务逻辑",
+        "实现地图数据可视化：使用 `Leaflet` 实现地图底图及 POI 数据展示功能，同时基于 `iD` 编辑器二次开发，实现定制化的地图编辑功能"
       ],
       "highlights": ["Map", "Data Platform"]
     },
@@ -85,7 +85,7 @@
       "endDate": "2017.09",
       "description": [
         "负责大豆瓣（包括书影音、社区、账号系统等）PC & Mobile & Hybrid 前端页面开发与维护，支持新功能的同时不断重构和优化，提高了产品迭代效率及用户体验，服务于亿级用户",
-        "使用 `React` 开发了全站帐号系统移动端（Mobile + Hybrid)，统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；"
+        "使用 `React` 开发了全站帐号系统移动端（Mobile + Hybrid)，统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容"
       ],
       "highlights": []
     }
@@ -94,6 +94,7 @@
     {
       "type": 0,
       "title": "达尔文(Darwin) “多端多域”：从 0 到 1 的 A/B 实验中台开放",
+      "tags": ["darwin", "antfin"],
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
@@ -110,6 +111,7 @@
     {
       "type": 0,
       "title": "达尔文(Darwin)：从 1 到 10 的科学权威的 A/B 实验平台建设",
+      "tags": ["darwin", "antfin"],
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
@@ -125,6 +127,7 @@
     {
       "type": 1,
       "title": "re-Resume 2.0",
+      "tags": ["resume", "person"],
       "time": "Aug 2020 ~ Oct 2020",
       "startDate": "2020.08",
       "endDate": "2020.10",
