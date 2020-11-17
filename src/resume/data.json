@@ -93,7 +93,7 @@
       "endDate": "2017.09",
       "description": [
         "Responsible for the development and maintenance of PC & Mobile & Hybrid front-end pages of Douban, including Douban Movie, Douban Books, Douban Music, SNS, account system, etc. Implemented new features while continuously refactoring and optimizing, improved product iteration efficiency and user experience, and serving hundreds of millions of users",
-        "Achieved the front-end development of the whole website account system (Mobile and Hybrid) by using `React`, integrated the Account system to Douban's multiple APP platforms(Douban APP, Douban Read, Douban FM, Douban Movie) and were compatible with multi-version and multi-system"
+        "Achieved the front-end development of the whole website account system (Mobile and Hybrid) by using `React`, integrated the Account system to Douban's multiple APP platforms(Douban APP & Read & Movie & FM) and were compatible with multi-version and multi-system"
       ],
       "highlights": []
     }

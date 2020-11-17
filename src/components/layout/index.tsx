@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect } from 'react'
 import Head from '../Head'
 import Footer from '../Footer'
 import Header from '../Header'
@@ -24,6 +24,37 @@ interface LayoutProps {
   [key: string]: any
 }
 
+// TODO: mv to utils
+const CN_LANG_STR = 'lang=zh'
+const CN_CLASS = 'cn-mode'
+const toggleCNClass = (attach: boolean) => {
+  const CNClass = CN_CLASS
+  const htmlTag = document.querySelector('html')
+  if (attach) {
+    htmlTag?.classList.add(CNClass)
+    return
+  }
+  htmlTag?.classList.remove(CNClass)
+}
+
+const toggleQueryString = (str: string, isAppended: boolean) => {
+  const searchStr = window.location.search
+
+  if (isAppended) {
+    if (!searchStr.includes(str)) {
+      location.search = `${searchStr}${
+        searchStr.includes('=') ? '&' : ''
+      }${str}`
+    }
+    return
+  }
+  if (searchStr.includes(str)) {
+    location.search =
+      searchStr.slice(0, searchStr.indexOf(str)) +
+      searchStr.slice(searchStr.indexOf(str) + str.length + 1)
+  }
+}
+
 export default function Layout({ data }: LayoutProps): React.ReactNode {
   console.log('^^^ layout resumeData', data)
   const [locale, setLocale] = React.useState<ILocale>({ ...defaultLocale })
@@ -31,26 +62,24 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
   const resumeData = data[locale.locale]
   const { basics } = resumeData
 
+  const changeLocaleCN = () => {
+    setLocale({ ...zh })
+    toggleCNClass(true)
+    toggleQueryString(CN_LANG_STR, true)
+  }
+  const changeLocaleDefault = () => {
+    setLocale({ ...defaultLocale })
+    toggleCNClass(false)
+    toggleQueryString(CN_LANG_STR, false)
+  }
+
   const changeLocale = (localeCode: Locale): void => {
     if (localeCode === Locale.enUS) {
-      setLocale({ ...zh })
-      toggleCNClass(true)
+      changeLocaleCN()
       return
     }
-    toggleCNClass(false)
-    setLocale({ ...defaultLocale })
+    changeLocaleDefault()
   }
-
-  const toggleCNClass = (attach: boolean) => {
-    const CNClass = 'cn-mode'
-    const htmlTag = document.querySelector('html')
-    if (attach) {
-      htmlTag?.classList.add(CNClass)
-      return
-    }
-    htmlTag?.classList.remove(CNClass)
-  }
-
   const configProps = {
     changeLocale,
     locale,
@@ -61,6 +90,12 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
       PDF
     </button>
   )
+
+  useEffect(() => {
+    if (window.location.search.includes(CN_LANG_STR)) {
+      setLocale({ ...zh })
+    }
+  }, [])
 
   return (
     <>
