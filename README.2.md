@@ -1,6 +1,6 @@
 # re-resume
 
-v2 is out, with a breaking change.
+v2 is coming, with a breaking change.
 
 ### Design Principles
 
@@ -13,9 +13,10 @@ v2 is out, with a breaking change.
 
 - Intl with responsive font size
 - theme config(ing)
+- auto export pdf
 
 ### Tech Stack
 
 - react
 - typescript
-- webpack (maybe not)
+- webpack

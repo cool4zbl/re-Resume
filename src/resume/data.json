@@ -142,7 +142,7 @@
       "highlights": [
         "Concise, simple, and configurable, without excessive dependence",
         "SEO optimization",
-        "**Tech Stack**: `TypeScript` + `React`"
+        "**Tech Stack**: `TypeScript` + `React` + `Puppeteer`"
       ],
       "url": "http://zhangbinliu.me/resume",
       "github": "https://github.com/cool4zbl/resume"
