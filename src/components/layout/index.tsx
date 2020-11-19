@@ -9,6 +9,7 @@ import LangSwitch from '../LangSwitch'
 import { Locale } from '../provider/LocaleContext'
 import { ILocale } from '../provider/LocaleReceiver'
 import { defaultLocale, zh } from '../intl'
+import { toggleClass, toggleQueryString } from '../utils'
 
 import styles from './index.less'
 
@@ -24,36 +25,8 @@ interface LayoutProps {
   [key: string]: any
 }
 
-// TODO: mv to utils
 const CN_LANG_STR = 'lang=zh'
 const CN_CLASS = 'cn-mode'
-const toggleCNClass = (attach: boolean) => {
-  const CNClass = CN_CLASS
-  const htmlTag = document.querySelector('html')
-  if (attach) {
-    htmlTag?.classList.add(CNClass)
-    return
-  }
-  htmlTag?.classList.remove(CNClass)
-}
-
-const toggleQueryString = (str: string, isAppended: boolean) => {
-  const searchStr = window.location.search
-
-  if (isAppended) {
-    if (!searchStr.includes(str)) {
-      location.search = `${searchStr}${
-        searchStr.includes('=') ? '&' : ''
-      }${str}`
-    }
-    return
-  }
-  if (searchStr.includes(str)) {
-    location.search =
-      searchStr.slice(0, searchStr.indexOf(str)) +
-      searchStr.slice(searchStr.indexOf(str) + str.length + 1)
-  }
-}
 
 export default function Layout({ data }: LayoutProps): React.ReactNode {
   console.log('^^^ layout resumeData', data)
@@ -64,12 +37,12 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
 
   const changeLocaleCN = () => {
     setLocale({ ...zh })
-    toggleCNClass(true)
+    toggleClass(CN_CLASS, true)
     toggleQueryString(CN_LANG_STR, true)
   }
   const changeLocaleDefault = () => {
     setLocale({ ...defaultLocale })
-    toggleCNClass(false)
+    toggleClass(CN_CLASS, false)
     toggleQueryString(CN_LANG_STR, false)
   }
 
@@ -93,7 +66,7 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
 
   useEffect(() => {
     if (window.location.search.includes(CN_LANG_STR)) {
-      setLocale({ ...zh })
+      changeLocaleCN()
     }
   }, [])
 
