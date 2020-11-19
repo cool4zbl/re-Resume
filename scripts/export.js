@@ -15,9 +15,9 @@ const marginCN = {
 }
 
 const marginEN = {
-  top: '.38in',
+  top: '.36in',
   right: '.4in',
-  bottom: '.38in',
+  bottom: '.36in',
   left: '.4in',
 }
 
@@ -67,7 +67,7 @@ const convert = async () => {
         args: ['--no-sandbox'],
       })
       const page = await browser.newPage()
-      const url = `${URL}?${lang === 'CN' ? 'lang=zh' : ''}`
+      const url = `${URL}?${lang === 'ZH' ? 'lang=zh' : ''}`
 
       console.log('EXPORT PDF FROM `%s`', url)
 
@@ -92,7 +92,7 @@ const convert = async () => {
       throw new Error(err)
     }
   }
-  const genPDFCN = async () => await genPDF('CN')
+  const genPDFCN = async () => await genPDF('ZH')
 
   Promise.all([genPDF(), genPDFCN()]).then(() => {
     console.log('EXPORT FINISHED.')

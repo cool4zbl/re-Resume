@@ -59,8 +59,13 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
   }
 
   const DownloadBtn = () => (
-    <button className="btn" onClick={() => console.log('OPDF')}>
-      PDF
+    <button
+      className="btn"
+      onClick={() => {
+        console.log('OPDF')
+      }}
+    >
+      <a href={`${window.location.host}`}>PDF</a>
     </button>
   )
 
