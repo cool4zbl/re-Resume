@@ -7,7 +7,7 @@
     "experience": "5+ 年",
     "email": "i@zhangbinliu.me",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
-    "phone": "185-xxxx-xxxx",
+    "phone": "185-0036-7879",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
     "summary": [
@@ -133,7 +133,8 @@
       "endDate": "2020.10",
       "description": "一个排版良好、具有设计感的响应式的简历模板生成器",
       "highlights": [
-        "无过多依赖，简洁、简单，可配置；SEO 优化",
+        "无过多依赖，简洁、简单，可配置",
+        "支持中英文格式，SEO 优化",
         "自动生成 PDF",
         "**技术栈**：`TypeScript` + `React` + `Puppeteer`"
       ],

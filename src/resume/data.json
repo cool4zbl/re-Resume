@@ -6,7 +6,7 @@
     "experience": "5+ years",
     "email": "i@zhangbinliu.me",
     "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
-    "phone": "185-xxxx-xxxx",
+    "phone": "(+86)185-0036-7879",
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
     "summary": [
@@ -141,7 +141,7 @@
       "description": "Yet another responsive resume template-builder with good typography and design sense.",
       "highlights": [
         "Concise, simple, and configurable, without excessive dependence",
-        "SEO optimization",
+        "Intl supported with SEO optimization",
         "**Tech Stack**: `TypeScript` + `React` + `Puppeteer`"
       ],
       "url": "http://zhangbinliu.me/resume",

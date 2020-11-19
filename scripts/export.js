@@ -7,6 +7,20 @@ const { setInterval } = require('timers')
 
 const URL = 'http://localhost:3000/public'
 
+const marginCN = {
+  top: '.32in',
+  right: '.28in',
+  bottom: '.32in',
+  left: '.32in',
+}
+
+const marginEN = {
+  top: '.38in',
+  right: '.4in',
+  bottom: '.38in',
+  left: '.4in',
+}
+
 const fetchPage = url => {
   return new Promise((resolve, reject) => {
     try {
@@ -31,7 +45,7 @@ const waitUntilPageLoaded = async () => {
       } catch (e) {
         // reject(e)
       }
-    }, 500)
+    }, 1000)
   }).catch(err => {
     console.log('WAIT_PAGE_LOADED ERROR ', err)
   })
@@ -70,6 +84,7 @@ const convert = async () => {
         path: `${fullDirPath}/zhangbinliu_resume${lang ? `_${lang}` : ''}.pdf`,
         format: 'A4',
         printBackground: true,
+        margin: lang ? marginCN : marginEN,
       })
 
       await browser.close()

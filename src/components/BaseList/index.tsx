@@ -39,8 +39,8 @@ export const ItemMeta: React.FC<ListItemMetaProps> = ({
 
   return (
     <div {...others} className={metaCls}>
-      {title && <Heading className={styles.itemTitle}>{title}</Heading>}
       {extra && <div className={styles.extra}>{extra}</div>}
+      {title && <Heading className={styles.itemTitle}>{title}</Heading>}
       {description && <div className={descCls}>{description}</div>}
     </div>
   )

@@ -18,7 +18,12 @@ export type IconProps = {
 // }
 
 function Icon({ icon, className, spin, ...rest }: IconProps): React.ReactNode {
-  const svgIcon = require(`!raw-loader!./icons/${icon}.svg`)
+  let svgIcon = null
+  try {
+    svgIcon = require(`!raw-loader!./icons/${icon}.svg`)
+  } catch (e) {
+    return null
+  }
 
   const spanCls = cls({
     [styles.svgWrapper]: true,

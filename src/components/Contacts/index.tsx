@@ -14,7 +14,7 @@ const ContactsIcon = ({ style, ...rest }: IconProps): React.FC => {
   return <Icon style={{ ...style, ...contactsIconStyle }} {...rest} />
 }
 export default function Contacts({ basics }: ContactsProps): React.ReactNode {
-  const { email, website, location, social } = basics
+  const { email, phone, location, social } = basics
 
   const dataSource = [
     {
@@ -23,10 +23,14 @@ export default function Contacts({ basics }: ContactsProps): React.ReactNode {
       username: email,
     },
     {
-      network: 'link',
-      url: website,
-      username: website,
+      network: 'phone',
+      username: phone,
     },
+    // {
+    //   network: 'link',
+    //   url: website,
+    //   username: website,
+    // },
     {
       network: 'map-pin',
       username: location,
