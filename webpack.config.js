@@ -9,6 +9,8 @@ const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
 const sourcePath = path.resolve(__dirname, sourceDir)
 const outputPath = path.resolve(__dirname, 'dist')
 
+console.log('======= NODE ENV ======: ', process.env.NODE_ENV)
+
 module.exports = {
   // new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
   entry: sourcePath,
@@ -53,11 +55,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'public/index.html',
+      filename: 'index.html',
       template: path.resolve(sourcePath, 'assets/index.html'),
-      templateParameters: {
-        foo: 'bar',
-      },
+      // templateParameters: {
+      //   foo: 'bar',
+      // },
     }),
   ],
 }

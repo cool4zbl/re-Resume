@@ -1,113 +1,52 @@
-# Re-Resume 🤓
+# re-Resume 🤓
 
-Another resume generator or template.
+**v2 is coming, with a breaking change especially in design.**
+
+Yet another responsive resume template-builder with good typography and design sense.
 Simple but useful.
 Instant resume with no config!
 
-[中文版自述](README_zh.md)
+## Preview & Demo
 
-### Preview
+See [Resume](http://zhangbinliu.me/resume)
 
-![Web Preview](resume_cool4zbl_web.png)
+## Design Principles
 
-## Feature
+- 极简, 无过多依赖. Simplicity matters. Concise, simple, and configurable, without excessive dependence
+- 可配置. Configurable.
 
-- Simplicity. Just a resume template
-- Typography, responsive image.
-- Atom components, with higly customize
+## Features
+
+- Responsive
+- Intl supported
+- Auto export PDF
 - SEO optimization
+- Easy deploy with github pages
+
+## Content Structure
+
+See `src/resume/data.json` or go to https://jsonresume.org/schema/
 
 ## Usage
 
-1. Edit `src/Me/index.js`， fill the content field
-2. `yarn start`，then open `localhost:3000`
-3. Done.
+### Local Develop & Customize
 
-## Customize
+0. `npm install`
+1. Edit `src/resume/data[_zh].json`， fill the content field
+1. `[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] npm run dev`，then open `localhost:3000/public`
+1. Done.
 
-- `src/typography/Typography/index.js`，override typography
-- `src/components/themes/default.js`，config color theme
+### Build
 
-```
-bio contains:
+1. `[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] npm run build`, then go to the `dist` dir.
 
-    name : string
-    role : string
-    contacts : an object with
-          mobile: string
-          email: string
-          github: string
-          twitter: string (optional)
-          location: string
-    welcomeMessage: string
-    skills: array of strings
-    biopic: string url
-    display: function taking no parameters
+### Export PDF
 
+1. `npm run export`, then go to the `download` dir.
 
-education contains:
+## Tech Stack
 
-    schools: array of objects with
-         name: string
-         location: string
-         degree: string
-         majors: array of strings
-         dates: string (works with a hyphen between them)
-         url: string
-    onlineCourses: array of objects with
-         title: string
-         school: string
-         dates: string (works with a hyphen between them)
-         url: string
-    display: function taking no parameters
-
-
-work contains
-
-    jobs: array of objects with
-         employer: string
-         title: string
-         location: string
-         dates: string (Can be 'in progress')
-         description: string
-    display: function taking no parameters
-
-
-projects contains:
-
-    projects: array of objects with
-          title: string
-          dates: string (works with a hyphen between them)
-          description: string
-          images: array with string urls
-    display: function taking no parameters
-```
-
-### Tech Stacks
-
-- React
-- React-Router
-- normalizr
-- styled-components
-- Storybook
-
-### 0. Install
-
-`npm install`
-
-### 1. Dev
-
-`[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] npm run dev`
-
-### 2. Build
-
-`[PORT=xxx] [HOST=xxx] [PUBLIC_PATH=xxx] npm run build`
-
-#### Credits
-
-- styled-components
-- Typography
-
----
-
-#### Based on [Rocket 🚀](https://github.com/cool4zbl/rocket)
+- react
+- typescript
+- webpack
+- puppeteer

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Locale, ILocale } from '../provider/LocaleContext'
+import { Locale } from '../provider/LocaleContext'
+import { ILocale } from '../provider/LocaleReceiver'
 
 interface LangSwitchProps {
   locale: ILocale
