@@ -10,9 +10,9 @@
     "website": "http://zhangbinliu.me",
     "url": "http://zhangbinliu.me/resume",
     "summary": [
-      "Self-driving front-end engineer with five years of experience in large-scale website development, proficient with JavaScript and web technologies, understanding Java, and skilled in using React eco-system tools to build high-performance front-end applications;",
-      "Data-driven, with two years of data middle-platform experience, can find problems from data and solve them. And have an acquaintance with A/B testing(especially UI experiments) and growth hacking.",
-      "Focus the Web trends, willingness to share, passion for exploring the best practices of front-end architecture, and practice new technologies to serve business and team."
+      "Self-motivated front-end engineer with five years of experience in developing large-scale and high-performance web applications proficiently with JavaScript and React eco-system tools;",
+      "Data-driven, with two years of data middle-platform experience, and have an acquaintance with A/B testing(especially UI experiments) and growth hacking.",
+      "Pay attention to Web trends, be willing to share, be keen to explore the best practices of front-end architecture, and practice new technologies to serve business and team."
     ],
     "location": "Beijing, CN",
     "social": [
@@ -46,9 +46,9 @@
     {
       "name": "Professional",
       "keywords": [
-        "Passion & Responsible",
-        "Quick learner & Problem Solver",
-        "Sharing & Team Player"
+        "Responsible & Passionate",
+        "Quick learner & Problem solver",
+        "Team player & love to share"
       ]
     }
   ],
@@ -62,9 +62,8 @@
       "startDate": "2018.01",
       "endDate": "2020.07",
       "description": [
-        "Responsible for the front-end development of \"Darwin\" -- an internal one-stop A/B testing platform for Ant Group",
-        "Designed and carried out the front-end of Darwin A/B testing platform and runtime experiment SDK in an all-around way to fulfill the UI experiments' value, implemented and perfected the full-link front-end A/B Testing solution from 0 to 1",
-        "Covered all scenarios of front-end experiments of Ant Group, helping businesses to use A/B testing adequately, and boosted data-driven business optimization and growth"
+        "Implemented the front-end UI of \\\"Darwin\\\" -- an internal one-stop A/B testing platform",
+        "Designed and carried out the front-end of Darwin A/B testing platform and runtime experiment SDK in an all-around way to fulfill the UI experiments' value, realized and perfected the full-link front-end A/B Testing solution from 0 to 1, which covered all scenarios of front-end experiments of Ant Group, helped businesses to use A/B testing adequately, and boosted data-driven business optimization and growth"
       ],
       "highlights": []
     },
@@ -77,9 +76,8 @@
       "startDate": "2017.10",
       "endDate": "2018.01",
       "description": [
-        "Responsible for the development and maintenance of Map-Gaia front-end of Meituan's internal map data platform, and realized the functions of map data management, viewing/editing map POI data, etc., helping operations to edit better and maintain map data",
-        "Accomplished the platform front-end business logic by using `Vue` + `Vuex` + `ElementUI`",
-        "Implemented the map data-visualization: realized the function of displaying the map base layer and POI data by using Leaflet, achieved the customized map editing feature based on the custom development of `iD` editor"
+        "Developed Meituan's internal map data platform *Gaia.*",
+        "Implemented the data visualization of the map's base layer and POI data by using Leaflet, customized editing map feature based on the secondary development of iD editor, and accomplished the functions of map data production and release, helping operations handle map data better."
       ],
       "highlights": ["Map", "Data Platform"]
     },
@@ -92,8 +90,9 @@
       "startDate": "2015.07",
       "endDate": "2017.09",
       "description": [
-        "Responsible for the development and maintenance of PC & Mobile & Hybrid front-end pages of Douban, including Douban Movie, Douban Books, Douban Music, SNS, account system, etc. Implemented new features while continuously refactoring and optimizing, improved product iteration efficiency and user experience, and serving hundreds of millions of users",
-        "Achieved the front-end development of the whole website account system (Mobile and Hybrid) by using `React`, integrated the Account system to Douban's multiple APP platforms(Douban APP & Read & Movie & FM) and were compatible with multi-version and multi-system"
+        "Responsible for the front-end development and maintenance of PC, mobile, and hybrid pages of Douban (such as Douban Movie, Douban Books, Douban Music, SNS, Account system)",
+        "Redesigned the whole website account system using *React*, integrated the system into Douban's multiple app platforms and completed multi-version and multi-system compatibility.",
+        "Implemented new features while continuously refactoring and optimizing, serving near 100 million users."
       ],
       "highlights": []
     }
@@ -105,13 +104,13 @@
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.06",
       "endDate": "2020.04",
-      "description": "Opened middle-platform to reduce the cost and lower the threshold of UI experiments.",
+      "description": "Opened middle-platform to lower the threshold of UI experiments and popularized A/B testing culture",
       "highlights": [
-        "Cooperated with back-ends, through SaaS-based diversion service, designed and implemented Darwin A/B testing front-end runtime SDK: JS SDK & mini-program SDK & A/B component (including React, Vue, Alipay mini-program) & Egg plugin(Node.js), which closely followed the eco-system of Ant Group front-end apps and provided a unified and easy-use front-end A/B access solution",
-        "JS SDK's main functions included A/B testing diversion parameters acquisition, A/B testing data collecting/logging, audience configuring, caching, etc. Analyzed logging data and refined the performance. In the end, SDK size was 43kB(8kB after gzip), and the success rate of getting parameters was 95%-99.9%, smoothing out various end differences; SDK had been downloaded above 20,000+ times, serving 10+ BUs, 1,000+ experiments, and had experienced tens of millions of traffic tests",
-        "Led the cooperation between Darwin and various third-party platforms, like \"Darwin conjunction with Morpho (An internal page-building platform),\" and Alipay mini program IDE A/B testing extension, to help operations and developers respectively",
-        "Integrated by the amount to 6+ business units, 30+ internal platform products, and empowered AB Testing ability in the business",
-        "**Tech Stack**: `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
+        "Designed and implemented the whole Darwin A/B testing front-end runtime SDK: JS SDK & mini-program SDK & A/B components (including React, Vue, Alipay mini-program) & Egg plugin(Node.js), which closely followed the eco-system of Ant Group front-end and provided a unified and easy-use UI experiments solution",
+        "Analyzed SDK's log data, refined its performance, and improved the success rate of acquiring parameters from 90% to 95%-99.9% by reducing its size (8kB after gzip) and optimizing SDK methods.",
+        "SDK had been downloaded above 20,000+ times, served 10+ BUs, 1,000+ experiments, and passed the test of tens of millions of traffic levels.",
+        "Led the cooperation between Darwin and various third-party platforms, integrated Darwin into the amount to 6+ business units, 30+ internal platform products by packaged business capabilities, and empowered the business with A/B test.",
+        "Tech Stack `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
       ],
       "url": ""
     },
@@ -121,14 +120,13 @@
       "time": "Jan 2018 ~ Apr 2020",
       "startDate": "2018.01",
       "endDate": "2020.04",
-      "description": "Developed the platform of scientific authority by building various A/B testing capabilities.",
+      "description": "Developed the authoritative scientific platform by building various A/B testing abilities",
       "highlights": [
-        "Built the one-stop A/B testing platform Darwin as a front-end core developer with PMs, UI designers, back-ends, and data scientists(30 colleagues in total)",
-        "Landed and improved various basic and high-level A/B testing capabilities, such as the life cycle of A/B tests, metric system productization, automatic decision-making, real-time monitoring, multi-dimensional analysis, and dashboard, etc., helping the platform to realize the construction of scientific authority platform from 1 to 10",
-        "Carried out code clean continuously and had unified the tech stack, solved heavy historical burden and chaotic architecture, and abstracted the domain model layer. Packaged some fundamental or data visualization components based on Ant Design and Ant Vision",
-        "Established the quality assurance system (front-end monitoring, promotion of TypeScript, etc.), which resulted in improving R&D efficiency by 30%",
-        "Surveyed 5+ famous A/B testing platforms, explored and enhanced some useful features with designers, made the platform easy to use and gained a good user reputation",
-        "**Tech Stack**: `TypeScript` + `React` + `AntDesign` + `AntVision`"
+        "Built the one-stop A/B testing platform \"Darwin\" as a core front-end developer, along with PMs, UI designers, back-ends, and data scientists(30 colleagues in total)",
+        "Landed and improved various primary and advanced functions (such as life cycle of experiments, metrics system, multi-dimensional analysis), supporting the platform to achieve scientificity and authority from 1 to 10",
+        "Carried out code clean, abstracted the domain model layer and components, unified the tech stack and codebases, and established the QA system (like front-end monitoring), resulting in reducing technical debt and a 30% improvement in R&D efficiency",
+        "Surveyed 5+ famous A/B testing platforms, explored and enhanced some useful features with designers, made the platform easy to use and gained a good reputation from users.",
+        "Tech Stack:`TypeScript` + `React` + `AntDesign` + `AntVision`"
       ],
       "url": ""
     },
@@ -140,10 +138,11 @@
       "endDate": "2020.10",
       "description": "Yet another responsive resume template-builder with good typography and design sense.",
       "highlights": [
-        "Concise, simple, and configurable, without excessive dependence",
-        "Intl supported with SEO optimization",
-        "Auto export PDF",
-        "**Tech Stack**: `TypeScript` + `React` + `Puppeteer`"
+        [
+          "Concise, simple, and configurable, without excessive dependence",
+          "`i18n` supported with SEO optimization and auto PDF export",
+          "Tech Stack:`TypeScript` + `React` + `Puppeteer`"
+        ]
       ],
       "url": "http://zhangbinliu.me/resume",
       "github": "https://github.com/cool4zbl/resume"
@@ -187,11 +186,11 @@
     {
       "name": "Hobbies",
       "description": [
-        "A lifelong learner, always keeping curious about the world",
-        "Tool enthusiast / Productivity-driven / Vimer",
+        "A lifelong learner, keeping curiosity about the world.",
         "Obsessed with all aesthetic designs",
-        "Reading / Photography / Music / Fitness",
-        "Life tenet: Work hard, play hard."
+        "Tool enthusiast / Productivity-driven(Efficiency-driven) / Vimer",
+        "Reading, photography, music, and fitness",
+        "Life tenet: Work hard; play hard."
       ]
     },
     {
@@ -203,6 +202,6 @@
     }
   ],
   "thanks": [
-    "I cherish every opportunity to make me better and look forward to working with you. Thank you for your precious time, and wish you success in your work."
+    "I appreciate every opportunity and look forward to working with you. Thank you for your precious time; Hope everything goes well."
   ]
 }

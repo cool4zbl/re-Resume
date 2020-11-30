@@ -5,6 +5,7 @@ const path = require('path')
 const http = require('http')
 const { setInterval } = require('timers')
 
+// TODO:
 const URL = 'http://localhost:3000/public'
 
 const marginCN = {
