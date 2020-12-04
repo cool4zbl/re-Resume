@@ -15,7 +15,7 @@ module.exports = {
   // new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
   entry: sourcePath,
   output: {
-    filename: 'app.[name].js',
+    filename: 'app.[name].[hash].js',
     publicPath,
     path: outputPath,
   },

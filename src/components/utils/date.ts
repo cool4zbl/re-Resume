@@ -29,8 +29,9 @@ export const formatDate = (date?: string | number, locale?: Locale): string => {
     return date
   }
 
-  const dateString = new Date(date).toDateString()
-  const [, m, , y] = dateString.split(' ')
+  const [year, month] = date.split('.')
+
+  const [, m, , y] = new Date(year, month).toDateString().split(' ')
   return `${m} ${y}`
 }
 
