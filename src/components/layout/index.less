@@ -1,0 +1,176 @@
+@import '../style/global';
+
+:global {
+  html {
+    font-size: @mobile-base-font-size;
+    // line-height: 1.5;
+    line-height: 30px;
+  }
+
+  html.cn-mode {
+    font-size: @mobile-base-font-size-cn;
+  }
+
+  body {
+    overflow-x: hidden;
+    border-top: 6px solid @pigeon-red;
+    padding: 30px;
+    margin: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+    background: @body-bg-color;
+    color: @text-color;
+  }
+
+  .qrcode {
+    display: none;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: @content-bg-color;
+  background: white;
+}
+
+.toolbar {
+  background: @body-bg-color;
+  padding: 10px 0;
+  text-align: right;
+  button {
+    margin-left: 4px;
+  }
+}
+
+.contentWrapper {
+  border-top: 1px solid @border-color;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1.5rem;
+}
+
+.footer {
+  background: @body-bg-color;
+  margin-top: auto;
+  padding: 2rem 2rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: @breakpoint-lg), print {
+  .contentWrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 4;
+    max-width: 70%;
+    border-right: 1px solid @border-color;
+  }
+
+  .sidebar {
+    max-width: 30%;
+    flex: 1 0 30%;
+  }
+}
+
+@media screen and (min-width: @breakpoint-lg) {
+  :global {
+    html {
+      font-size: @base-font-size;
+    }
+    html.cn-mode {
+      font-size: @base-font-size-cn;
+    }
+    body {
+      background: @body-bg-color;
+    }
+    .qrcode {
+      display: block;
+    }
+  }
+
+  .resumeWrapper {
+    background: @content-bg-color;
+  }
+  .main {
+    padding: 0 2rem;
+  }
+  .sidebar {
+    min-height: 800px;
+  }
+}
+
+// @media (max-width: @breakpoint-sm) {
+//   :global {
+//     html {
+//       font-size: @base-font-size;
+//     }
+//     html.cn-mode {
+//       font-size: @base-font-size-cn;
+//     }
+//     body {
+//       background: @body-bg-color;
+//     }
+//   }
+// }
+
+// TODO:
+@media print {
+  :global {
+    html {
+      font-size: 10pt;
+      line-height: 1.2;
+      font-family: @print-font;
+    }
+    html.cn-mode {
+      font-size: 10pt;
+      font-family: @print-font-cn;
+      line-height: 1.3;
+    }
+    body {
+      background: white;
+      border: 0;
+      padding: 0;
+    }
+    .small-text {
+      font-size: 9pt;
+    }
+    table,
+    pre {
+      page-break-inside: avoid;
+    }
+    pre {
+      word-wrap: break-word;
+    }
+    .qrcode {
+      display: block;
+    }
+    .avatar {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+  .toolbar,
+  .footer {
+    display: none;
+  }
+}

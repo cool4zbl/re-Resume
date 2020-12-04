@@ -1,0 +1,298 @@
+{
+  "//": "@see https://jsonresume.org/schema/",
+  "///": "Chinese version",
+  "basics": {
+    "name": "张滨浏",
+    "title": "高级前端工程师",
+    "experience": "5+ 年",
+    "email": "i@zhangbinliu.me",
+    "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
+    "phone": "185-0036-7879",
+    "website": "http://zhangbinliu.me",
+    "url": "http://zhangbinliu.me/resume",
+    "summary": [
+      "自驱型前端工程师，五年大型网站开发经验，熟悉 JavaScript 等 Web 技术，能熟练运用 React 生态工具构建高性能的前端应用",
+      "数据驱动，两年数据中台经验，对于 A/B 测试（前端实验）及用户增长有一定了解",
+      "关注 Web 发展，乐于分享，热衷探索前端架构的最佳实践，并实践新技术来服务业务和团队"
+    ],
+    "location": "北京",
+    "social": [
+      {
+        "network": "LinkedIn",
+        "username": "Zhang Binliu",
+        "url": "https://www.linkedin.com/in/zhang-binliu-0722a48a"
+      },
+      {
+        "network": "GitHub",
+        "username": "@cool4zbl",
+        "url": "https://github.com/@cool4zbl"
+      },
+      {
+        "network": "Douban",
+        "username": "郫县豆瓣",
+        "url": "https://douban.com/people/cool4zbl"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "技术",
+      "keywords": [
+        "HTML / CSS",
+        "TypeScript / JavaScript",
+        "React / Node.js / 前端工程化",
+        "Java, C/C++（了解）"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "蚂蚁金服",
+      "website": "https://antfin.com",
+      "position": "高级前端工程师",
+      "location": "北京",
+      "time": "Jan 2018 ~ July 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.07",
+      "description": [
+        "负责蚂蚁全域一站式 A/B 测试科学平台 “达尔文(Darwin)” 前端开发",
+        "为充分发挥 UI 实验价值，对 A/B 测试平台前端及实验运行时 SDK 进行全方位设计和落地，从 0 到 1 实现了前端全链路 AB 解决方案，覆盖蚂蚁前端实验场景，帮助业务又好又快地使用 AB 测试，数据驱动业务优化与增长"
+      ],
+      "highlights": []
+    },
+    {
+      "company": "美团",
+      "position": "高级前端工程师",
+      "website": "https://meituan.com",
+      "location": "北京",
+      "time": "Oct 2017 ~ Jan 2018",
+      "startDate": "2017.10",
+      "endDate": "2018.01",
+      "description": [
+        "负责美团内部地图数据平台 Gaia 前端开发与维护。使用 `Vue` 实现平台业务逻辑；使用 `Leaflet` 进行地图底图及 POI 数据展示，同时基于 `iD` 编辑器二次开发，定制化地图编辑功能，总体实现了地图数据生产和发布、POI 数据创建修改等功能，帮助运营更好地处理地图数据"
+      ],
+      "highlights": ["Map", "Data Platform"]
+    },
+    {
+      "company": "豆瓣",
+      "position": "前端工程师",
+      "website": "https://meituan.com",
+      "location": "北京",
+      "time": "July 2015 ~ Sep 2017",
+      "startDate": "2015.07",
+      "endDate": "2017.09",
+      "description": [
+        "负责大豆瓣（包括书影音、社区、账号系统等）PC & Mobile & Hybrid 三端页面开发与维护",
+        "使用 `React` 开发了全站帐号系统移动端（Mobile + Hybrid)，统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统兼容",
+        "支持新功能的同时不断重构和优化，提高了产品迭代效率及用户体验，服务于亿级用户"
+      ],
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "type": 0,
+      "title": "达尔文(Darwin) “多端多域”：从 0 到 1 的 A/B 实验中台开放",
+      "tags": ["darwin", "antfin"],
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.04",
+      "description": "开放中台以降低前端实验门槛和成本，普及 A/B 文化",
+      "highlights": [
+        "与后端同学合作，通过 SaaS 化分流服务，结合轻量前端 SDK 的模式，设计并实现了 Darwin A/B Testing Runtime SDK: JS SDK & 小程序 SDK & AB 实验组件（React / VUE / 小程序）及 Egg Plugin(Node)，紧贴蚂蚁前端应用生态，提供了统一的（支付宝端内、端外 H5 和小程序场景）前端 AB 接入解决方案",
+        "JS SDK 具有实验分流参数获取、数据埋点、场景圈人、缓存等功能，结合日志数据不断优化后，打包体积 43kB(gzip 8kB)，获取参数成功率 95% - 99.9%，抹平了各类端上差异，对外提供统一的 API；SDK 累计下载量 20000+ 次，累计服务蚂蚁 10+ BU，1000+ 实验，经历过千万级流量考验",
+        "主导了达尔文与各种三方平台的合作共建，主要有 “达尔文接入闪蝶（蚂蚁搭建平台）” 和小程序 IDE A/B Testing 拓展插件，分别帮助运营和开发者使用 A/B",
+        "Darwin 累计被六大蚂蚁 BU、30+ 内部平台产品集成，赋能业务中台 A/B 能力",
+        "技术栈：`TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 0,
+      "title": "达尔文(Darwin)：从 1 到 10 的科学权威的 A/B 实验平台建设",
+      "tags": ["darwin", "antfin"],
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.04",
+      "description": "实现各种实验能力，打造科学权威平台",
+      "highlights": [
+        "作为核心前端开发，与产品、设计、后端及数据科学家一起，打造蚂蚁的一站式 A/B 实验平台，落地和完善了各种基础与高阶实验能力（如实验生命周期、指标产品化、自动化决策、实时监控、多维分析、实验大盘等产品功能），帮助平台实现从 1 到 10 的科学权威平台建设",
+        "开发过程中不断进行代码治理，统一技术栈，抽象领域模型层，基于 `AntDesign` 封装平台基础组件 20+，基于 `AntVision` 封装数据可视化组件 10+，建立质量保障体系（前端监控、推广 TypeScript 等），解决历史包袱重、架构混乱问题，提升研发效率 30%",
+        "与设计师合作，调研了 5 个商用 A/B 测试平台，借鉴并落地了一些实用功能，不断提高平台易用性，获得良好的用户口碑",
+        "技术栈：`TypeScript` + `React` + `AntDesign` + `AntVision`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 1,
+      "title": "re-Resume 2.0",
+      "tags": ["resume", "person"],
+      "time": "Aug 2020 ~ Oct 2020",
+      "startDate": "2020.08",
+      "endDate": "2020.10",
+      "description": "一个排版良好、具有设计感的响应式的简历模板生成器",
+      "highlights": [
+        "无过多依赖，简洁、简单，可配置",
+        "支持国际化、SEO 优化及自动生成 PDF",
+        "技术栈：`TypeScript` + `React` + `Puppeteer`"
+      ],
+      "url": "http://zhangbinliu.me/resume",
+      "github": "https://github.com/cool4zbl/resume"
+    },
+    {
+      "type": 0,
+      "hide": true,
+      "title": "Creator 创作者社区",
+      "time": "2017.05 - 2017.09",
+      "startDate": "2017.05",
+      "endDate": "2017.09",
+      "description": "负责开发的创作者社区平台（Web + Mobile + Hybrid），包括创作者作品申请、作品管理后台及创作者作品展示功能。",
+      "highlights": [
+        "使用 `React` + `Redux` 开发的Web + Mobile + Hybrid **多端SPA**，通过 Ajax 与后端进行所有数据通信；",
+        "使用`Redux` + `normalizr` + `Immutable.js` 作**状态管理**，实现复杂的页面交互；",
+        "技术栈：`React` + `React-Router` + `Redux` + `Webpack`"
+      ],
+      "url": "https://www.douban.com/verify/apply/"
+    },
+    {
+      "type": 0,
+      "hide": true,
+      "title": "Account System",
+      "time": "2015.12 - 2017.09",
+      "startDate": "2015.12",
+      "endDate": "2017.09",
+      "description": "负责开发的全站帐号系统移动端（Mobile + Hybrid），包括注册、找回密码、绑定 / 解绑用户帐号和第三方帐号登录功能。",
+      "highlights": [
+        "使用 `React` 开发的 Mobile + Hybrid 端 **SPA**， 统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容；",
+        "使用 `Webpack` `code-splitting` 技术使各个功能的页面代码**按需加载**，页面打开时间减少了 20%，提高了用户体验；",
+        "模块化开发组件且加入**单元测试**，降低线上出错概率的同时提高了开发效率",
+        "使用 `jscodeshift` & `js-codemod` & `react-codemod` 将所有代码从 ES5 迁移到 ES6",
+        "技术栈：`React` + `React-Router` + `Webpack` + `Mocha` + `Chai` + `Enzyme` + `Sinon`"
+      ],
+      "url": "https://accounts.douban.com/app/register#/"
+    },
+    {
+      "type": 0,
+      "hide": true,
+      "title": "Zerkalo 书影音条目长评",
+      "time": "2016.04 - 2016.08",
+      "startDate": "2016.04",
+      "endDate": "2016.08",
+      "description": "负责开发的传统 PC 页面重构，应用新设计重构豆瓣全站 Web 端条目，包括书影音、游戏、舞台剧等所有条目的长评页面，并加入长评赞赏新功能。",
+      "highlights": [
+        "**三个月重构项目**，整合之前分散在五个大型项目中的长评 `Mako`模板代码，按页面模块布局拆分并基本重写了样式文件；",
+        "将之前超两千行的主站 `douban.js` 按功能模块拆分，使用 Vanilla JavaScript 重构需要的功能代码并`Webpack` 打包加载，提升页面的性能，方便调试和维护；",
+        "交互上把所有传统表单提交操作改为 Ajax 与后端通信，提升用户体验，并解决了多个项目不同域名下的 **CORS 跨域**问题；",
+        "技术栈：`Mako` + `SCSS` + `ES6` + `Webpack`"
+      ],
+      "url": "https://movie.douban.com/review/8004640/"
+    },
+    {
+      "type": 0,
+      "hide": true,
+      "title": "Talion 豆瓣手机版",
+      "time": "2015.12 - 2017.09",
+      "startDate": "2015.12",
+      "endDate": "2017.09",
+      "description": "参与开发的移动版的豆瓣，具备 PC Web 有的基本功能",
+      "highlights": [
+        "对整个移动端进行了 **SEO** 和分享至微信的优化，给整站带来更多的流量及给用户更好的分享效果；",
+        "应用模块化、组件化思想开发传统移动端页面，广泛使用 `ES6 template literals` + `Fetch API` + `SCSS`，根据设计稿开发对应组件， 方便复用和快速生成页面，提高开发效率；",
+        "一些页面的 view 层通过自己编写 Python 调接口实现",
+        "技术栈：`Mako` + `SCSS` + `ES6` + `Python`"
+      ],
+      "url": "https://m.douban.com"
+    },
+    {
+      "type": 0,
+      "hide": true,
+      "title": "SNS 社区",
+      "time": "2015.12 - Present",
+      "description": "参与的大型传统 Web 项目开发，即豆瓣 Web 主站，包括广播、日记和用户主页等",
+      "highlights": [
+        "使用`jQuery` 编写转播对话框插件，开发了 Web 广播转播功能，同时对历史遗留代码进行了重构",
+        "在传统 Web 项目应用组件化思想，使用 `Mako` 编写模板，重构旧项目页面的同时，编写各种 Mako 模块函数，达到跨项目复用，例如对全站的 `UserCard` 的 HTML & CSS & JS 做了封装，可以跨项目被社区 / 条目等项目复用，提升开发效率",
+        "技术栈：`Mako` + `SCSS` + `jQuery` + `ES6`"
+      ],
+      "url": "https://www.douban.com/"
+    },
+    {
+      "type": 1,
+      "hide": true,
+      "title": "每日鸡血 Inspiring Me",
+      "time": "2017.07",
+      "startDate": "2017.07",
+      "endDate": "2017.07",
+      "description": "一个带来每日正能量的页面，展示随机生成的鼓舞人心的图片和名人名言；",
+      "highlights": [
+        "技术栈： `React` + `styled-component` + `Webpack` + `Unsplash API`"
+      ],
+      "url": "http://zhangbinliu.me/inspiring-me",
+      "github": "https://github.com/cool4zbl/inspiring-me"
+    },
+    {
+      "type": 1,
+      "hide": true,
+      "title": "Ghost-render",
+      "startDate": "2017.06",
+      "endDate": "2017.06",
+      "description": "一个使用 Ghost 及其默认主题 Casper 的静态博客生成器 ",
+      "highlights": [
+        "对生成博客文章链接格式进行了优化，并修复一些小 Bug",
+        "技术栈：`Node`"
+      ],
+      "url": "https://github.com/cool4zbl/ghost-render",
+      "github": "https://github.com/cool4zbl/ghost-render"
+    }
+  ],
+  "education": [
+    {
+      "institution": "电子科技大学 (UESTC)",
+      "website": "https://www.uestc.edu.cn",
+      "area": "电子信息工程",
+      "studyType": "本科",
+      "startDate": "2011.09.01",
+      "endDate": "2015.07.01",
+      "gpa": "3.6",
+      "courses": ["模拟电路", "数字电路", "微机原理", "信号与系统", "信息论"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "母语"
+    },
+    {
+      "language": "英语",
+      "fluency": "中等水平"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "prototype": [
+    {
+      "name": "Hobbies",
+      "description": [
+        "终身学习者，对世界保持一颗好奇心",
+        "具有审美设计能力，痴迷一切优美的设计",
+        "工具控 / 效率控 / Vimer",
+        "业余喜欢阅读 / 拍照 / 音乐 / 健身",
+        "人生理想：Work hard, play hard."
+      ]
+    },
+    {
+      "name": "Quotes",
+      "description": [
+        "Fake it till you make it.",
+        "God helps one who help themselves"
+      ]
+    }
+  ],
+  "thanks": [
+    "我珍惜每一次锻炼的机会，非常期待能与您共事。感谢您的宝贵时间，祝工作顺利。"
+  ]
+}

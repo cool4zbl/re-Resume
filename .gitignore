@@ -1,11 +1,9 @@
 .DS_Store
-dist
 *.log
+
 node_modules
 .happypack
-webpack/webpack-assets.json
 
-content.md
+dist
 o_me.js
-
-
+TODO

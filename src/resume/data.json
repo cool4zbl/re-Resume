@@ -1,0 +1,205 @@
+{
+  "//": "@see https://jsonresume.org/schema/",
+  "basics": {
+    "name": "Binliu ZHANG",
+    "title": "Senior Frontend Engineer",
+    "experience": "5+ years",
+    "email": "i@zhangbinliu.me",
+    "picture": "http://zhangbinliu.me/content/images/avatar_zbl.jpg",
+    "phone": "(+86)185-0036-7879",
+    "website": "http://zhangbinliu.me",
+    "url": "http://zhangbinliu.me/resume",
+    "summary": [
+      "Self-motivated front-end engineer with five years of experience in developing large-scale and high-performance web applications proficiently with JavaScript and React eco-system tools;",
+      "Data-driven, with two years of data middle-platform experience, and have an acquaintance with A/B testing(especially UI experiments) and growth hacking.",
+      "Pay attention to Web trends, be willing to share, be keen to explore the best practices of front-end architecture, and practice new technologies to serve business and team."
+    ],
+    "location": "Beijing, CN",
+    "social": [
+      {
+        "network": "LinkedIn",
+        "username": "Zhang Binliu",
+        "url": "https://www.linkedin.com/in/zhang-binliu-0722a48a"
+      },
+      {
+        "network": "GitHub",
+        "username": "@cool4zbl",
+        "url": "https://github.com/@cool4zbl"
+      },
+      {
+        "network": "Douban",
+        "username": "郫县豆瓣",
+        "url": "https://douban.com/people/cool4zbl"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "HTML / CSS",
+        "TypeScript / JavaScript",
+        "React / Node.js / Front-end Engineering",
+        "Java, C/C++ (Knowledge level)"
+      ]
+    },
+    {
+      "name": "Professional",
+      "keywords": [
+        "Responsible & Passionate",
+        "Quick learner & Problem solver",
+        "Team player & love to share"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Ant Group",
+      "website": "https://antgroup.com",
+      "position": "Senior FrontEnd Engineer",
+      "location": "Beijing",
+      "time": "Jan 2018 ~ July 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.07",
+      "description": [
+        "Implemented the front-end UI of *Darwin*, the internal one-stop A/B testing platform",
+        "Designed and carried out the front-end of Darwin A/B testing platform and runtime experiment SDK in an all-around way to fulfill the UI experiments' value, realized and perfected the full-link front-end A/B Testing solution from 0 to 1, which covered all scenarios of front-end experiments of Ant Group, helped businesses to use A/B testing adequately, and boosted data-driven business optimization and growth"
+      ],
+      "highlights": []
+    },
+    {
+      "company": "Meituan",
+      "position": "FrontEnd Engineer II",
+      "website": "https://meituan.com",
+      "location": "Beijing",
+      "time": "Oct 2017 ~ Jan 2018",
+      "startDate": "2017.10",
+      "endDate": "2018.01",
+      "description": [
+        "Developed Meituan's internal map data platform *Gaia*",
+        "Implemented the data visualization of the map's base layer and POI data by using Leaflet, customized editing map feature based on the secondary development of iD editor, and accomplished the functions of map data production and release, helping operations handle map data better"
+      ],
+      "highlights": ["Map", "Data Platform"]
+    },
+    {
+      "company": "Douban",
+      "position": "FrontEnd Engineer",
+      "website": "https://meituan.com",
+      "location": "Beijing",
+      "time": "July 2015 ~ Sep 2017",
+      "startDate": "2015.07",
+      "endDate": "2017.09",
+      "description": [
+        "Responsible for the front-end development and maintenance of PC, mobile, and hybrid pages of Douban (such as Douban Movie, Douban Books, Douban Music, SNS, Account system)",
+        "Redesigned the whole website account system using *React*, integrated the system into Douban's multiple app platforms and completed multi-version and multi-system compatibility",
+        "Implemented new features while continuously refactoring and optimizing, serving near 100 million users"
+      ],
+      "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "type": 0,
+      "title": "Darwin \"Multi-terminal and Multi-domain\": Open A/B Testing middle-platform from 0 to 1",
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.06",
+      "endDate": "2020.04",
+      "description": "Opened middle-platform to lower the threshold of UI experiments and popularized A/B testing culture",
+      "highlights": [
+        "Designed and implemented the whole Darwin A/B testing front-end runtime SDK: JS SDK & mini-program SDK & A/B components (including React, Vue, Alipay mini-program) & Egg plugin(Node.js), which closely followed the eco-system of Ant Group front-end and provided a unified and easy-use UI experiments solution",
+        "Analyzed SDK's log data, refined its performance, and improved the success rate of acquiring parameters from 90% to 95%-99.9% by reducing its size (8kB after gzip) and optimizing SDK methods",
+        "SDK had been downloaded above 20,000+ times, served 10+ BUs, 1,000+ experiments, and passed the test of tens of millions of traffic levels",
+        "Led the cooperation between Darwin and various third-party platforms, integrated Darwin into the amount to 6+ business units, 30+ internal platform products by packaged business capabilities, and empowered the business with A/B test",
+        "Tech Stack: `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 0,
+      "title": "Darwin: Platform construction from 1 to 10",
+      "time": "Jan 2018 ~ Apr 2020",
+      "startDate": "2018.01",
+      "endDate": "2020.04",
+      "description": "Developed the authoritative scientific platform by building various A/B testing abilities",
+      "highlights": [
+        "Built the one-stop A/B testing platform *Darwin* as a core front-end developer, along with PMs, UI designers, back-ends, and data scientists(30 colleagues in total)",
+        "Landed and improved various primary and advanced functions (such as life cycle of experiments, metrics system, multi-dimensional analysis), supporting the platform to achieve scientificity and authority from 1 to 10",
+        "Carried out code clean, abstracted the domain model layer and components, unified the tech stack and codebases, and established the QA system (like front-end monitoring), resulting in reducing technical debt and a 30% improvement in R&D efficiency",
+        "Surveyed 5+ famous A/B testing platforms, explored and enhanced some useful features with designers, made the platform easy to use and gained a good reputation from users",
+        "Tech Stack: `TypeScript` + `React` + `AntDesign` + `AntVision`"
+      ],
+      "url": ""
+    },
+    {
+      "type": 1,
+      "title": "re-Resume 2.0",
+      "time": "Aug 2020 ~ Oct 2020",
+      "startDate": "2020.08",
+      "endDate": "2020.10",
+      "description": "Yet another responsive resume template-builder with good typography and design sense.",
+      "highlights": [
+        "Concise, simple, and configurable, without excessive dependence",
+        "`i18n` supported with SEO optimization and auto PDF export",
+        "Tech Stack: `TypeScript` + `React` + `Puppeteer`"
+      ],
+      "url": "http://zhangbinliu.me/resume",
+      "github": "https://github.com/cool4zbl/resume"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Electronic Science and Technology of China (UESTC)",
+      "website": "https://www.uestc.edu.cn",
+      "area": "Electronic Engineering",
+      "studyType": "BSc",
+      "startDate": "2011.09.01",
+      "endDate": "2015.07.01",
+      "gpa": "3.6",
+      "courses": [
+        "Analogue Circuit",
+        "Digital Circuit",
+        "Princlple of Computer",
+        "Signal and System",
+        "Information Theory"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Working knowledge"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "prototype": [
+    {
+      "name": "Hobbies",
+      "description": [
+        "A lifelong learner, keeping curiosity about the world",
+        "Obsessed with all aesthetic designs",
+        "Tool enthusiast / Productivity-driven(Efficiency-driven) / Vimer",
+        "Reading, photography, music, and fitness",
+        "Life tenet: Work hard; play hard."
+      ]
+    },
+    {
+      "name": "Quotes",
+      "description": [
+        "Fake it till you make it.",
+        "God helps one who help themselves"
+      ]
+    }
+  ],
+  "thanks": [
+    "I appreciate every opportunity and look forward to working with you. Thank you for your precious time; Hope everything goes well."
+  ]
+}

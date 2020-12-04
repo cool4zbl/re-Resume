@@ -1,0 +1,60 @@
+@import '../style/vars';
+
+.listWrapper {
+  overflow: hidden;
+  // TODO: use `margin` when printing
+  padding: 1rem 0;
+}
+
+.list {
+  list-style: none;
+}
+
+/**
+  .item
+    .meta
+      .itemTitle  |  .extra
+      .itemDescription
+*/
+
+.item {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.25rem;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: 1rem;
+  color: @sub-title-color;
+}
+
+/** time or ... */
+.extra {
+  font-size: 0.85rem;
+  color: @gray1;
+}
+
+.itemDescription {
+  clear: both;
+  font-size: 0.9rem;
+  color: @gray1;
+}
+
+@media only screen and (min-width: @breakpoint-lg), print {
+  // .itemTitle {
+  .titleWithExtra {
+    float: left;
+    max-width: 75%;
+  }
+  /** time or ... */
+  .extra {
+    float: right;
+    // max-width: 25%;
+  }
+}

@@ -1,94 +1,65 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const devServer = require('@webpack-blocks/dev-server2')
-const splitVendor = require('webpack-blocks-split-vendor')
-const happypack = require('webpack-blocks-happypack')
+const config = require('./config')
 
-const {
-  addPlugins, createConfig, entryPoint, env, setOutput,
-  sourceMaps, defineConstants, webpack,
-} = require('@webpack-blocks/webpack2')
+const { host, port, publicPath } = config
 
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
 const sourceDir = process.env.SOURCE || 'src'
-const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
-const sourcePath = path.join(process.cwd(), sourceDir)
-const outputPath = path.join(process.cwd(), 'dist')
+const sourcePath = path.resolve(__dirname, sourceDir)
+const outputPath = path.resolve(__dirname, 'dist')
 
-const babel = () => () => ({
-  module: {
-    rules: [
-      { test: /\.jsx|\.js?$/, exclude: /node_modules/, loader: 'babel-loader' },
-    ],
+console.log('======= NODE ENV ======: ', process.env.NODE_ENV)
+
+module.exports = {
+  // new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
+  entry: sourcePath,
+  output: {
+    filename: 'app.[name].js',
+    publicPath,
+    path: outputPath,
   },
-})
-
-const assets = () => () => ({
+  devServer: {
+    contentBase: 'public',
+    stats: 'errors-only',
+    historyApiFallback: { index: publicPath },
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    host,
+    port,
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+  },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        // Include ts, tsx, js, and jsx files.
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       },
-      { test: /\.(png|jpe?g|svg|gif|woff2?|ttf|eot)$/, loader: 'url-loader?limit=8192' },
+      // assets
+      {
+        test: /\.(less|css)$/,
+        use: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+          'less-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|svg|gif|woff2?|ttf|eot)$/,
+        loader: 'url-loader?limit=8192',
+      },
     ],
   },
-})
-
-const resolveModules = modules => () => ({
-  resolve: {
-    modules: [].concat(modules, ['node_modules']),
-  },
-})
-
-const config = createConfig([
-  entryPoint({
-    app: sourcePath,
-  }),
-  setOutput({
-    filename: '[name].js',
-    path: outputPath,
-    publicPath,
-  }),
-  defineConstants({
-    'process.env.NODE_ENV': process.env.NODE_ENV,
-    'process.env.PUBLIC_PATH': publicPath.replace(/\/$/, ''),
-  }),
-  addPlugins([
-    new webpack.ProgressPlugin(),
+  plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(process.cwd(), 'public/index.html'),
+      template: path.resolve(sourcePath, 'assets/index.html'),
+      // templateParameters: {
+      //   foo: 'bar',
+      // },
     }),
-  ]),
-  happypack([
-    babel(),
-  ]),
-  assets(),
-  resolveModules(sourceDir),
-
-  env('development', [
-    devServer({
-      contentBase: 'public',
-      stats: 'errors-only',
-      historyApiFallback: { index: publicPath },
-      headers: { 'Access-Control-Allow-Origin': '*' },
-      host,
-      port,
-    }),
-    sourceMaps(),
-    addPlugins([
-      new webpack.NamedModulesPlugin(),
-    ]),
-  ]),
-
-  env('production', [
-    splitVendor(),
-    addPlugins([
-      new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
-    ]),
-  ]),
-])
-
-module.exports = config
+  ],
+}
