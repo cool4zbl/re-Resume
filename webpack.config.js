@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const config = require('./config')
 
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
+const { host, port, publicPath } = config
+
 const sourceDir = process.env.SOURCE || 'src'
-const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
 const sourcePath = path.resolve(__dirname, sourceDir)
 const outputPath = path.resolve(__dirname, 'dist')
 

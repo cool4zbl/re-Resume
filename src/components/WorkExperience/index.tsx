@@ -14,7 +14,7 @@ const WorkExperience = ({
       {item.company}
     </a>,
     item.location && (
-      <span key="location">
+      <span key="location" style={{ fontWeight: 500 }}>
         <span key="dash"> - </span>
         {item.location}
       </span>
@@ -26,8 +26,10 @@ const WorkExperience = ({
       <BaseList.Item key={item.company} style={{ marginBottom: '1rem' }}>
         <BaseList.Item.Meta
           style={{ marginBottom: '.5rem' }}
-          title={item.position}
-          description={getCompany(item)}
+          title={getCompany(item)}
+          // title={item.position}
+          // description={getCompany(item)}
+          description={item.position}
           extra={locale?.localeUtil.formatTimeRange({
             start: item.startDate,
             end: item.endDate,

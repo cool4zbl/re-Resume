@@ -1,25 +1,42 @@
 /* eslint-disable no-console */
 const puppeteer = require('puppeteer')
 const fs = require('fs')
-const path = require('path')
 const http = require('http')
 const { setInterval } = require('timers')
 
-// TODO:
-const URL = 'http://localhost:3000/public'
+const config = require('../config')
+
+const { host, port, publicPath, downloadDir, downloads } = config
+
+const URL = `http://${host}:${port}${publicPath || ''}`.replace('//', '/')
+
+// 调参侠....
+// const marginCN = {
+//   top: '.32in',
+//   right: '.28in',
+//   bottom: '.32in',
+//   left: '.32in',
+// }
+
+// const marginEN = {
+//   top: '.36in',
+//   right: '.4in',
+//   bottom: '.36in',
+//   left: '.4in',
+// }
 
 const marginCN = {
-  top: '.32in',
-  right: '.28in',
-  bottom: '.32in',
-  left: '.32in',
+  top: '.38in',
+  right: '.5in',
+  bottom: '.38in',
+  left: '.5in',
 }
 
 const marginEN = {
-  top: '.36in',
-  right: '.4in',
-  bottom: '.36in',
-  left: '.4in',
+  top: '.45in',
+  right: '.6in',
+  bottom: '.45in',
+  left: '.6in',
 }
 
 const fetchPage = url => {
@@ -34,11 +51,11 @@ const fetchPage = url => {
   })
 }
 
-const waitUntilPageLoaded = async () => {
+const waitUntilPageLoaded = async url => {
   return new Promise(resolve => {
     let tId = setInterval(async () => {
       try {
-        const code = await fetchPage(URL)
+        const code = await fetchPage(url)
         if (code === 200) {
           clearInterval(tId)
           resolve(true)
@@ -46,7 +63,7 @@ const waitUntilPageLoaded = async () => {
       } catch (e) {
         // reject(e)
       }
-    }, 1000)
+    }, 500)
   }).catch(err => {
     console.log('WAIT_PAGE_LOADED ERROR ', err)
   })
@@ -55,34 +72,29 @@ const waitUntilPageLoaded = async () => {
 const convert = async () => {
   console.log('CONNECTING SERVER')
 
-  await waitUntilPageLoaded()
+  await waitUntilPageLoaded(URL)
 
-  const genPDF = async lang => {
+  const fullDirPath = downloadDir
+  if (!fs.existsSync(fullDirPath)) {
+    fs.mkdirSync(fullDirPath)
+  }
+
+  const genPDF = async (lang, download) => {
     try {
-      const fullDirPath = path.join(__dirname, '../download')
-      if (!fs.existsSync(fullDirPath)) {
-        fs.mkdirSync(fullDirPath)
-      }
-
       const browser = await puppeteer.launch({
         args: ['--no-sandbox'],
       })
       const page = await browser.newPage()
-      const url = `${URL}?${lang === 'ZH' ? 'lang=zh' : ''}`
+      // const url = `${URL}?${lang === 'ZH' ? 'lang=zh' : ''}`
 
-      console.log('EXPORT PDF FROM `%s`', url)
+      console.log('EXPORT PDF FROM `%s`', download.url)
 
-      // page.on('requestfailed', request => {
-      //   console.log('====== Request Failure ==== \n')
-      //   console.log(request.url() + ' ' + request.failure().errorText)
-      // })
-
-      await page.goto(url, {
+      await page.goto(download.url, {
         waitUntil: 'networkidle2',
       })
 
       await page.pdf({
-        path: `${fullDirPath}/zhangbinliu_resume${lang ? `_${lang}` : ''}.pdf`,
+        path: download.filePath,
         format: 'A4',
         printBackground: true,
         margin: lang ? marginCN : marginEN,
@@ -93,10 +105,13 @@ const convert = async () => {
       throw new Error(err)
     }
   }
-  const genPDFCN = async () => await genPDF('ZH')
 
-  Promise.all([genPDF(), genPDFCN()]).then(() => {
-    console.log('EXPORT FINISHED.')
+  Promise.all(
+    Object.entries(downloads).map(async ([lang, download]) => {
+      await genPDF(lang, download)
+    })
+  ).then(() => {
+    console.log('pdf export finished.')
   })
 }
 

@@ -2,6 +2,9 @@ import React from 'react'
 
 export const transformText = (textString: string): React.ReactNode => {
   // const codeRegExp = /`(\S+)`/gi
+  if (typeof textString !== 'string') {
+    textString = String(textString)
+  }
 
   const r = textString
     .replace(/\*{2}(.+?)\*{2}/g, '<b>$1</b>')

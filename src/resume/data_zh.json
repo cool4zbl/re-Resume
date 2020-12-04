@@ -83,7 +83,7 @@
       "endDate": "2017.09",
       "description": [
         "负责大豆瓣（包括书影音、社区、账号系统等）PC & Mobile & Hybrid 三端页面开发与维护",
-        "使用 `React` 开发了全站帐号系统移动端（Mobile + Hybrid)，统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统（iOS / Android）兼容",
+        "使用 `React` 开发了全站帐号系统移动端（Mobile + Hybrid)，统一了豆瓣多个 APP 平台（豆瓣、豆瓣阅读、豆瓣FM、豆瓣电影）的帐号系统，且多版本、多系统兼容",
         "支持新功能的同时不断重构和优化，提高了产品迭代效率及用户体验，服务于亿级用户"
       ],
       "highlights": []
@@ -99,11 +99,11 @@
       "endDate": "2020.04",
       "description": "开放中台以降低前端实验门槛和成本，普及 A/B 文化",
       "highlights": [
-        "与后端同学合作，通过 SaaS 化分流服务，结合轻量前端 SDK 的模式，设计并实现了 Darwin A/B Testing Runtime SDK: JS SDK & 小程序 SDK & A/B 实验组件（包括 React / VUE / 小程序）及 Egg Plugin(Node.js)，紧贴蚂蚁前端应用生态，提供了统一的（支付宝端内、端外 H5 和小程序场景）前端 AB 接入解决方案",
-        "JS SDK 具有实验分流参数获取、数据埋点、场景圈人、缓存等功能，结合日志数据不断优化后，总打包体积 43kB(gzip 8kB)，获取参数成功率 95% - 99.9%，抹平了各类端上差异，对外提供统一的 API；SDK 累计下载量 20000+ 次，累计服务蚂蚁 10+ BU，1000+ 实验，经历过千万级流量考验",
+        "与后端同学合作，通过 SaaS 化分流服务，结合轻量前端 SDK 的模式，设计并实现了 Darwin A/B Testing Runtime SDK: JS SDK & 小程序 SDK & AB 实验组件（React / VUE / 小程序）及 Egg Plugin(Node)，紧贴蚂蚁前端应用生态，提供了统一的（支付宝端内、端外 H5 和小程序场景）前端 AB 接入解决方案",
+        "JS SDK 具有实验分流参数获取、数据埋点、场景圈人、缓存等功能，结合日志数据不断优化后，打包体积 43kB(gzip 8kB)，获取参数成功率 95% - 99.9%，抹平了各类端上差异，对外提供统一的 API；SDK 累计下载量 20000+ 次，累计服务蚂蚁 10+ BU，1000+ 实验，经历过千万级流量考验",
         "主导了达尔文与各种三方平台的合作共建，主要有 “达尔文接入闪蝶（蚂蚁搭建平台）” 和小程序 IDE A/B Testing 拓展插件，分别帮助运营和开发者使用 A/B",
         "Darwin 累计被六大蚂蚁 BU、30+ 内部平台产品集成，赋能业务中台 A/B 能力",
-        "技术栈： `TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
+        "技术栈：`TypeScript` + `React` + `Lerna` + `Webpack` + `Jest` + `Node.js`"
       ],
       "url": ""
     },
@@ -119,7 +119,7 @@
         "作为核心前端开发，与产品、设计、后端及数据科学家一起，打造蚂蚁的一站式 A/B 实验平台，落地和完善了各种基础与高阶实验能力（如实验生命周期、指标产品化、自动化决策、实时监控、多维分析、实验大盘等产品功能），帮助平台实现从 1 到 10 的科学权威平台建设",
         "开发过程中不断进行代码治理，统一技术栈，抽象领域模型层，基于 `AntDesign` 封装平台基础组件 20+，基于 `AntVision` 封装数据可视化组件 10+，建立质量保障体系（前端监控、推广 TypeScript 等），解决历史包袱重、架构混乱问题，提升研发效率 30%",
         "与设计师合作，调研了 5 个商用 A/B 测试平台，借鉴并落地了一些实用功能，不断提高平台易用性，获得良好的用户口碑",
-        "技术栈:`TypeScript` + `React` + `AntDesign` + `AntVision`"
+        "技术栈：`TypeScript` + `React` + `AntDesign` + `AntVision`"
       ],
       "url": ""
     },
@@ -150,7 +150,7 @@
       "highlights": [
         "使用 `React` + `Redux` 开发的Web + Mobile + Hybrid **多端SPA**，通过 Ajax 与后端进行所有数据通信；",
         "使用`Redux` + `normalizr` + `Immutable.js` 作**状态管理**，实现复杂的页面交互；",
-        "技术栈： `React` + `React-Router` + `Redux` + `Webpack`"
+        "技术栈：`React` + `React-Router` + `Redux` + `Webpack`"
       ],
       "url": "https://www.douban.com/verify/apply/"
     },

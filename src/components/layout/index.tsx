@@ -11,6 +11,8 @@ import { ILocale } from '../provider/LocaleReceiver'
 import { defaultLocale, zh } from '../intl'
 import { toggleClass, toggleQueryString } from '../utils'
 
+import { downloads } from '../../../config'
+
 import styles from './index.less'
 
 interface LayoutProps {
@@ -58,15 +60,19 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
     locale,
   }
 
+  const downloadLink = downloads[locale.locale].filePath
+  console.log('download btn href ', downloadLink)
   const DownloadBtn = () => (
-    <button
-      className="btn"
-      onClick={() => {
-        console.log('OPDF')
-      }}
-    >
-      <a href={`${window.location.host}`}>PDF</a>
-    </button>
+    <a href={downloadLink}>
+      <button
+        className="btn"
+        onClick={() => {
+          console.log('OPDF')
+        }}
+      >
+        PDF
+      </button>
+    </a>
   )
 
   useEffect(() => {
