@@ -27,25 +27,10 @@ const downloads = (() =>
     return acc
   }, {}))()
 
-const getDownloads = () =>
-  langs.reduce((acc, cur) => {
-    if (!acc[cur]) {
-      acc = {
-        ...acc,
-        [cur]: {
-          filePath: downloadFilePath(cur),
-          url: url(cur),
-        },
-      }
-    }
-    return acc
-  }, {})
-
 module.exports = {
   host,
   port,
   publicPath,
   downloadDir,
   downloads,
-  getDownloads,
 }
