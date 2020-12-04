@@ -4,14 +4,16 @@ const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 3000
 const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
 
-const downloadDir = path.join(__dirname, publicPath, '../download')
+const downloadDir = path.join(__dirname, '../download')
 
 const langs = ['enUS', 'zhCN']
 
 const URL = `http://${host}:${port}${publicPath || ''}`.replace('//', '/')
 const url = lang => `${URL}?${lang === 'zhCN' ? 'lang=zh' : ''}`
 const downloadFilePath = lang =>
-  `${downloadDir}/zhangbinliu_resume${lang === 'zhCN' ? `_${lang}` : ''}.pdf`
+  `/resume${downloadDir}/zhangbinliu_resume${
+    lang === 'zhCN' ? `_${lang}` : ''
+  }.pdf`
 
 const downloads = (() =>
   langs.reduce((acc, cur) => {

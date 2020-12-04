@@ -60,9 +60,7 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
     locale,
   }
 
-  const downloadLink =
-    'http://zhangbinliu.me/resume/download/zhangbinliu_resume.pdf' ||
-    downloads[locale.locale].filePath
+  const downloadLink = downloads[locale.locale].filePath
   console.log('download btn href ', downloadLink)
   const DownloadBtn = () => (
     <a href={downloadLink}>
