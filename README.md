@@ -50,3 +50,7 @@ See `src/resume/data.json` or go to https://jsonresume.org/schema/
 - typescript
 - webpack
 - puppeteer
+
+### TODO
+
+- Set http header `content-disposition: attachment` when download PDF, which is not supported by github pages.
