@@ -139,7 +139,7 @@
       "description": "Yet another responsive resume template-builder with good typography and design sense.",
       "highlights": [
         "Concise, simple, and configurable, without excessive dependence",
-        "`i18n` supported with SEO optimization and auto PDF export",
+        "`i18n` supported, SEO features included and PDF export automatically",
         "Tech Stack: `TypeScript` + `React` + `Puppeteer`"
       ],
       "url": "http://zhangbinliu.me/resume",
