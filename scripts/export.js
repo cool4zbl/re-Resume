@@ -33,9 +33,9 @@ const marginCN = {
 }
 
 const marginEN = {
-  top: '.45in',
+  top: '.7in',
   right: '.6in',
-  bottom: '.45in',
+  bottom: '.7in',
   left: '.6in',
 }
 
@@ -85,7 +85,6 @@ const convert = async () => {
         args: ['--no-sandbox'],
       })
       const page = await browser.newPage()
-      // const url = `${URL}?${lang === 'ZH' ? 'lang=zh' : ''}`
 
       console.log('EXPORT PDF FROM `%s`', download.url)
 
@@ -97,7 +96,7 @@ const convert = async () => {
         path: download.filePath,
         format: 'A4',
         printBackground: true,
-        margin: lang ? marginCN : marginEN,
+        margin: lang === 'zhCN' ? marginCN : marginEN,
       })
 
       await browser.close()
@@ -111,7 +110,7 @@ const convert = async () => {
       await genPDF(lang, download)
     })
   ).then(() => {
-    console.log('pdf export finished.')
+    console.log('PDF export finished.')
   })
 }
 

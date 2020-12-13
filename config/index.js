@@ -15,12 +15,12 @@ const url = lang => `${URL}?${lang === 'zhCN' ? 'lang=zh' : ''}`
  * resume file saving
  */
 const downloadDir =
-  process.env.NODE_ENV === 'production'
-    ? '/resume'
-    : path.join(__dirname, '../download')
+  process.env.NODE_ENV === 'production' ? '/resume' : path.join(__dirname, '..')
 
 const downloadFilePath = lang =>
-  `${downloadDir}/zhangbinliu_resume${lang === 'zhCN' ? `_${lang}` : ''}.pdf`
+  `${downloadDir}/download/zhangbinliu_resume${
+    lang === 'zhCN' ? `_${lang}` : ''
+  }.pdf`
 
 const downloads = (() =>
   langs.reduce((acc, cur) => {

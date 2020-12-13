@@ -9,9 +9,7 @@ import { ILocale } from '../provider/LocaleReceiver'
 export default function ProtoType({
   dataSource = [],
 }: Resume.CommonListProps<Resume.ProtoType>): React.FC {
-  const currentDataSource = dataSource.find(
-    dt => dt.name.toLowerCase() === 'hobbies'
-  )?.description
+  const currentDataSource = dataSource[0]?.description
 
   return (
     <LocaleReceiver componentName="prototype">
