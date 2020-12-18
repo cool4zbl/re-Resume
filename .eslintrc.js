@@ -1,17 +1,4 @@
 module.exports = {
-  // env: {
-  //   node: true,
-  //   es6: true,
-  // },
-  // root: true,
-  // parser: '@typescript-eslint/parser',
-  // plugins: ['@typescript-eslint'],
-  // extends: [
-  //   'plugin:@typescript-eslint/recommended',
-  //   'plugin:react/recommended',
-  //   'prettier/@typescript-eslint',
-  //   'plugin:react-hooks/recommended',
-  // ],
   env: {
     es6: true,
     browser: true,

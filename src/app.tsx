@@ -5,8 +5,8 @@
 import React from 'react'
 import Layout from './components/layout'
 
-import rawData from './resume/data.json'
-import zhRawData from './resume/data_zh.json'
+import rawData from '../data/data.json'
+import zhRawData from '../data/data_zh.json'
 import { Locale } from './components/provider/LocaleContext'
 
 const App = (): React.ReactNode => {
