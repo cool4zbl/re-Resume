@@ -11,7 +11,7 @@ import { ILocale } from '../provider/LocaleReceiver'
 import { defaultLocale, zh } from '../intl'
 import { toggleClass, toggleQueryString } from '../utils'
 
-import { downloads } from '../../../config'
+import { distFilePath } from '../../../config'
 
 import styles from './index.less'
 
@@ -31,7 +31,6 @@ const CN_LANG_STR = 'lang=zh'
 const CN_CLASS = 'cn-mode'
 
 export default function Layout({ data }: LayoutProps): React.ReactNode {
-  console.log('^^^ layout resumeData', data)
   const [locale, setLocale] = React.useState<ILocale>({ ...defaultLocale })
 
   const resumeData = data[locale.locale]
@@ -60,8 +59,9 @@ export default function Layout({ data }: LayoutProps): React.ReactNode {
     locale,
   }
 
-  const downloadLink = downloads[locale.locale].filePath
-  console.log('download btn href ', downloadLink)
+  // const downloadLink = downloads[locale.locale].filePath
+  const downloadLink = distFilePath
+
   const DownloadBtn = () => (
     <a href={downloadLink}>
       <button
