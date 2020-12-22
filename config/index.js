@@ -22,6 +22,8 @@ const downloadFilePath = lang =>
     lang === 'zhCN' ? `_${lang}` : ''
   }.pdf`
 
+const distFilePath = `${downloadDir}/download/zhangbinliu_resume.pdf`
+
 const downloads = (() =>
   langs.reduce((acc, cur) => {
     if (!acc[cur]) {
@@ -42,4 +44,5 @@ module.exports = {
   publicPath,
   downloadDir,
   downloads,
+  distFilePath,
 }
