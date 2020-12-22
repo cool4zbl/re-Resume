@@ -1,12 +1,13 @@
 /* eslint-disable no-console */
 const puppeteer = require('puppeteer')
+const pdfMerge = require('easy-pdf-merge')
 const fs = require('fs')
 const http = require('http')
 const { setInterval } = require('timers')
 
 const config = require('../config')
 
-const { host, port, publicPath, downloadDir, downloads } = config
+const { host, port, publicPath, downloadDir, downloads, distFilePath } = config
 
 const URL = `http://${host}:${port}${publicPath || ''}`.replace('//', '/')
 
@@ -105,13 +106,27 @@ const convert = async () => {
     }
   }
 
+  const downloadEntries = Object.entries(downloads)
+
   Promise.all(
-    Object.entries(downloads).map(async ([lang, download]) => {
+    downloadEntries.map(async ([lang, download]) => {
       await genPDF(lang, download)
     })
-  ).then(() => {
-    console.log('PDF export finished.')
-  })
+  )
+    .then(() => {
+      const files = downloadEntries.map(([, download]) => {
+        return download.filePath
+      })
+      pdfMerge(files, distFilePath, err => {
+        if (err) {
+          throw err
+        }
+        console.log('PDF export finished.')
+      })
+    })
+    .catch(err => {
+      console.log('Error occured: ', err)
+    })
 }
 
 convert()
