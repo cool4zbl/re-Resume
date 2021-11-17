@@ -1,6 +1,6 @@
 # re-Resume 🤓
 
-**v2 is coming, with a breaking change especially in design.**
+**v2 is coming out, with a breaking change especially in design.**
 
 Yet another responsive resume template-builder with good typography and design sense.
 Simple but useful.
